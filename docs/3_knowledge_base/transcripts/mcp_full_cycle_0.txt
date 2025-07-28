@@ -1,0 +1,685 @@
+vídeo: Model Context Protocol: Guia que todo Dev precisa saber
+
+Introdução
+0:00
+a sigla da vez agora é MCP Model Contex Protocol Nós desenvolvedores aí estamos
+0:05
+indo à loucura com as grandes e grandes possibilidades que a gente tem agora de fazer com que os nossos modelos de
+0:12
+inteligência artificial falem com os nossos sistemas externos né uma a gente tem agora uma série de ferramentas um
+0:18
+monte de servidores MCP para brincar mas a realidade é que muitos debs não tm a
+0:25
+menor ideia de como que esse protocolo funciona quais são os seus componentes como é que a sua a sua arquitetura e as
+0:32
+possibilidades que você tem por trás dele Então é por conta disso que eu resolvi gravar esse vídeo e eu vou te
+0:39
+dar aí meio que uma aula sobre MCP inclusive trazendo uma apresentação que eu montei aqui no Scaly Draw e também
+0:47
+código para que você consiga ver essa parada na prática inclusive utilizando
+0:52
+aí o cursor Mas antes de gente falar disso eu queria muito mesmo te dar um recado e uma recomendação Clica no link
+0:58
+aqui embaixo para você conhecer mais sobre o curso Full Cycle 4.0 zero principalmente porque agora a gente
+1:04
+adicionou um pilar de inteligência artificial para desenvolvedores Então se você tá passando raiva aí com IA achando
+1:10
+que ela programa mal para caramba e tá mais te atrapalhando às vezes do que te ajudando clica nesse link porque a gente
+1:16
+encontrou ótimas soluções que vão mudar completamente a forma de como que você trabalha com IA no seu dia a dia Recados
+Entendendo MCP
+1:22
+dados Vamos lá então aqui pra tela do meu computador onde eu preparei aqui uma apresentação bem bacaninha para você
+1:27
+entender mais sobre MCP e ter realmente a visão que vale a pena você entender como que você pode explorar tudo isso
+1:33
+Maravilha Então vamos lá galera MCP Model Context Protocol né um protocolo que ele vai padronizar como que os
+1:39
+nossos sistemas conseguem dar contexto para os modelos de inteligência artificial tá então basicamente ele faz
+1:45
+com que a gente tenha a possibilidade de fazer com que o nosso modelo se conecte a fontes externas peguem informações
+1:51
+consigam executar ações e tudo mais Então aqui tem um exemplo bem simples para que você consiga entender a ideia e
+1:57
+as possibilidades que o MCP ele traz aqui pra gente tá então lance é o seguinte Nós temos aqui um host mas preste bem atenção nós temos um host e
+2:04
+nós temos um MCP client O que que isso significa significa que você tem uma aplicação que utiliza inteligência
+2:10
+artificial e essa aplicação ela implementa um client do MCP por exemplo
+2:15
+um cursor um VS Code um cloud por exemplo Essas aplicações utilizam por baixo dos panos um MCP client para fazer
+2:22
+uma chamada em um MCP server tá então aqui eu tenho alguns exemplos bem simples Um MCP server do Postgress então
+2:28
+eu sou capaz de falar com o meu modelo e fazer com que esse meu modelo faça uma chamada no meu Postigress tá e esse
+2:34
+servidor aqui de MCP server de PBS consegue acessar realmente o meu banco
+2:39
+de dados Da mesma forma que eu consigo fazer um MCP server onde ele vai fazer uma chamada de API para pegar dados por
+2:46
+exemplo de produtos numa API e pegar por exemplo dados de usuário em outra API Então eu consigo fazer sim o meu modelo
+2:52
+conseguir trabalhar com chamadas externas de API E ao mesmo tempo eu consigo ter MCPs até bem interessantes
+2:57
+como o de Docker né então eu tenho um servidor MCP de Docker que ele consegue se comunicar com o Docker da nossa
+3:02
+máquina por exemplo e consegue trazer informações que a gente precisa sobre os nossos contêiners iniciar serviços parar
+3:08
+serviços e tudo mais Então se você perceber a gente tem possibilidades bem bacanas porque a gente consegue acessar
+3:13
+banco de dados a gente consegue executar ações e a gente consegue fazer bastante coisa O grande ponto é que essa é a
+3:19
+visão que a maioria das pessoas que bateram olho no MVCP acabam tendo isso que eu acabei de mostrar E daí a maioria
+3:25
+das pessoas elas acabam parando por aí E é por conta disso que eu gravei esse vídeo A gente vai um pouquinho mais a
+3:31
+fundo em relação a esses aspectos Fechou então vamos lá Então somente para você entender alguns pontos importantes o
+3:36
+lance é o seguinte Ahã eu vou dar uns exemplos aqui de como que essas chamadas acontecem no seu modelo né então por
+3:43
+exemplo eu posso perguntar quais são os contêiners docker que estão sendo executados verifique no postiz quantos registros eu tenho na tabela de logs
+3:50
+qual o produto que possui o ID1 de acordo com a minha Tool tá então se você perceber em algumas situações você tem
+3:55
+que inclusive afirmar ali pro seu LLM né pro seu modelo que você quer que ele utilize uma determinada ferramenta tá
+4:03
+vamos dizer assim mas você vai perceber que MCPs eles vão bem além de tools de ferramentas e é isso aí que acaba
+4:09
+limitando as possibilidades que muitos desenvolvedores têm nos dias de hoje Beleza então como que funciona né vamos
+4:14
+entender os componentes aí que a gente tem em relação ao MCP Server né a MCP de forma geral Então como eu tava falando
+Componentes
+4:20
+para você você tem um host que pode ser um cursor um VS Code um cloud ou qualquer sistema tá que faça interface
+4:27
+com o seu modelo de inteligência artificial O que que acontece o seguinte você tem esse host e esse host ele
+4:32
+consegue implementar um client que tem inclusive um SDK com todas as especificações Esse cliente host
+4:38
+obviamente vai falar com MCP Server e a gente pode fazer na realidade chamadas tanto locais dentro do nosso próprio
+4:45
+computador quanto chamadas externas ou seja chamadas remotas Então eu sou capaz de por exemplo trabalhar e modificar
+4:52
+acessar meu sistema de arquivos mas ao mesmo tempo eu consigo ler dados por exemplo de um Google Drive da vida ou
+4:58
+pegar informações numa pasta remota Então eu consigo ter muitas oportunidades quando a gente tá
+5:04
+trabalhando aí com MCPs Agora o grande ponto aqui que você tem que se ligar é que essas implementações né você tanto
+5:10
+rodar local e rodar remoto as coisas elas mudam um pouco E isso ao longo aqui do nosso bate-papo desse vídeo aqui você
+5:17
+vai ter um pouquinho mais de clareza sobre isso tá então por exemplo só para ficar claro para você essa parada de MCP
+5:22
+client e MCP Server tá então o seguinte exemplos de aplicações que implementam o MCP clients o GitHub Copilot o Cursor o
+5:28
+cloud desktop o cloud Code ou seja todas essas ferramentas elas dentro dela implementam e tem esse client para
+5:34
+conseguir falar com um MCP Server Exemplos de MCP servers Eu tenho MCP Servers do PostGrees do Google Drive do
+5:40
+Git do GitHub do Slack File System Docker Kubernets Eu tenho um monte depois eu vou compartilhar aqui com vocês uma lista de servidores sites
+5:46
+legais onde você já vê um monte de servidor pronto para você sair utilizando e facilitar para caramba a sua vida aí no dia a dia tanto
+5:52
+utilizando IA né pessoalmente quanto trabalhando com IA para código dentro do seu ecossistema aí de de serviços de
+5:58
+Docker de Kubernets Git e etc Maravilha Então essa que é a ideia básica aqui Agora vamos entender um pouco mais sobre
+6:05
+a arquitetura de um MCP Server Eu acho que aqui que tá o grande ponto porque a gente eu vejo muita gente limitado a
+Arquitetura do MCP
+6:11
+essas possibilidades Normalmente hoje em dia quando eu vejo alguém falar de MCP a pessoa ela já tá normalmente se baseando
+6:18
+em algo chamado tools que são ferramentas tá e sim é uma das coisas assim mais poderosas que você pode ter
+6:24
+num MCP Server tá então o que que é uma TU tu é uma ferramenta que realiza ação Elas são controladas pelo modelo ou seja
+6:31
+a própria LLM decide quando chamar tá o que que isso significa significa que
+6:37
+quando você tá utilizando o modelo né e de acordo com o que você escreve o modelo fala: "Poxa essa informação eu
+6:43
+acho que eu tenho uma ferramenta que vai me ajudar a conseguir executar essa determinada ação." Então quem tá
+6:49
+decidindo por utilizar né esse MCP server é o modelo em si tá e uma coisa
+6:55
+interessante é que toda vez que você tem um servidor MCP você tem ferramentas ali de auto discover O que que significa
+7:01
+você tem como se fosse uma lista um glossário né onde o seu modelo consegue acessar e ver todas as ferramentas e
+7:07
+todos os recursos todas as capabilities que um MCP Server tem e a partir dali ele escolhe o qual ele vai querer
+7:13
+trabalhar tá então esse aí é um ponto importante Agora o ponto principal de uma tool e o por ela é tão poderosa é
+7:19
+porque elas conseguem realizar ações O que que significa isso o Matu consegue criar um arquivo ela consegue chamar uma
+7:26
+API ela consegue a derrubar um contêiner ela consegue criar um pó de cubernetes
+7:31
+ela consegue executar qualquer coisa Basicamente essa é a ideia de uma fazer
+7:36
+execução E essa execução ela é controlada ela é percebida pela pelo modelo tá pelo Llm si Fechou então isso
+7:45
+aí é um ponto importante para você se ligar Agora o lance é o seguinte a gente tem uma um outro cara tá num MCP server
+7:51
+que você pode utilizar e é muito subutilizado na realidade que são os resources tá então o que que são
+7:57
+resources os resources eles permitem com que a gente consiga pegar dados pelos
+8:03
+clientes para usar como contexto pelo LLM Então vamos imaginar que os resources eles são como se fossem
+8:08
+datasets Eles são locais onde você consegue pegar informações que vão te ajudar a deixar né o seu prompt deixar a
+8:16
+utilização da sua muito mais inteligente né ultimamente o que que a gente faz muito né os famosos rags você pega tudo
+8:23
+quanto é dado que você tem na sua empresa você vetoriza tudo isso e quando você precisa de alguma informação você
+8:29
+faz uma busca nesse banco de dados utilizando o vetor traz aquele pedaço de conteúdo que você acha que vai ser
+8:34
+relevante e embeda ali no seu prompt né então esse tipo de tarefa é extremamente
+8:40
+custosa desgastante dá trabalho para caramba e com resources você não precisa necessariamente mais fazer isso Isso
+8:46
+muda o jogo completamente inclusive como a forma que as pessoas estão trabalhando com inteligência artificial como as
+8:51
+empresas estão estruturando as suas arquiteturas e preparando os documentos e os modelos para conseguir trazer
+8:57
+informações relevantes para aquilo que servem ali para elas Os resources eles servem exatamente para isso Basicamente
+9:02
+o MCP ele vai ter como se fosse um cardápio de recursos onde ele pode pegar essas informações Ah eu preciso pegar os
+9:09
+preços dos meus produtos né então vai ter um end point ali pro MCP acessar e
+9:14
+já trazer aquela tabela de produtos que ele precisa né alha eu preciso também pegar as imagens dos últimos balancetes
+9:21
+que eu tive na empresa e que estão registradas em tal lugar Então o seu LLM consegue entender essas coisas e a sua
+9:28
+aplicação vai lá consegue chamar né vamos dizer assim essas imagens pegar colocar dentro do seu sistema Então você
+9:34
+consegue fazer isso para arquivos você consegue fazer isso para imagem você consegue fazer isso para banco de dados e tudo mais Agora entenda que tem uma
+9:41
+diferença e que isso acaba gerando um pouco de confusão entre a diferença de tools e resources Por quê porque uma
+9:48
+tool em tese o que que ela pode fazer ela pode fazer uma chamada de API e pegar também a tabela de preços para mim
+9:53
+né e tá tudo bem maravilha isso vai funcionar mas a principal utilidade da TU é executar ações e não
+10:00
+necessariamente apenas ficar lendo dados mas também tem a coisa que muda completamente o jogo na diferença entre
+10:06
+um e outro Se você perceber a TU aqui ela decide né faz com que o LLM decida
+10:12
+quando chamar uma TU Já no caso dos resources quem determina quando aquele resource vai ser chamado vai ser não vai
+10:20
+ser o modelo mas sim a sua aplicação que está utilizando a inteligência artificial E isso faz muita diferença
+10:26
+Por exemplo imagina que eu quero pegar né em algum momento tá tendo sei lá um chat ali e alguém pergunta o preço ali
+10:32
+naquele momento Eu posso pedir pro meu a minha ferramenta fazer uma chamada de API posso mas nesse momento quando eu
+10:38
+sei que tem uma uma necessidade de um pedido o que que eu posso falar fazer olha ele tá pedindo produtos né então eu tenho um cardápio aqui de todos os meus
+10:44
+produtos Então deixa eu ler esse resource porque tá aqui a opção que esse cara tá querendo Ou seja eu posso escolher a dedo dependendo da situação
+10:51
+qual resource eu vou utilizar naquele momento E lembre-se resource não é necessariamente apenas chamada de API
+10:58
+Resources são qualquer tipo de documento Pode ser um Google Drive pode ser um monte de arquivo no seu file system pode
+11:04
+ser o que for no final das contas mas basicamente quem decide na hora de chamar o resource não é o LLM não é o
+11:10
+modelo e sim a sua aplicação que está utilizando aquele modelo Fechou então aqui são exemplos de como que o como que
+11:18
+são feitas essas chamadas né desses resources Então tem um screen eu posso passar minha imagem eu posso passar um arquivo eu posso passar inclusive até um
+11:23
+banco de dados Mas a grande sacada aqui é você entender essa diferença Tool executação resource no final das contas
+11:30
+eles provê fonte de dados e quem utiliza a chamada dessas fontes de dados é o
+11:35
+client e não necessariamente o modelo que vai decidir Fechou e por último aqui e não menos importante ah nós temos algo
+11:42
+chamado de prompts que também faz parte de componentes aqui da arquitetura de um MCP server Como é que funciona os talos
+11:49
+prompts galera imagina que você tem situações que você sempre tem que usar o bendito mesmo prompt para resolver um
+11:56
+determinado tipo de problema né e daí o que que a gente acaba ficar fazendo o que a gente fica fazendo criando um monte de arquivinho ou colocando aquele
+12:02
+prompt dentro do seu próprio sistema ou até mesmo né copiando e colando nas suas ferramentas Eu não sei se você tem o
+12:08
+cloud desktop por exemplo mas se você perceber se você tem um MCP que provê prompts você vai perceber que você pode
+12:14
+selecionar manualmente qual prompt que você quer utilizar para você não ter que ficar copiando e colando toda hora Uma
+12:20
+coisa interessante dos prompts né que é que quem escolhe qual prompt utilizar é
+12:25
+o usuário Então vamos lá A quem escolhe quem vai chamar vai ser o LLM O resource quem escolhe é o client e o prompt quem
+12:32
+escolhe é o usuário Ou seja o usuário ele tem ali os prompts que ele quer trabalhar naquele dia a dia Galera isso
+12:38
+é muito útil Ultimamente eu do que que eu tenho copiado e colado diversos prompts que deu um trabalhão eu criar e
+12:43
+daí de repente ah é copia e cola daí eu tenho meu Notion e tudo mais Quando você tem um servidor MCP que tem todos os
+12:49
+prompts que você mais usa e ainda mais conseguir colocar place holders deixar esse prompt dinâmico facilita muito mas
+12:55
+muito a sua vida Imagina toda hora que você quer verificar um bug no seu software você tem aquele prompt você é um especialista em buscar bugs eu quero
+13:02
+que você faça isso eu quero que você faça aquilo eu preciso que você siga essas regras Toda hora escrever isso faz com que você perda perca muito tempo faz
+13:08
+com que você fique copiando colando ou escreva de qualquer jeito Se você tem um servidor MCP que você tem diversos prompts promptos ali para você você
+13:15
+selecionou atualizou alguns campos que são dinâmicos e ele já consegue trazer o prompt para você Então lembrando galera
+13:21
+estamos falando de MCP estamos falando de tools resources e prompties Então isso aí é um dos pontos assim mais
+13:27
+importantes aqui para vocês Agora a gente tem também como que funciona o formato de comunicação tá ah num
+Formatos de comunicação
+13:34
+servidor MCP tá então aqui é uma das coisas que muda também bem o jogo e
+13:40
+inclusive pode parecer confuso para algumas pessoas mas quando você olhar agora vai ficar bem simples A gente tem dois formatos principais de comunicação
+13:47
+Um formato de comunicação é utilizando o ST ST IiO basicamente a a entrada padrão
+13:53
+de input e output ali do seu sistema O resumo da história é que quando você trabalha com SDIO você está rodando né o
+14:01
+seu servidor de MCP normalmente localmente na sua máquina ele trabalha ali como se ele fosse um processo né
+14:07
+então a chamada ele executa aquele processo né é enviado dados num determinado formato e é retornado dados
+14:14
+ali naquele formato Então se um dia você interagir né pelo console mesmo com o servidor MCP ah utilizando STIO você vai
+14:21
+consegue ver as respostas os outputs que ele tá trabalhando ali para você Então normalmente você vai trabalhar com isso
+14:26
+quando você vai trabalhar localmente ou seja o servidor MCP tá instalado na sua máquina e as mensagens elas são enviadas
+14:32
+recebidas utilizando o JSON RPC ali como padrão tá então eu acho que 90% 95% de
+14:39
+todos os servidores MCPs que talvez você já tenha trabalhado ou que você já usou ou que você já viu tá utilizando esse
+14:44
+formato aqui tá por quê porque ele é mais simples Você muita gente utiliza faz com TypeScript então apenas roda um
+14:50
+NPX e já executa esse tipo de coisa Por outro lado muitas vezes você vai
+14:56
+precisar né trabalhar com MCP remoto ou seja eu tenho um serviço externo né de
+15:01
+MCP que eu preciso me comunicar Então vamos imaginar que você tem a sua empresa você criou um MCP externo e todo
+15:07
+mundo que quer se conectar com a sua empresa e utilizando inteligência artificial pode fazer chamadas aí
+15:13
+diretamente pro seu serviço remoto E é aí que a gente tem a outra forma de comunicação que roda via HTTP que é o
+15:18
+SSE né que é o Server Cent Events que é uma das formas assim bem bacanas de você conseguir se comunicar Ele mantém
+15:25
+conexão de client server você vai conseguindo receber a as informações conforme você precisa Não confunda Web
+15:32
+Sockets com SSE são coisas diferentes SSE é unidirecional web sockets é bidirecional tá então basicamente é essa
+15:40
+pegada Então se você precisa algo remoto você vai perceber que você vai precisar trabalhar com SSE Tem um ponto aí que
+15:46
+realmente é complexo É muito mais fácil você criar uma aplicação local a pessoa instala e sai executando do que você
+15:53
+criar um serviço online né onde a pessoa acessa remotamente ainda mais com SSE Por quê porque você tem que se preocupar
+15:59
+com segurança você vai ter que se preocupar com rate limiting você vai ter que ver como é que você faz com autenticação com autorização com uma pancada de coisa Então obviamente quando
+16:06
+a gente tá falando em criar um servidor MCP usando SSE não é tão trivial assim a
+16:12
+não ser que você vai fazer uma do list né ou qualquer coisa desse tipo que você não precise de absolutamente nada de segurança mas como qualquer software
+16:18
+qualquer serviço a web você tem que ter todo um respaldo técnico de segurança né
+16:24
+de boas práticas de desenvolvimento para você não fazer besteira e trazer né disponibilizar dados sensíveis ou qualquer coisa desse tipo ali da sua
+16:30
+empresa Então como qualquer outra solução web se você trabalhar com SSE saiba que você tem que se preocupar bem
+16:37
+mais aí com a parte de segurança Não que o SDIO não tem que se preocupar com segurança claro que tem mas o nível de complexidade acaba sendo diferente E eu
+16:43
+vou te dar uma notícia triste tá que é o seguinte pelo menos no momento que eu tô gravando esse vídeo meu as documentações
+16:49
+as implementações que você vê sobre SSE são muito ruins O que eu tô dizendo é
+16:55
+que você eu sofri miseravelmente para conseguir desenvolver alguns servidores MCPs usando SSE gastei um mega tempo ah
+17:01
+para descobrir eh os protocolos mudam as versões do SDK muda então ah tá num momento aí meio cinzento para o SSE mas
+17:08
+sim funciona já existem serviços O Copilot Studio por exemplo utiliza SSE para você conseguir se comunicar e
+17:14
+utilizar Bacana mas saiba que eu acredito que na maioria das vezes você vai ver servidores MCPs locais Agora tem
+17:20
+um ponto que você tem que tomar muito cuidado tá e aqui fica ligado você quando você tem um servidor
+17:26
+MCP local na sua máquina provavelmente você vai baixar esse servidor de alguém né de algum repositório do GitHub ou
+17:32
+qualquer coisa desse tipo O que que isso significa significa que se você não tiver confiança o suficiente que aquele
+17:38
+software ele não é vamos dizer assim pode fazer alguma besteira local no seu computador ah não instale né vamos
+17:44
+imaginar que eu crio um MCP malicioso aqui que toda vez que você rodar eu simplesmente vou sair apagando alguns arquivos do seu computador ou eu vou
+17:50
+fazer alguma besteira aí no seu computador ou vou pegar informações sensíveis e jogar para algum outro lugar Então toma cuidado porque você tá
+17:55
+instalando um software no seu computador Isso aí muda muito o jogo Você pode ter um servidor MCP que vai fazer mal que
+18:02
+pode trabalhar de forma maliciosa Então tome muito cuidado com quais são esses servidores Fechou galera essa era a
+18:09
+visão geral que eu queria dar aqui para você sobre MCP mas agora eu queria mostrar rapidamente um pouquinho de código e alguns locais onde você pode
+18:15
+olhar diversos servidores MCPs para você sair utilizando ainda hoje beleza então vamos lá pessoal Primeira coisa vou
+18:22
+mostrar um pouco de código aqui para você Eu desenvolvi tá um servidor MCP
+Código fonte de um MCP
+18:27
+extremamente simples tá basicamente é o seguinte eu tenho uma aplicação tá que
+18:32
+eu desenvolvi na linguagem GO Legal então se você olhar aqui eu tenho um software feito em GO que é um uma API
+18:38
+simples aqui uma API rest bem simples Na realidade ela só tem um add user e ela
+18:43
+tem um list user né ou seja eu tô guardando os dados tudo aqui em memória Então eu tenho aqui um user com ID nome
+18:49
+e-mail eu tenho um local onde eu guardo um mapa de usuários na memória e daí eu consigo listar todos os usuários e eu consigo adicionar novos usuários E eu
+18:55
+disponibilizei isso aqui na minha porta 8081 Ou seja eu tenho um web server servindo algumas informações aí pra
+19:01
+gente Pronto e acabou Basicamente é isso Eu vou até reiniciar esse cara aqui Eu acho que ele deve estar rodando aqui para mim Á Bom nem sei onde que ele tá
+19:08
+rodando Eu sei que ele deve tá rodando em algum lugar Beleza Então aqui é um backend Esse cara que poderia tá na internet em qualquer web server e etc
+19:15
+Maravilha Uma API qualquer E aqui eu tenho o meu servidor MCP Então o que que
+19:20
+acontece esse servidor eu fiz aqui utilizando TypeScript porque é uma linguagem bem neutra mas existem
+19:26
+diversas outras linguagens que t o SDK oficial para você trabalhar com MCP Beleza então como que funciona só para
+19:33
+você entender como que eu separei Eu tentei separar e deixar isso da forma mais simples possível de você entender Eu criei um arquivo aqui chamado Users
+19:40
+Tools tá basicamente eu tô usando o Axos para eu conseguir fazer uma consulta externa Criei uma interface bem simples
+19:46
+com ID nome e-mail seguindo exatamente aquele servidor em go que eu acabei fazendo E aqui eu tenho um get users
+19:51
+onde eu vou passar uma URL base né para eu conseguir fazer a consulta E eu pego os resultados aqui para mim Nem tô
+19:58
+tratando os dados aqui mas e eu tô retornando esses dados aqui pra gente Basicamente é isso aqui E aqui eu tenho
+20:05
+um create user ou seja eu tô dando um post né e simplesmente vou enviar
+20:11
+aqueles dados ali para mim e aí eu vou receber uma response de volta Ou seja se você perceber pessoal essa parte aqui
+20:18
+não tem nada a ver com MCP Você concorda comigo o que eu tô querendo dizer isso por que que eu tô querendo dizer para
+20:23
+você o que eu tô querendo trazer é que se você já tem um software hoje e ele tá bem organizado isso significa que você
+20:31
+basta colocar uma camada acima num servidor MCP e você pode reaproveitar todo o código que você já tem hoje para
+20:37
+disponibilizar para esse servidor MCP Então imagina que essa essas duas funções que eu tenho aqui de get user e
+20:42
+create user eu poderia fazer isso ser utilizado num servidor de RPC eu poderia colocar num servidor HTTP eu poderia
+20:49
+utilizar essas funções para um monte de coisa que eu quisesse aqui independente do protocolo tá então é por isso que eu tô fazendo essa separação aqui para que
+20:55
+você consiga ver beleza e agora finalmente a gente vai pro mcp.ts né aqui como que funciona se você perceber
+21:02
+eu tô utilizando né o SDK né que foi feito ali pela Antropic que é a criadora
+21:08
+aí do protocolo E nesse caso aqui você vai perceber que eu tenho o MCP Server o
+21:13
+ST e STD IO Server Transport Lembra que eu posso escolher tanto como SSE quanto
+21:19
+SDIO então aqui eu tô utilizando STIO eu tô usando o ZOD para ajudar eu formatar
+21:24
+vamos dizer assim os meus JSONs E aqui obviamente eu tô utilizando aquela minha interface o get users e o create user
+21:31
+Aqui para mim coloquei minha base API que é onde eu tô chamando aquela minha aplicação em go Então tudo aqui começa
+21:36
+se você for utilizar diretamente o SDK de uma forma bem simples que é o quê eu vou criar uma nova instância de um
+21:41
+servidor MCP Tem uma coisa importante aqui para você também Essa nova instância ela tá criada aí de forma bem
+21:47
+simples vamos dizer assim Por quê porque se você tiver um servidor onde você tá trabalhando com prompts que você tá
+21:52
+trabalhando com resources que você tá trabalhando com tools você tem uma opção ali de você adicionar mais informações
+21:57
+inclusive a parte de capabilities que na realidade você fala o que que esse servidor tem a capacidade de fazer E ali
+22:02
+você vai especificar o que ele pode fazer tá agora o que que a gente faz aqui eu vou registrar as minhas
+22:09
+ferramentas Então eu criei uma ferramenta de get users Então tô falando aqui ó server né que é esse cara que eu acabei de criar Tool get users O get
+22:16
+users eu não preciso de nenhum parâmetro para passar porque eu tô simplesmente listando os meus usuários E aqui eu tô
+22:22
+falando como que eu consigo obter os meus usuários né então ele tem aqui uma função onde ele vai dar um get users
+22:28
+basicamente pra gente e o nosso retorno vai ser dentro de content e aqui com um JSON aqui
+22:36
+retornando pra gente Então dessa forma aqui é simplesmente como que eu registro um novo usuário Agora a gente tem a
+22:42
+segunda ferramenta nossa que ela é um pouquinho diferente mas não muda nada de forma geral que é o seguinte eu vou
+22:47
+registrar uma nova ferramenta que é server Onde eu tenho aqui para mim um create user No caso do create user eu
+22:53
+preciso ter os parâmetros que vão ser preenchidos porque se eu não fizer isso né ah não vai funcionar Então aqui eu
+23:01
+estou definindo um esquema básico E nesse create user eu vou tô definindo que eu vou ter que ter um objeto de usuário que vai ter um ID nome email
+23:08
+Esse parâmetro aqui né esses parâmetros aqui são os parâmetros que o client MCP vai ter que preencher para fazer a
+23:15
+chamada do meu do meu create user tá então se eu escrever lá crie um novo usuário com o ID1 com o nome Wesley com
+23:21
+e-mail x@x.com o que que ele o que que a LLM vai fazer vai chamar a tu create user Daí ela vai falar: "Ah ele falou o
+23:27
+ID um Então eu vou preencher o campo ID Ele falou o nome eu vou preencher o nome eu vou eu falei ele falou e-mail eu vou
+23:32
+preencher o e-mail Porque se a gente se a se a LLM né não preencher isso pra gente a gente não vai conseguir criar o usuário Então aqui é como a gente define
+23:38
+define o o a estrutura de objetos que vão ter que ser passadas ali por parâmetro pra gente Fechou então isso
+23:44
+aqui é uma forma de você conseguir olhar Agora fora isso daí não muda muita coisa
+23:49
+eu crio um novo usuário passando API e o usuário né o user que foi passado por parâmetro aqui paraa gente né que em
+23:56
+tese vai satisfazer Óbvio que eu não tô fazendo um monte de verificação aqui E aí né dando tudo certo eu vou retornar
+24:02
+um texto e falar que o usuário foi criado com sucesso ali para mim E tá aqui registrada essas minhas duas
+24:07
+ferramentas Para finalizar eu vou falar como que eu configuro como que vai ser o meio de transporte Então tô falando com
+24:12
+ST de IO Server Transport e eu vou pedir pro meu servidor que eu instanciei aqui em cima né e que eu registrei as minhas
+24:19
+tools a se conectar através desse meio de transporte Se você tiver trabalhando com SSE você vai ter que ter um servidor
+24:26
+web né que tem um end point de SSE/Mages normalmente e você vai usar esse cara como meio de transporte
+24:32
+Basicamente essa a ideia quando você tá trabalhando com SSE Nesse caso aqui ele é bem mais simples aqui Agora qual que é
+24:37
+a utilização prática da gente fazer isso aqui nesse momento basicamente com esses
+24:43
+dois arquivos de uma forma bem simples eu consigo utilizar ele em qualquer local né qualquer host que implemente
+24:50
+cliente de MCP Nesse momento eu tô no meu cursor né e o cursor ele tem uma parte apenas para MCP e eu vou mostrar
+24:57
+esse cara sendo utilizado Só para você saber eu já compilei né eu dei um TSC ele gerou esses meus arquivos aqui ó um
+25:03
+JS E aí o que que eu vou fazer eu vou aqui no meu cursor vou em settings cursor settings aqui para mim E se você
+25:09
+olhar aqui eu tenho a parte de MCPs Quando você olhar essa minha parte de MCPs você vai ver que eu tenho alguns MCP servers porque eu já deixei aqui
+Registrando MCP no Cursor
+25:16
+cadastrado para você Um MCP server aqui é o do Docker onde se você olhar eu tenho esse monte de ferramenta que eu
+25:21
+posso trabalhar ou seja eu consigo listar contêiner criar contêiner rodar contêiner recriar contêiner e tudo mais Eu tenho um do Postress onde eu consigo
+25:29
+através do MCP fazer consultas num banco de dados postagers E se você olhar o
+25:35
+comando que ele tá executando nesse caso do Docker é um Docker run né ah aqui pra gente e existe né uma imagem Docker
+25:41
+chamada MCP Server Docker Latest onde a gente precisa passar o volume do do socket do do Docker Então perceba que
+25:47
+você pode usar MCPs chamando Docker Então se você tem Docker no seu computador você pode usar MCPs ah que
+25:53
+tem Docker files ou que estão registrados lá no Docker Hub Beleza no caso do Postgis ele já tá trabalhando
+25:58
+aqui com NPX então ele tá sendo feito ali em tá publicado ali no npm da vida e você consegue fazer execução E aqui eu
+26:06
+tenho o MCP users que foi o MCP que eu acabei de mostrar aqui para vocês onde eu tô executando um comando node
+26:12
+diretamente passei né o caminho do meu computador até o meu arquivo JavaScript
+26:17
+tá wesley mas que feio cara É assim tá rodando o local Se eu quisesse publicar isso no pacote npm ou fazer qualquer
+26:22
+outra coisa eu poderia fazer e fazer a chamada do comando O importante é que você tem que fazer a execução aí para
+26:28
+você Ah como é que é registrado isso né se você dá um editar aqui você vai ver que ele tem um arquivo JSON e no JSON
+26:34
+você nomeia o nome do seu servidor fala qual é o comando para executar e os argumentos Então é exatamente isso que
+26:39
+tá acontecendo aqui ó MCP user o meu comando é node o meu argumento é o meu arquivo JavaScript tá agora como que eu
+26:45
+vejo essas coisas funcionando se eu chegar aqui ó no meu no meu ô meu Deus
+Utilizando MCP na prática
+26:52
+do céu no meu cursor eu posso perguntar o seguinte: "Ah liste todos os os
+26:58
+users usando o MCP users" tá tô tô tentando ser mais específico pra gente
+27:04
+evitar outros erros aqui mas ah outra coisa tá eu tô aqui com o GPT 4.1 e esse
+27:10
+cara aqui junto com Cursor ele não suporta MCP Eu vou mudar aqui pro cloud Sonet aqui nesse caso porque ele dá um
+27:16
+tropic que implementou MCP então o MCP funciona aqui com ele e eu vou aqui ó vou listar todos os usuários com o
+27:22
+serviço MCP users Então se você olhar aqui ó olha o que ele fez Ele fez uma chamada para uma tool chamada get users
+27:27
+Se você olhar essa tool ele vai ver os parâmetros que foram passados Aqui a gente combinou né que a gente não ia precisar de nenhum parâmetro para listar
+27:35
+os usuários né então olha aqui ó Eu não preciso de nenhum parâmetro E é por isso que eu tenho nenhum parâmetro aqui E
+27:40
+aqui eu peguei os resultados que ele trouxe E aqui né eu consigo ter o resultado aqui para mim Basicamente é
+27:46
+isso Se eu chegar agora aqui para ele fala o seguinte: "Olha crie um novo user com um ID 2000 com o nome de Roberto e o
+27:58
+e-mail é r@r.com Se eu fizer isso aqui vamos ver o que que ele vai tentar fazer nesse momento
+28:05
+Ele vai criar um novo usuário Chamou aqui um MCP tool Create User e deu aqui usuário criado com sucesso ID2000
+28:11
+Roberto e e-mail r@r.com Como que eu sei o que que ele fez automaticamente ele
+28:17
+preencheu aqui para mim os parâmetros que eu precisava e que eu defini exatamente aqui no meu servidor MCP Se
+28:24
+você olhar aqui no meu create user eu defini exatamente essa estrutura e a minha IA ela conseguiu ler entender essa
+28:30
+estrutura e preencher os campos da forma como eu tava querendo Então a partir daí eu consigo ter esse tipo de resultado
+28:35
+Obviamente eu posso perguntar: "Liste os users novamente para eu ver se o
+28:43
+Roberto está lá" E agora ele chamou os users novamente e se Deus quiser o Roberto vai
+28:49
+tá aqui ó roilr@r.com Ou seja já dá paraa gente perceber as possibilidades que a gente tem porque
+28:55
+você poderia estar fazendo isso na sua própria API ou executando diversas coisas mas eu posso chegar aqui para mim e falar assim ó agora liste para mim
+29:02
+todos os contêiners Docker que estão rodando na minha máquina Vamos ver se
+29:08
+ele consegue se tocar que existe um MCP para isso Mas olha só ele chamou uma TU chamada list containers e agora ele tá
+29:14
+trazendo todos os contêiners que ele encontrou e ele só tá fazendo isso por conta do MCP doer Se eu chegar e
+29:19
+perguntar para para mim ah veja quais são as tabelas do banco de dados que eu
+29:27
+tenho no Postgress Vamos ver se ele consegue trazer essa parada aqui para mim Vou verificar Ele chamou uma uma s
+29:34
+uma tool query lá do meu postg onde ele pegou esse resultado Aí eu vou perguntar aqui para ele ah quantos registros eu
+29:42
+tenho em invoices agora ele vai fazer uma query vai fazer
+29:48
+uma busca e trouxe aqui ó eu tenho cinco registros seis registros na tabela invoices Então é basicamente por baixo
+29:53
+do pano ele passou um parâmetro que é select count from invoices Então esse tipo de coisa galera muda muda mas
+29:59
+bastante o jogo mesmo na hora que você for trabalhar E aí você tem opções ali fantásticas de possibilidades para você
+30:06
+utilizar MCP aí no seu dia a dia Agora existem muitos MCPs que provavelmente você já gostou sei lá o Docker o Post
+30:12
+mas existem muito mais feitos pela comunidade feito por um monte de gente inclusive feito por empresas que têm a intenção de fazer com que IAs possam se
+30:19
+comunicar com elas tá então se você chegar aqui ó eu separei alguns links para vocês que é o seguinte Ah
+Repositórios MCP Github
+30:26
+oficialmente tá no site no GitHub oficial aqui do Model Context Protocol
+30:32
+com servers eh aqui ele dá ideia né dos servidores de referência e alguns third parties servers que a gente tem por aqui
+30:39
+Então se você olhar tem servidor de tudo quanta coisa Então tem servidor ah para fazer busca usando a API do Brave tem
+30:45
+servidor para fetch pegar dados de internet ah tem file system Git GitHub e
+30:51
+Google Drive Google Maps Posties Memory ah Reds Então tem muita coisa pronta mas
+30:56
+também tem servidores MCPs bem interessantes que são de serviços que a gente acaba usando sei lá um MCP da Cloudflare um MCP ah do Heroco do
+31:04
+Elastic Search um MCP do Grafana para eu ver os logs da minha aplicação conforme as coisas estão rodando né então assim
+31:10
+tem da Jet Brbranch tem Mayogun tem do Make tem muita opção aqui para você trabalhar O mais interessante também é
+31:17
+que obviamente se eles estão num gitubo de como que ele foi desenvolvido Vou clicar aqui por exemplo no Reds Se
+31:23
+eu clicar aqui e pode ver que ele trabalha através de Docker pode trabalhar e ele tem um index Que mostra
+31:29
+como que esse servidor ele foi feito Aparentemente bem simples mesmo aqui né então ah aqui é uma forma de como que
+31:35
+ele trabalhou E se você perceber não é difícil mas assim essa opção aqui do
+31:40
+Reds ela tá bem simplória Obviamente poderia ser muito melhor mas você já consegue pegar informações que são
+31:45
+importantes de gets sets e várias coisas do Reds aqui para você Então vale a pena você explorar esses repositórios do
+31:51
+GitHub não apenas para você saber que existem esse MCPs mas principalmente para vocês conseguirem ver os scripts e
+31:57
+usar como referências para vocês poderem criar os seus próprios MCPs Tem dois sites bem interessantes que acabam
+Repositórios MCP Glama
+32:03
+acabaram virando como os repositórios que as pessoas cadastram MCPs tá eu gosto bastante desse cara aqui que chama
+32:08
+Glama Se você entra nesse glama você vai perceber que existem ali ó categorias de
+32:15
+servidores MCPs né servidores ah que são bastante úteis assim até com connect de
+32:21
+MCP Server Tem muita coisa interessante você consegue na realidade buscando né então por exemplo Golo tem até um MCP
+32:28
+com GO aqui Deixa eu olhar Go Opa cliquinho Agora eu fiz besteira aqui Eu tô filtrando por GO Basicamente MCP
+32:35
+package version Cara sei lá eu nem sei onde que eu cliquei já mais agora O fato aqui que é importante vocês conseguirem
+32:40
+olhar é que existem né diversas opções de server que vocês podem dar uma olhada Mas novamente pessoal tome muito mas
+32:48
+muito cuidado mesmo ah na hora de instalar esses caras nas suas máquinas porque a maioria deles rodam local e se
+32:54
+roda local aí a coisa fica um pouco mais complicada Então se você puder sempre tente pegar né servidores MCPs que são
+33:01
+oficiais porque você já tem um nível de segurança né muito maior Então você clica aqui ele traz para você como é que
+33:06
+funciona para você se conectar na Redcloud como é que são as opções e tudo mais que você precisa saber para utilizar esse MCP Ele traz todos os
+33:13
+guias para você utilizar Então novamente tá perceba que há um risco grande de
+33:19
+você instalar um MCP que é malicioso Tome muito cuidado mas isso já acontece com qualquer pacote do Node que você vai
+33:25
+utilizar mas é apenas um alerta Fechou agora galera eu queria muito saber aí de
+Dicas e comentários
+33:31
+vocês quais são os servidores MCPs que você mais utiliza Ah você já criou seu próprio servidor MCP para que que você
+33:36
+tá utilizando e quais são as possibilidades que você acha que isso aí vai trazer no nosso dia a dia aí com desenvolvimento tá então espero que você
+33:43
+tenham gostado desse vídeo né ele ficou meio grandinho mas eu acho que deu para ter uma visão um pouco mais geral de alguns componentes que poucas pessoas às
+33:50
+vezes acabam sabendo que existem aí em servidores MCPs Fechou um grande abraço aí para você tudo de bom e até o nosso
+33:55
+próximo vídeo Eu queria muito saber aí de vocês quais são os servidores MCPs que você mais utiliza Ah você já criou
+34:03
+seu próprio servidor MCP para que que você tá utilizando e quais são as possibilidades que você acha que isso aí
+34:08
+vai trazer no nosso dia a dia aí com o desenvolvimento tá então espero que você tenha gostado desse vídeo né ele ficou
+34:15
+meio grandinho mas eu acho que deu para ter uma visão um pouco mais geral de alguns componentes que poucas pessoas às
+34:22
+vezes acabam sabendo que existem aí em servidores MCPs Fechou um grande abraço aí para você tudo de bom e até o nosso
+34:29
+próximo [Música]
+34:45
+vídeo He

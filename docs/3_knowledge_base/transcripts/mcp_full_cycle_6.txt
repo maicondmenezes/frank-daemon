@@ -1,0 +1,618 @@
+vídeo: Arquitetura de Software na era da IA. O que você precisa saber
+
+Desenvolvedor como Arquiteto na era da IA
+0:00
+Uma das coisas que tá muito nítida, eu acredito que para todo desenvolvedor, é que a forma de como a gente tá
+0:06
+desenvolvendo o software tá mudando completamente depois da inteligência artificial e que isso não tem mais
+0:12
+volta. A grande questão que fica é que a cada dia todo o desenvolvedor, sem
+0:18
+exceção, vai ter que entender muito, mas muito mais sobre arquitetura de software
+0:24
+e arquitetura de solução. Não tem mais como negar, porque o desenvolvedor ele
+0:29
+não vai mais ficar digitando o código o tempo todo, ele vai ter que ser capaz de pilotar IA. E para isso ele precisa de
+0:36
+conhecimentos profundos para inclusive entender aquele código que está sendo gerado e qual vai ser o impacto que tudo
+0:43
+aquilo vai ter no projeto. E sem entender de arquitetura de software, sem entender de arquitetura de solução, isso
+0:50
+cada vez fica mais complexo. Então hoje eu quero trazer aqui para vocês oito pontos que você tem que ter aí no seu
+0:56
+roadmap de estudos, tá? para que você realmente consiga ter essa visão geral
+1:01
+do que você precisa aprender ou pelo menos ter uma boa base eh nessa nova
+1:07
+etapa aí da nossa profissão, tá? E obviamente antes da gente ir direto ao assunto, se inscreve aí no nosso canal,
+1:14
+ah, ativa aí o sininho para o sininho para as próximas notificações e também comenta embaixo o que que você acha que
+1:20
+é o novo papel do desenvolvedor nos dias de hoje. Coloque aí também o quanto que você já manja hoje em dia de
+1:27
+arquitetura, de software, de solução. Uma outra coisa que eu não posso deixar de dizer é que aqui na Full Cycle nós
+1:33
+temos também o nosso MBA em engenharia de software com IA, onde nós temos
+1:39
+quatro pilares que vai te ajudar realmente nessa parte inclusive que a gente vai falar nesse vídeo de arquitetura de software, mas também vai
+1:46
+te ajudar muito numa metodologia clara e rápida e de uma forma que realmente vai
+1:51
+trazer muito mais produtividade para você. a parte de desenvolvimento de aplicações integrados com IA,
+1:57
+desenvolvimento de agentes de A de verdade e também como que você pode entregar software de uma forma mais
+2:02
+rápida, mais segura e ainda manter a confiabilidade usando essa parte de DevOps SRE. Então tô deixando o link
+2:09
+aqui embaixo no vídeo, clica para entender mais sobre o que a gente tem. Você pode também bater um papo com a
+2:15
+nossa equipe, entender o seu momento profissional e ver, quem sabe você consegue aí trabalhar com a gente,
+2:21
+fechou? estudar com a gente na realidade. Maravilha, galera. Mas agora vamos aí direto ao assunto, porque a
+2:28
+gente tem bastante coisa para cobrir, principalmente nesses aspectos aí de
+2:34
+arquitetura de software na era da IA. Então, deixa eu compartilhar aqui minha tela. Eu vou até aumentar um pouco o
+8 pilares da Arquitetura de software com IA
+2:40
+zoom para ficar mais fácil, caso você esteja vendo isso aqui a na parte mobile. Então o seguinte, pessoal, são
+2:46
+oito pontos que eu quero trazer aqui para vocês. Inclusive, esses oitos pontos foram pontos extremamente
+2:53
+importantes pra gente, inclusive colocar na nossa ementa do nosso MBA, porque
+2:58
+realmente deu muito trabalho para que a gente aqui dentro tenha tido clareza suficiente depois de ter batido muitos
+3:05
+papos com profissionais de grandes empresas do que realmente hoje em dia tá importando a você aprender aí em relação
+3:13
+à arquitetura de software, tá? Então, negócio é o seguinte, eu vou passar para vocês hoje um contexto. A gente vai
+3:19
+falar de agente de A e protocolos de comunicação, que são pontos importantes, design patterns hoje em dia focados na
+3:26
+IA, caching, que é algo que não dá para ignorar, a parte de segurança, context
+3:32
+engineering e prompt engineering. A gente também vai falar sobre teste de qualidades em sistemas com IA e também a
+3:39
+parte de controle de custos em arquiteturas com IA. Ou seja, é uma agenda bem grande aqui para esse vídeo,
+3:46
+tá? Mas obviamente eu não vou aprofundar em todos esses temas. Eu quero que você
+3:52
+tenha uma visão geral do que a gente vai falar. Eu vou comentar tópico a tópico
+3:57
+com alguns subtópicos que eu acabei separando aqui. Fechou? Então vamos lá, tá, pessoal? contexto. Eu acho que aí é
+Contexto do NOVO perfil de desenvolvedor e Arquiteto
+4:04
+o ponto principal que a gente tem que entender, principalmente se você não se
+4:09
+ligou muito do que tá acontecendo realmente no mercado nesses momentos onde tudo realmente tá mudando e a nossa
+4:17
+profissão tá ficando cada vez mais ressignificada, tá? Então o lance é o seguinte, a gente tem que entender que
+4:24
+existia um mundo de arquitetura de software antes da IA. E obviamente nem
+4:29
+tudo, né, grande parte do que a gente usava e usa de arquitetura de software
+4:35
+ainda, né, é atual, tá? Eu não posso dizer isso. Existe uma arquitetura de
+4:40
+software tradicional, que é o que a gente utiliza no dia a dia, tá? Por outro lado, a gente tem que se ligar que
+4:48
+após a entrada da inteligência artificial no jogo, essa parte de arquitetura de software, ela mudou
+4:55
+completamente, ou seja, muitas coisas foram adicionadas depois disso e coisas
+5:01
+que, provavelmente, na arquitetura de software tradicional ela vai ter que ser
+5:06
+meio que readaptada para conseguir, né, se encaixar com todo com toda essa
+5:13
+evolução. da parte de arquitetura de software com IA. Então, fique ligado, tente entender
+5:19
+o que que muda um antes e depois e a gente vai falar sobre isso. A gente tem que entender que o perfil do
+5:24
+desenvolvedor mudou. Como eu tava falando para vocês, desenvolvedores daqui pra frente eles vão ter que atuar
+5:29
+muito como arquiteto, principalmente para que eles consigam organizar, criar workflows, ter uma visão mais clara do
+5:36
+projeto, entender padrões que sem estão sendo utilizados, entender restrições que o projeto tem, atributos de
+5:42
+qualidade, tá? Então, muitas vezes o desenvolvedor ele não tá tão preocupado com isso, tá muito mais preocupado com
+5:48
+colocar a mão no código, mas no final das contas esse isso que eu acabei de falar ficava muito a critério do
+5:54
+arquiteto de software, tá? E hoje em dia o que a gente vai perceber é que desenvolvedores vão virar cada vez mais
+6:00
+arquitetos. E o papel do arquiteto, ele vai ser muito mais abrangente agora, porque ele vai tá cada vez mais ligado
+6:07
+também com o software que tá sendo desenvolvido de uma forma um pouco mais baixo nível, porque até então muitas
+6:14
+empresas que têm inclusive o cargo de arquiteto de software é um cargo mais de alto nível e não necessariamente a mão
+6:20
+no código ela está ali a todo momento, tá? Então esse é um ponto importante que
+6:25
+inclusive quem trabalha com arquitetura hoje também vai precisar se adaptar, tá? E a gente tem que entender que a partir
+6:32
+do momento que existem formas novas de desenvolver aplicações, ou seja,
+6:37
+aplicações que antes não existiam ah da sem a tecnologia de EA, agora existem.
+6:44
+Então existem novos componentes, regras, compli, parte de segurança, tudo isso
+6:50
+acaba sendo acrescentado para que você tenha que entender um pouco mais sobre a parte de arquitetura de software, tá?
+6:57
+Então, para isso, pessoal, eu separei alguns pontos. Eu não quero deixar esse vídeo aqui extremamente longo, mas eu
+7:03
+quero pelo menos dar uma pincelada nesses pontos e você pode usar isso como base ah para você estudar daqui paraa
+7:11
+frente e entender que esses pontos são extremamente importantes. Primeira coisa que a gente tem que se ligar é que a
+Agentes de IA e Protocolos de comunicação
+7:18
+partir de agora cada vez mais você vai ouvir falar em agentes de a e protocolos de comunicação. O grande ponto que eu
+7:24
+percebo é que ainda há um conceito muito abstrato sobre o que é um agente de a. Eu conheço muitos desenvolvedores que
+7:30
+ainda não têm essa clareza, tá, de realmente o que é um agente de A. Não é
+7:37
+um software comum, tá? Mas ao mesmo tempo que ele não é um software comum, ele é um software. Então a gente vai ter
+7:43
+que voltar e revisitar software microsserviços versus agentes de A. Um
+7:48
+agente de A pode ser um microsserviço. Qual tipo de software ele é? Existe alguma mágica ou algo muito diferente
+7:55
+nesse tipo de software que é um agente? Então esse aí o grande ponto. Estruturalmente um agente de A é
+8:01
+totalmente diferente do software comum que a gente desenvolve. Mesmo ele sendo um software, mesmo ele rodando como um
+8:08
+microsserviço, mesmo ele tendo todos os problemas e conceitos de escala que nós já estamos acostumados, tá? Então,
+8:15
+baseado nisso, você vai ter que entender que nós temos hoje em dia arquiteturas de agentes de a. Então você começa a
+8:23
+nich arquitetura de software, porque agora você vai ter que pensar de uma
+8:28
+forma completamente diferente na hora de arquitetar um agente. Existem várias formas e diversos tipos de agentes, né?
+8:35
+E aí você vai ter que entender que existem agentes que trabalham em paralelos, agentes que trabalham de forma sequencial, agentes que são
+8:42
+customizados e você consegue forçar um workflow, agentes que são completamente autônomos e você não tem tanto controle
+8:49
+de como ele vai chamar outros agentes. Então, a gente tem que entender que essa arquitetura ela muda bem. E se você não
+8:56
+pensar nessa arquitetura antes de sair desenvolvendo seus agentes, realmente você vai ter um grande problema. E eu
+9:02
+digo isso para você porque eu já tive esse problema, tá? E novamente, quando a
+9:07
+gente começa a entrar, né, nessa situação, você não vai criar um agente. Um agente não resolve a vida. Você vai
+9:13
+criar equipes de agentes, aplicações multiagênticas, tá? E para isso você vai
+9:18
+aprender a orquestrar, fazer com que esses caras também se comuniquem. É uma nova formato de comunicação de sistema.
+9:25
+E uma vez que a gente fala em comunicação de sistema, a gente fala em protocolos. E agora a gente tem novos
+9:30
+protocolos e outros que estão surgindo. Eu acredito que talvez você já tenha ouvido falar em MCP, model context
+9:37
+protocolo, que faz com que o agente consiga executar ferramentas, que ele consiga ter acesso a resources e que ele
+9:44
+consiga ter acesso a prompts. Ah, mas ao mesmo tempo você vai perceber que MCP
+9:50
+ele pode virar algo extremamente complexo, principalmente quando a gente tem meios de transporte diferentes, como
+9:56
+streamable HTTP, né? Muitas vezes você tá acostumado a usar um MCP aí
+10:01
+utilizando STIO, mas você vai perceber que para escalar e fazer rodar isso
+10:07
+dentro da sua empresa, para pegar dados de diversos lugares, trabalhar com streamable HTTP vai ser completamente
+10:15
+importante. Lembrando que a parte de SSE está ah deprecada, então são novas
+10:22
+coisas que você tem que aprender e que não são triviais. Outra coisa, protocolos emergentes como AA, agent to
+10:29
+agent. Agora eu posso ter diversos agentes em diversas tecnologias diferentes, fazer com que esses caras se
+10:34
+comuniquem ah em diversos frameworks. É um protocolo feito pela Google e a cada
+10:40
+dia tem iniciativas de novos protocolos. E nesse meio de toda, nesse meio de campo, nós temos algo chamado de
+10:47
+evaluation, que a gente consegue ver realmente como que esses agentes estão se comportando e como que de fato eles
+10:54
+estão ah trabalhando e trazendo resultados esperados e de uma forma
+10:59
+controlada. A gente tem que lembrar que a trabalha de forma não determinística.
+11:05
+Ela não funciona apenas com ifs e elsces que a gente tá acostumado nos nossos softwares, tá?
+11:11
+E aí a gente começa aí para outros aspectos que nessa área de arquitetura são importantes, né? Todo mundo acredito
+11:18
+que se você desenvolve software, você já ouviu falar em design patterns e acredite que hoje nós já temos design
+Design Patterns de IA
+11:26
+patterns focados em IA, tá? Então você vai perceber que você tem patterns novos
+11:32
+que vai você vai utilizar para desenvolver aplicações que vão se integrar com o IAS e você vai ter
+11:38
+patterns que são específicos paraa criação de agentes de A, tá? Você vai
+11:43
+perceber, inclusive que existem design patterns focados extremamente em segurança, porque parte de promption,
+11:53
+por exemplo, pode contaminar um agente. Então você pode utilizar diversos agentes que não peguem informações
+12:00
+contaminadas para que ele consiga trabalhar. Então, existem diversos padrões de segurança. E uma das coisas
+12:07
+que são bem interessantes é que hoje em dia tem uma iniciativa chamada de 12 Factors Agents. Porque, né, eu acredito
+12:14
+que se você acompanhou o desenvolvimento de escala de softwares, o Heroco na época criou o 12 Factors App e agora a
+12:21
+gente tem 12 Factors Agent. São coisas que nós temos que entender. O ponto importante é que tem gente que ainda
+12:28
+nunca desenvolveu um agente ou não entende com clareza o que é um agente. Aí as coisas começam a se complicar um
+12:34
+pouco, porque se você não tem essa base, você não vai conseguir entender nada sobre o Tuev Factor Agents, tá bom?
+Cache
+12:41
+Outra coisa que é o seguinte, pessoal, algo que eu sempre falo, não tem nada que mude no seu software mais quando a
+12:49
+escala do seu software muda. Você tem 10, 100, 1000, 100.000, 1 milhão, tá?
+12:55
+Ah, 10 milhões de acessos dentro dos seus sistemas. A escala ela muda tudo, o
+13:01
+a parte de foundation do seu sistema. Então aqui nesses casos, se tem algo que
+13:07
+é importante que vai você fazer o seu sistema ficar mais rápido, mas fundamentalmente mais barato, é
+13:13
+trabalhar com o conceito de cashing, tá? Muitos envolvedores têm a ideia geral do que como que funciona a cash, né? Mas se
+13:20
+você for olhar isso em âmbito mais profundo, conceitos de cashes que sempre existiram vão continuar existindos.
+13:27
+Então você vai ter formas de invalidação, time to leave, cash aside, right through e etc. Você vai ter também
+13:34
+eviction policies como LRU, LFU, FIFO, MRU, random replacement. E aí as coisas
+13:42
+elas começam a ir mais pro lado da IA, porque tudo que eu falei até agora de caching são coisas mais claras e
+13:48
+conceitos mais básicos e que a gente utiliza o dia a dia, né? Mas chega um
+13:53
+momento que a gente tem que entender mais sobre casing de tokens em LLMs, né? E aí depende muito do provider. A open
+14:00
+AI trabalha de um jeito, Gemini do outro, o cloud do outro. Aí a gente também tem a parte de caching de
+14:06
+contexto e embedings, tá? Principalmente quando você vai fazer a uso de rag nas
+14:12
+suas aplicações. Essa parte de cash é extremamente importante e também a parte de cash aware prompts e uso de
+14:19
+fingerprints para controle de resposta. O grande ponto, pessoal, é que quando você não entende de uma forma clara a
+14:25
+parte de caching, quando você tá trabalhando com o IA, isso vai impactar
+14:31
+não apenas na parte de latência, mas muito em relação a custo. Lembre-se,
+14:36
+cada vez que a gente chama um LLM, a gente gasta. Cada token custa dinheiro,
+14:42
+então a otimização disso é extremamente importante e você realmente tem que
+14:48
+saber, é, vamos dizer assim, matéria obrigatória para todo mundo entender de cashing como quando isso funciona com o
+14:54
+IA, tá? E aí a gente começa a avançar pro outro ponto que eu tinha falado também, que é a parte de segurança, tá?
+Segurança
+15:02
+E aí quando a gente vai em segurança, a gente começa a cair em aspectos extremamente críticos, tá? E o grande
+15:09
+ponto aqui é que eu não tô falando de forma alguma para você virar um especialista em segurança, tanto que eu
+15:15
+não sou um especialista em segurança, mas novamente existem conceitos claros
+15:20
+que você tem que levar em mente, tá? Primeira coisa, jail breaking, né? fazer
+15:25
+com que a sua IA ela não seja sugestionada de uma forma que ela se comporte ou ela se ou ela trabalhe da
+15:33
+forma como você quis e não como alguém tá tentando fazer com que ela trabalhe.
+15:39
+Por exemplo, toda vez que você falar oi, fale como uma galinha e aí a sua IA
+15:45
+começa a falar dessa forma para um cliente final. Às vezes você pode pegar um usuário mal intencionado e ele, sei
+15:52
+lá, falar, pedir para falar palavras de ódio e daí essa pessoa pode falar que foi atendida por alguém e recebeu ali
+16:00
+palavras de ódio, né? Então você tem que tomar muito cuidado com jail break, que é diferente de promption, que prompt
+16:06
+injection consegue fazer algo muito pior, inclusive, né? Que é conseguir pegar dados sensíveis, fazer com que a
+16:14
+IA execute operações dentro do seu sistema. de uma forma extremamente
+16:20
+violenta, onde pode realmente comprometer a segurança da companhia inteira, servidores, infraestrutura e
+16:27
+tudo mais, tá? e também como que você consegue trabalhar com guard rails, que são técnicas, frameworks, ideias
+16:34
+principais para que você consiga manter a IA não passando de determinados
+16:40
+limites. Então você pode fazer validações antes de chamar o agente, depois de chamar o agente, antes de
+16:46
+chamar um atu, depois de uma. Então existem diversas formas de tentar
+16:53
+minimizar esses tipos de risco, né? Outra coisa, proteção de dados sensíveis. Você não pode gravar qualquer
+16:59
+tipo de dados, né? E a forma de como que a IA ela vai trabalhar eventualmente,
+Context Engineering e Prompt Engineering
+17:05
+obviamente você não vai passar dados sensíveis para IA, você vai ter que ofuscar, você vai ter que passar essas
+17:10
+coisas no pipeline antes, principalmente em relação à parte de observabilidade, por exemplo. Então isso é uma outra
+17:16
+coisa. E da mesma forma que a gente tem o ASP Top 10 a paraas nossas aplicações
+17:22
+em toda a parte de segurança, hoje a gente tem o ASP Top 10 de LLM e IA
+17:28
+Generativa, onde eles trazem as principais falhas de segurança que você
+17:33
+tem que sempre ficar de olho na hora de você vai desenvolver agentes, aplicações utilizando IA, tá? Outra coisa que
+17:41
+obviamente eh é muito importante e assim todo mundo pensa que sabe ou às vezes
+17:49
+sabe, mas não implementa. Primeiro ponto, prompt engineering. Prompt
+17:54
+engineering é a base de tudo, porque no final das contas, se você não sabe especificar o que pedir, quais as
+18:01
+técnicas necessárias para fazer isso, e você tem muitas chain of thought, tree of thoughts, skeleton of thoughts,
+18:07
+react, você tem maneiras self rolling, então assim, tem muita coisa envolvida
+18:13
+por trás de prompt engineering para você criar aplicações. E o prompt engineering
+18:18
+é um dos pilares fundamentais, inclusive, para que o seu agente se comporte da forma como você quer que ele
+18:25
+se comporte. Então, muitas vezes você desenvolve um software e grande parte
+18:31
+desse software você vai gastar tempo no prompt para ele conseguir executar as coisas da forma como você quer. E no
+18:36
+meio dessa história, hoje em dia, a gente tem uma palavra nova, vamos dizer assim, um hype novo, mas que foi algo
+18:43
+que eu sempre preguei aqui, se você viu meus vídeos anteriores, que é dar o máximo de contexto possível, né, para a
+18:51
+inteligência artificial. E o Context Engineering faz isso. Como que eu posso pegar documentações, design docs,
+18:58
+documentos de contexto, ah, documentos de playbooks, de execução, tudo que é
+19:06
+documentação vai conseguir te ajudar a fazer com que a IA ela seja cada vez
+19:12
+mais clara. E não é apenas gerar uma documentação, é fazer com que ela pegue eventualmente em tempo real outras
+19:19
+documentações que estão no servidores, nos bancos de dados da empresa. Então isso aí é extremamente importante,
+19:26
+principalmente quando a gente está falando em aplicações de grande porte. não é uma prova de conceito que eu crio,
+19:31
+né, e que eu não preciso ter tanta infraestrutura e documentos e dados de
+19:38
+contexto para Iar. Mas quando você pensa ao longo dos anos, ao longo do tempo, cada documento, cada decisão, tudo que é
+19:44
+documentado, tudo que é trabalhado, a forma de como você estruturou, como a IA pode buscar os dados, tá? vai a ser um
+19:52
+grande asset, vai ser um grande ativo no seu projeto, independente se ele tem um
+19:58
+dia, 1 ano, 10 anos. Isso aí é que nem teste automatizado. Ah, você faz uma vez
+20:04
+e isso aí vai te ajudar o resto do projeto, tá? E se tem algo também que acabou ficando muito complexo durante
+20:12
+todo esse processo, é o versionamento de prompt históricos de interação. E quando
+System Design e Sistemas distribuídos com IA
+20:18
+a gente pensa em a em versionamento, não é só versionar um prompt no Git ou
+20:23
+version prompt no banco de dados, tá? Versionamento de prompt, ele passa por um processo complexo, porque você tem um
+20:30
+prompt numa versão um que executa algo de uma determinada forma. Quando você gera uma versão dois, isso aí pode
+20:37
+quebrar o sistema. Então você tem que ter formas de validação e você tem que poder fazer o rollback muito antes. Você
+20:43
+pode fazer isso na sua pipeline de C e CD. E na hora que esse novo prompt subir, simplesmente ele vai ser barrado
+20:51
+nos testes automatizados. Então é algo complexo, não é ficar fazendo simplesmente um versionamento do Git que
+20:58
+você tá trabalhando com versionamentos de prompts, a coisa é muito mais embaixo, tá? E aí a gente vai, né?
+21:07
+Especificamente, eu já tinha falado um pouco sobre, como que eu posso dizer, a
+21:15
+parte de não digo nem system design, mas atividades de engenharia e de
+21:20
+arquitetura de forma geral, tá? Por que que eu tô dizendo isso? Porque esses
+21:26
+tipos de disciplina, deixa eu até copiar aqui, ficar até mais fácil aqui. Ah,
+21:34
+eu posso colocar escala, system design, performance e etc. Tá? O
+21:42
+que que eu tô querendo dizer com isso? Quando você vai desenvolver uma aplicação de grande porte, normalmente,
+21:48
+né, se você tem um, se você é ou se você faz o papel ou se a sua empresa tem, ou
+21:53
+independente de qualquer coisa, você tem que entender os novos princípios de system design, né? Como que você
+22:00
+consegue expressar o seu sistema, a o seu ecossistema se comunicando em diversos componentes, né? E quando a
+22:09
+gente entra na era da IA, adivinha o que que acontece? Nós temos novas formas de fazer system design, novos componentes,
+22:17
+novas chamadas, novas formas de interagir. E aí, novamente, a gente cai
+22:22
+nos aspectos escala, como que eu escalo? Fazer com que ela rode ali para milhões,
+22:29
+milhares de usuários, centenas de milhares, né? E para fazer isso, você tem que pensar normalmente em três
+22:35
+pontos. Performance, porque você quer a menor latência nas respostas, custo, né? você quer diminuir esse custo e
+22:41
+qualidade. Então você com esse triângulo você tem que conseguir achar esses tradeoffs. Como eu acho o modelo mais
+22:49
+barato, que traga uma qualidade satisfatória, com uma grande performance para eu conseguir escalar. E isso tem
+22:56
+técnicas para você conseguir resolver essa tríade. Legal. E aí, né, muitas
+23:02
+coisas acabam mudando quando você vai trabalhar com IA, porque pipelines,
+23:08
+mensageria, streaming, trabalhar com Cafkaa, Rabbit, MQ, todos esses tipos de coisas também vão ser integrados as suas
+23:15
+aplicações de inteligência artificial, né? Bancos de dados. Agora você cada vez mais vai ouvir em bancos de dados
+23:23
+vetoriais para você fazer as consultas por proximidade, embedings, conseguir
+23:28
+entender esses modelos de embeding, mas também utilizar bancos de dados como Reds, por exemplo, que tem a parte de
+23:34
+vetor para trabalhar como cash, uma nova camada. Então, as coisas elas vão escalando, né? Cada vez que a gente olha
+23:41
+o buraco, a gente vai cavando mais e a gente vai percebendo que o buraco é mais fundo, né? Então você tem que entender
+23:47
+de compatibilidade entre versões de embeds, porque às vezes você tem embedings num determinado modelo e
+23:53
+depois você tem que mudar ou vai mudar de provider. Então isso é mais alguma coisa. Entender de arquitetura ra? Muita
+23:59
+gente apenas pensa que ra fazer com que a IA busque um banco de dados vetorial e
+24:05
+daí traga o dado pra gente botar no contexto. E de fato é isso. Mas isso
+24:10
+para trazer informações acuradas de verdade é muito complexo. Trabalhar com
+24:16
+ra que é retrieve augmented a generation é muito complexo. Você tem que ter metadado, você tem estruturação, você
+24:22
+tem tipos de documento, você tem fontes, você tem versões, você tem a parte de invalidação, a parte de sincronização.
+24:29
+Então, realmente, ah, é complexo, né? Principalmente quando a gente vai falar em escala, né? E obviamente, novamente,
+24:37
+a gente tem que visitar os cloud providers, né? Google, AWS,
+24:42
+Azure, né? Agora Open AI, a gente tem um monte de provider que tem uma série de
+24:48
+serviços e a gente tem que pelo menos ter a base desse serviços porque eventualmente você vai acabar usando.
+24:55
+Por exemplo, eu quero trabalhar com RG de uma forma mais rápida aqui. Opa, eu posso pegar o vertex AI da do Gemini da
+25:02
+Google, por exemplo, e utilizar bancos de dados vetoriais que já estão prontos, que tem bibliotecas prontas para você
+25:08
+fazer um rag muito rápido, né? E novamente a gente cai num aspecto que é
+25:14
+complexo para qualquer tipo de sistema, tá? Independente se tem a ou não, que é observabilidade. Observabilidade, a
+25:21
+gente tem logs, tracing, a gente tem métricas, né? A gente tem eventos e agora IA entra no meio dessa história.
+25:28
+Como que eu faço tracing de um LLM, né? Como que eu consigo realmente analisar a
+25:33
+chamada de um cara para um outro, de um agente pro outro, latência, né? Open telemetry. H, orientado, vamos dizer, a
+25:41
+I, a IA entrando no mundo também do Open Telemetry. E quando a gente cai nesse aspecto, a gente tem que conseguir
+25:48
+garantir qualidade. Então, da mesma forma que a gente tem testes automatizados na nossa aplicação, a
+Testes e Qualidade de sistema com IA
+25:53
+gente vai ter que ter testes de prompts e contextos, né? A gente chama de promptings. A gente tem ferramentas
+26:00
+especiais exatamente para fazer isso. Frameworks que criam componentes de prompts para que você consiga rodar.
+26:07
+Existem frameworks que você roda, que você passa suas necessidades de entrar, saída e aí de repente ele faz alteração
+26:15
+no seu prompt tentando trazer o melhor resultado, criando variações de prompts para você. A gente tem que conseguir
+26:21
+avaliar agentes, a gente tem que pegar eh datasets reais de como que as coisas
+26:26
+estão se comportando e que você acha que tá OK, né? Você pode tirar snapshots do que você pretende e você consegue rodar
+26:34
+testes aí mais determinísticos para garantir que aí ela vai se comportar de acordo com o seu dataset, de acordo com
+26:40
+o seu snapshot para garantir que todas as atualizações que você fez em modelo,
+26:45
+em código, imprompt, por exemplo, eles vão continuar se comportando de uma forma melhor ou de uma forma que pelo
+26:52
+menos mantenha o comportamento, tá? Então você tem formas de testes automatizados para trabalhar com o IA,
+26:59
+desde ferramentas tem a Leng Smith, mas tem assim, tem muita ferramenta que hoje em dia já tá em volta de tudo isso. E
+27:06
+acredite que em ferramentas como data Dog, New Relic, todas essas ferramentas estão começando a evoluir com agentes
+27:13
+para conseguir te ajudar em todo o processo de observabilidade no meio de toda essa história, tá? E por último,
+27:19
+galera, e não menos importante, e é aqui que eu acho que tem uma responsabilidade muito grande, não que os outros itens
+Gerenciamento de Custos em Arquiteturas com IA
+27:26
+não façam e não não são itens extremamente importantes, mas é a parte de custos em arquiteturas com IA. Ah, já
+27:35
+tem muitos casos que tem empresa que quase fecha as portas porque implementou IA e daí de repente a conta veio gigante
+27:42
+no final do mês, exatamente por não entender como é que funciona o processo de gestão de custos, né? Então eu tenho
+27:49
+que entender input tokens, output tokens, eu tenho que entender limites por modelo, estratégias de cashing que
+27:54
+eu vou precisar, calculadoras, ferramentas, estimativas de custo, como que eu posso estimar o faço estimativa
+28:01
+de custo por usuário, por custo por chamada, com custo de utilização completa de multiagentes, tá? E aí você
+28:08
+vai ter que logar, você vai ter que monitorar, né? E de repente de tudo isso, você simplesmente vai conseguir
+28:16
+fazer otimizações de promptes, truncamento inteligente, ah, sumarização
+28:23
+para economizar tokens, para que você consiga reduzir custos. Você vai ter que
+28:28
+ter testes a B de acordo com a qualidade, quanto que aquilo vai te custar. Então, é muito complexo, porque
+28:36
+o buraco cada vez ele vai ficando mais embaixo, né? Eu tenho que saber qual o melhor modelo pro melhor trabalho que
+28:42
+vai trazer o melhor custo, com a melhor qualidade, com a menor latência para aquele caso de uso, porque para cada
+28:48
+parte de um sistema, você vai necessariamente usar um modelo diferente, porque nem todo modelo serve
+28:54
+para todos os casos, tá? E eventualmente você pode usar dois, três modelos, três chamadas numai para um único processo e
+29:02
+eventualmente isso vai ser mais rápido e mais barato do que apenas um modelo que
+29:07
+às vezes ele acaba sendo um pouco mais lento e mais custoso ali para você. Galera, o que que eu tenho para dizer de
+Considerações importantes
+29:15
+tudo isso, tá? Ah, é uma lista longa, tá? Mas eu acredito que a partir de
+29:20
+agora você tem pelo menos um pouco mais de clareza por onde você pode começar. pensando no mundo de arquitetura de
+29:27
+software e também arquitetura de solução numa era que a nossa profissão ela tá
+29:33
+sendo redefinida. E a pergunta, né, que não quer calar aqui para mim sempre é:
+29:39
+o que você já tá estudando em relação a esses aspectos? O que para você, né,
+29:44
+nesse momento é novo do que você viu? Coloca aí no comentário desse vídeo, vamos trocar uma ideia, que itens você
+29:50
+acha que eu poderia adicionar ou eventualmente remover dessa lista, tá? Então isso aqui pra gente ah é muito
+29:58
+importante até pros próximos vídeos que eu coloco aqui no canal. Lembrando também, pessoal, que a tudo isso que eu
+MBA em Engenharia de Software com IA
+30:05
+acabei de falar também consta no nosso MBA Engenharia de software com IA, porque ele vai te ajudar na parte de
+30:12
+arquitetura, no seu workflow de desenvolvimento para você ser mais produtivo e não passar raiva com IA,
+30:17
+para você desenvolver realmente as aplicações, desenvolver agentes, conseguir fazer a parte de entrega e de
+30:23
+confiabilidade ali no seu processo, tá? Então, clica no link abaixo desse vídeo,
+30:29
+vamos bater um papo. Ah, pode fazer a matrícula para entrar em algumas das
+30:34
+nossas turmas. Você pode falar com a nossa equipe, a gente vai te entender de forma personalizada mesmo, falar com
+30:41
+você para ver se é o melhor momento para você, né? E aí, quem sabe você vem aí estudar com a gente. É muito conteúdo,
+30:48
+né? A parte de arquitetura tem exatamente esses tópicos que eu acabei de falar, mas a gente vai de arquitetura, a gente vai em promptes
+30:55
+engineer, a gente vai em determin e design docs com IA, desenvolvimento de software com IA, a gente vai com
+31:02
+desenvolvimento em modo agente, desenvolvimento de aplicações com IA, desenvolvimento de agentes com IA,
+31:08
+protocolos de comunicação, devoles sreia aqui no meio dessa história. E a gente
+31:14
+tem parte de marketing pessoal, trabalho em equipe, empreendedorismo, soft skills que você precisa, inclusive para você
+31:21
+conseguir trabalhar, né, ah, nesse mundo de uma forma que tá mudando até a forma
+31:26
+de comunicação. Às vezes, hoje em dia, você tá perguntando primeiro para Iá, ah, antes mesmo de perguntar paraos seus
+31:32
+pares, tá? Então, ah, clica no link aí na descrição pra gente bater esse papo e
+31:38
+quem sabe você vem estudar com a gente, tá? De qualquer forma, foi um prazer gravar esse vídeo. Espero que vocês usem
+31:44
+a, ou pelo menos ten um ponto de partida para vocês conseguirem entender o que vocês precisam entender um pouco mais
+31:51
+sobre arquitetura de software, arquitetura de solução na hora que a gente tá falando agora nesse mundo de
+31:57
+inteligência artificial. Fechou? Um grande abraço para você. Até o nosso próximo vídeo aqui no canal.
+32:04
+[Música] เฮ
+32:10
+[Música]
+

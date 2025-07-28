@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frank_daemon_app
+    # Monta o diretório 'src' local no container para desenvolvimento ao vivo.
+    # Para um ambiente de produção, esta linha seria removida.
+    volumes:
+      - ./src:/app/src
+    # Mantém o container em execução para que possamos interagir com ele.
+    # O comando real será executado via 'docker compose exec'.
+    command: tail -f /dev/null
+    restart: unless-stopped
+    networks:
+      - frank_daemon_net
+
+networks:
+  frank_daemon_net:
+    driver: bridge

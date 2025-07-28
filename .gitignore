@@ -1,0 +1,36 @@
+# Arquivos a serem ignorados pelo Git
+
+# Ambientes virtuais
+venv/
+*.venv
+env/
+.env
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Arquivos de dependências locais
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Bancos de dados locais
+*.sqlite3
+
+# Arquivos de teste e cobertura
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Arquivos gerados
+progress.html

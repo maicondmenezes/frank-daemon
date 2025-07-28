@@ -1,0 +1,1159 @@
+vídeo: IA e Design Docs: O sofrimento acabou
+
+introdução
+0:00
+se você é desenvolvedor e provavelmente
+0:02
+já deva ter mexido ou tá desenvolvendo
+0:04
+usando inteligência artificial eu
+0:06
+acredito que você já deva ter tido
+0:08
+momentos de amor e ódio pela
+0:11
+inteligência artificial momentos que ela
+0:13
+cria aquele código que você fala: "Eu
+0:15
+sou o cara mais produtivo do mundo" mas
+0:17
+também momentos que ela sai fazendo uma
+0:19
+besteira danada de forma irresponsável e
+0:22
+acaba te deixando na mão isso gera uma
+0:24
+frustração e até ansiedade vamos dizer
+0:27
+assim o fato é que eu gastei aí eu acho
+0:31
+que mais de 1000 horas na frente do
+0:32
+computador trabalhando firme estudando
+Objetivo do vídeo
+0:34
+muito forte sobre a e eu digo que eu
+0:37
+acabei pegando bastante o jeito e
+0:38
+entendendo bem como é que ela funciona e
+0:40
+nesse vídeo eu vou passar um item de um
+0:44
+workflow que eu acabei montando para
+0:46
+você desenvolver softwares guiados
+0:48
+orientados a inteligência artificial que
+0:51
+vai minimizar bastante esses riscos que
+0:54
+você tem de alucinação e fazer com que a
+0:56
+IA no final das contas ela saia
+0:58
+destruindo o seu código deixando você
+1:00
+ainda mais nervoso e aí mais
+1:03
+atrapalhando do que ajudando mas antes
+1:04
+da gente ir direto ao assunto eu queria
+1:06
+aproveitar esse momento para pedir para
+1:08
+você dar um like nesse vídeo ah se
+1:10
+inscrever no nosso canal e saiba que
+1:12
+aqui na Full Cycle a gente tem um curso
+1:15
+chamado curso Full Cycle 4.0 que um dos
+1:18
+pilares agora do curso é inteligência
+1:21
+artificial como um desenvolvedor
+1:23
+consegue trabalhar com inteligência
+1:25
+artificial para aumentar a produtividade
+1:27
+da forma que ele nem consegue imaginar
+1:30
+então se você quer saber mais sobre isso
+1:32
+clica no link aqui abaixo a gente também
+1:34
+tem MBA em arquitetura pós-graduação de
+1:36
+desenvolvedor para se tornar tech lead
+1:39
+até mesmo pós-graduação na linguagem GO
+1:41
+então o link tá aqui embaixo clica vamos
+1:42
+bater um papo quero entender esse
+1:44
+momento profissional quem sabe você não
+1:46
+vem aí estudar com a gente beleza mas
+1:48
+galera o lance é o seguinte sem mais
+1:51
+delongas tá trabalhar com inteligência
+1:53
+artificial nos dias de hoje é
+1:54
+basicamente ter um workflow ter uma
+Workflow para trabalhar com IA
+1:57
+forma bem organizada e estruturada para
+1:59
+que ela entenda como você trabalha e
+2:02
+para que ela entenda realmente o que
+2:05
+você quer eu acredito que você já saiba
+2:08
+saber o que pedir como pedir pra
+2:10
+inteligência artificial é uma das coisas
+2:12
+mais importantes entender de prompts é
+2:14
+muito importante quando eu ouvia falar
+2:16
+no passado engenharia de prompt isso me
+2:18
+dava até gastura de pensar que já era
+2:20
+mais uma buz word que os caras estavam
+2:22
+criando quando eu comecei ler e entender
+2:24
+paper por paper científico de como esses
+2:27
+prompts funcionam eu percebi que eu tava
+2:29
+arranhando apenas ali a ponta do iceberg
+2:33
+hoje eu acabei conseguindo né trabalhar
+2:37
+de uma forma muito mais precisa com o IA
+2:39
+através de um framework né vamos dizer
+2:41
+assim um workflow que eu acabei ah
+2:43
+adotando para mim tá ah e eu quero
+2:46
+compartilhar aqui com vocês e mostrar um
+2:49
+único item desse cara aqui beleza ah
+2:52
+inclusive deixa aí no comentário para eu
+2:54
+saber como você tá trabalhando com ia
+2:57
+hoje você tá no modo go horse você já
+2:58
+tem uma metodologia qual IDE que você tá
+3:01
+usando você tá usando VS Code com GitHub
+3:03
+Copilots tá usando Jet Brains tá usando
+3:05
+Cursor deixa aí o comentário e eu quero
+3:07
+saber a sua relação de amor e ódio que
+3:10
+você tem com inteligência artificial nos
+3:13
+dias de hoje vamos ali ver mas pessoal
+3:15
+vamos ajustar as expectativas do que
+3:17
+você vai ver nesse vídeo beleza bom
+3:18
+primeiramente eu vou falar para vocês
+3:19
+desse workflow que eu tenho utilizado
+3:21
+para trabalhar ah com inteligência
+Apresentando Workflow
+3:23
+artificial para mundo do desenvolvimento
+3:25
+né a gente vai falar também sobre design
+3:27
+docs tipos de documentos para que você
+3:28
+entenda o que é importante o que não é
+3:30
+importante para um projeto para você não
+3:31
+gastar seu tempo aí eu vou mostrar para
+3:33
+vocês alguns assistentes que eu criei
+3:34
+que vão gerar essas documentações e eu
+3:36
+vou mostrar essas documentações no
+3:38
+cursor num projeto para que você entenda
+3:40
+como que tudo isso acaba se conectando
+3:42
+fechou então vamos lá pessoal
+3:43
+rapidamente aqui workflow de IA para
+3:46
+desenvolvedores isso aqui é basicamente
+3:49
+como eu trabalho nos dias de hoje depois
+3:50
+de todas as batidas de cabeça que eu
+3:52
+acabei tendo então eu começo a perceber
+3:54
+que quando você cria um projeto você vai
+3:57
+precisar de uma das coisas mais
+3:58
+importantes que você vai ter que é
+4:00
+documentação parece algo chato mas
+4:02
+quando você entende tá que documentação
+4:04
+ele é um ativo para você igual um teste
+4:06
+não tem mais a desculpa para você não
+4:09
+ter sabe quando você trabalha com teste
+4:11
+e quando você cria esse teste no dia um
+4:12
+do seu projeto quando você tiver 5 anos
+4:15
+de projeto esse teste ainda vai te
+4:16
+ajudar para que o seu projeto não quebre
+4:18
+lá na frente as documentações né e você
+4:21
+tem que saber quais e o por e quando
+4:22
+você vai utilizar elas fazem exatamente
+4:24
+isso hoje em dia no mundo da IA tá ela é
+4:27
+um ativo que você tem que ter o ponto é
+4:29
+que você tem que saber criar rapidamente
+4:30
+isso de uma forma que faça sentido e que
+4:32
+não atrapalhe o tempo de desenvolvimento
+4:33
+do seu software tá primeira parte é essa
+4:36
+segunda parte implementação tá como que
+4:38
+eu implemento softwares utilizando
+4:39
+inteligência artificial quais são as
+4:41
+fases que você utiliza qual o workflow
+4:42
+que você utiliza tem bastante coisa que
+4:44
+você faz para conseguir trabalhar a
+4:46
+implementação você tem a parte de code
+4:48
+review né porque depois que você
+4:49
+implementa o seu par você mesmo né
+4:52
+outros desenvolvedores vão fazer o code
+4:53
+review e para fazer esse code review
+4:55
+você consegue fazer com uma agilidade
+4:56
+danada desde que você tenha um workflow
+4:58
+decente para realizar e também toda a
+5:00
+parte de correção de software que você
+5:02
+vai ter tanto para softwares que já
+5:03
+existem que você tá chegando no projeto
+5:05
+como softwares ah que estavam sendo
+5:07
+desenvolvidos ali achou um bug e tem que
+5:09
+corrigir tá hoje a gente vai focar nesse
+Design Docs
+5:11
+cara aqui design Docs e eu quero
+5:12
+explicar para vocês claramente que
+5:14
+documentação não é algo tão ah um bicho
+5:16
+de sete cabeças e tão chato você vai
+5:18
+entender que isso é tão importante como
+5:19
+desenvolver um teste ali no seu software
+5:21
+o ponto é que você não precisa de
+5:23
+documentação para tudo em todas as
+5:25
+situações tá você tem que ponderar o
+5:27
+tamanho do projeto para que que esse
+5:29
+projeto e para que que essa documentação
+5:31
+ela vem ali para te ajudar então vamos
+5:33
+percorrer rapidamente esses tipos de
+5:35
+documentação somente para você ter uma
+5:36
+ideia e depois a gente vai para um
+5:37
+assistente que eu criei aqui beleza
+5:39
+então o seguinte existem documentações
+5:40
+focadas muito mais no lado do produto ou
+5:42
+seja no que o software faz tá e essa
+5:44
+documentação normalmente ela é criada
+5:46
+por pessoas de produto mas você
+5:47
+desenvolvedor também pode criar para
+5:49
+conseguir dar contexto pra sua
+5:50
+inteligência artificial baseado nas na
+5:52
+nas especificações que foram dadas ali
+5:54
+para você quais são esses tipos de
+5:56
+documentação tem várias mas eu separei
+5:57
+aqui as principais que eu acredito uma
+Documentação de Produtos
+5:59
+PRD products documents ou seja ela vai
+6:02
+fazer uma definição de alto nível do que
+6:04
+se trata o projeto seus requisitos
+6:05
+funcionais não funcionais as restrições
+6:07
+de negócio as restrições de tecnologia e
+6:09
+tudo mais você tem a TRD que é technical
+6:11
+reference documents esse tipo de
+6:13
+documentação ela especifica mais
+6:14
+tecnicamente como que o seu software vai
+6:16
+comunicar com outros softwares com
+6:17
+outros componentes quais são as APIs end
+6:19
+points contratos ou seja é um documento
+6:21
+mais técnico mas ele deixa claro como o
+6:24
+seu software ele vai falar basicamente é
+6:26
+isso nós temos aqui a FRD que é
+6:28
+functional requirements document que vai
+6:30
+detalhar para você ainda mais em
+6:32
+aspectos um pouco mais de baixo nível
+6:34
+como que vai ser os requisitos né como
+6:36
+que vai funcionar o seu software passo
+6:38
+por passo obviamente que você não
+6:40
+precisa dar o detalhe do detalhe mas
+6:42
+como que aquele módulo como que aquela
+6:44
+funcionalidade aquela feature vai
+6:45
+funcionar isso aí é importante e tem
+6:47
+também muitas empresas que trabalham com
+6:49
+users e stories porque é uma forma bem
+6:50
+interessante da área de produto
+6:52
+conseguir comunicar com a área de
+6:53
+desenvolvimento através de histórias né
+6:56
+quando como onde em qual situação você
+6:59
+vai contando uma história e baseado
+7:00
+nessa história a gente consegue fazer
+7:01
+implementações então isso aí é
+7:03
+importante para contextualizar o que vai
+7:05
+ser feito uma outra coisa que nesse caso
+7:07
+aí é importantíssimo são decisões
+Docs de Decisões técnicas
+7:09
+técnicas porque até aqui a gente tem um
+7:11
+pouco de documentação técnica mas é
+7:13
+muito mais referente ao produto em si tá
+7:16
+aqui nessa categoria de decisão técnica
+7:19
+a gente tem dois documentos que são
+7:20
+importantes obviamente que podem ter
+7:21
+muito mais eu tô trazendo o que a gente
+7:23
+que eu vejo mais utilizar no mercado um
+7:25
+RFC eu acredito que você já devo ter
+7:27
+ouvido falar que é o famoso request for
+7:29
+comments normalmente eu acho que é muito
+7:30
+comum você BRFC projetos open source
+7:33
+querem fazer uma mudança técnica uma
+7:34
+nova melhoria uma mudança ah que afeta
+7:37
+muitas vezes coisas a pessoa que quer
+7:39
+fazer aquela mudança cria um documento
+7:41
+coloca todas as justificativas a ideia
+7:42
+como é que vai ficar como é que não vai
+7:44
+ficar e tudo mais e manda isso para
+7:45
+comentários para outros desenvolvedores
+7:47
+para as pessoas das equipes para
+7:49
+comentarem e gerar uma discussão em cima
+7:51
+até esse documento ele ficar ali bem
+7:53
+próximo da decisão final de como que as
+7:55
+coisas vão ser implementadas tendo né
+7:57
+esse request for comments existem duas
+7:59
+situações uma situação onde o request
+8:01
+for comments quando ele é considerado
+8:02
+aprovado significa que aquela própria
+8:04
+documentação dele já é a decisão final
+8:07
+mas você pode fazer isso em duas etapas
+8:08
+ou apenas não usar RFC e utilizar um
+8:11
+documento chamado de ADR que é
+8:12
+Architectural Decision Record que é
+8:14
+basicamente tá um documento bem simples
+8:16
+que sim que vai mostrar ali o porqu uma
+8:19
+decisão técnica foi tomada porque aquele
+8:21
+banco de dados foi escolhido porque o
+8:23
+Cash vai ser utilizado daquela forma
+8:24
+porque aquela biblioteca vai ser
+8:26
+utilizada o porquê das coisas e ali vai
+8:28
+ser vai trazer a contextualização vai
+8:30
+falar a decisão técnica vai falar se
+8:32
+essa decisão tá em vigor ou não né vai
+8:34
+trazer os pontos positivos e vai trazer
+8:35
+os riscos também e pontos que você
+8:37
+consegue mitigar esses riscos por quê
+8:39
+toda vez que você cria e toma uma
+8:41
+decisão se você não souber o lado ruim
+8:43
+dessa decisão é porque você não tá
+8:45
+pronto para tomar essa decisão técnica e
+8:46
+esses documentos eles forçam a você a
+8:48
+pensar que você tá tomando a decisão
+8:50
+correta mas que você esteja claro dos
+8:52
+riscos que ela pode trazer também pro
+8:53
+seu projeto tá outro ponto aqui é
+8:56
+engineering guidelines todo projeto tem
+Engineering Guidelines
+8:59
+que ter guidelines para ele ser
+9:00
+desenvolvido o que que significa como
+9:02
+que vai ser o padrão de código né quais
+9:04
+vão ser as as boas práticas que a gente
+9:05
+vai utilizar como que a equipe de
+9:07
+engenharia vai trabalhar em determinadas
+9:09
+situações como que a gente vai trabalhar
+9:11
+estabelecer as pontos de segurança
+9:12
+básica e obviamente né se você tiver
+9:15
+numa empresa onde a parte de compliance
+9:17
+de segurança for muito grande essa parte
+9:18
+de segurança ela acaba tendo a sua
+9:20
+própria categorização tá mas isso aí é
+9:22
+um ponto importante outra coisa como são
+9:24
+feitos code reviews como são
+9:26
+desenvolvidos os testes como é que vão
+9:28
+funcionar as pipelines o processo de
+9:30
+aprovação então esses tipos de coisas
+9:32
+são extremamente importantes como que
+9:34
+você vai fazer uma PR então tudo isso
+9:37
+acaba entrando em engineering guidelines
+9:39
+beleza ah aí a gente tem também decisões
+Design e Arquitetura
+9:42
+arquiteturais e o ponto aqui galera é
+9:45
+importante você entender o seguinte você
+9:48
+não precisa e eu quero deixar muito
+9:49
+claro isso aqui para vocês ter tudo isso
+9:52
+de documentos mas uma vez que você sabe
+9:54
+as possibilidades que você tem você pode
+9:56
+escolher fazer um blend de quais
+9:58
+documentos você quer no seu projeto tá
+10:00
+tô deixando bem claro para ninguém sair
+10:01
+falando que o Wesley escreveu aí que
+10:03
+você tem que ter 10.000 documentos para
+10:04
+trabalhar com IA não é isso mas você
+10:06
+sabendo quais documentos existem você
+10:08
+sabe qual você vai usar no contexto no
+10:10
+tamanho do seu projeto beleza aqui a
+10:12
+gente tem documentos de design e
+10:14
+arquitetura tá tem gente que acredita
+10:15
+que arquitetura é design eu não vou
+10:17
+entrar na discussão se arquitetura e
+10:19
+design são coisas diferentes ou são
+10:20
+coisas iguais isso é um consenso aí que
+10:23
+nunca todo mundo acaba chegando existem
+10:25
+muitas decisões acaloradas em relação a
+10:26
+isso mas uma coisa é importante você
+10:29
+pode ter e recomendo principalmente para
+10:31
+microsserviços ou ecossistemas muito
+10:32
+grandes documentos de system design onde
+10:34
+você tem uma visão high level mesmo de
+10:37
+como o seu projeto ele funciona como ele
+10:39
+se comunica quais são os componentes ali
+10:40
+que ele acaba trabalhando mas você
+10:42
+também pode ter documentos de baixo
+10:44
+nível onde você mostra em relação até em
+10:46
+componentização às vezes em classes ou
+10:48
+coisas desse tipo como o seu documento
+10:50
+né como que a sua aplicação ela vai
+10:52
+acabar funcionando e se você consegue
+10:54
+entender bem desses componentes fica
+10:55
+muito claro né as barreiras como que as
+10:57
+coisas funcionam dentro do seu software
+11:00
+e obviamente é importante pro seu time e
+11:02
+a e a própria inteligência artificial
+11:03
+entender um pouco mais dessas barreiras
+11:05
+e também a gente começa a ter modelo C4
+11:08
+onde a gente tem contex container
+11:09
+component code a gente fala bastante
+11:11
+disso inclusive no nosso MBA então são
+11:13
+documentos que apesar de um documento
+11:15
+como C4 ele ser um documento visual hoje
+11:18
+em dia você consegue criar essa vamos
+11:20
+dizer visão utilizando sei lá por
+11:22
+exemplo
+11:25
+plento representar aquela visão gráfica
+11:27
+ou seja a própria IA consegue entender
+11:29
+um C4 através do código dela então isso
+11:31
+é bem importante para você se ligar tá
+11:33
+então se liga design e arquitetura
+11:35
+também é importante e também a gente
+11:37
+pode ter documentos de operação e
+11:39
+infraestrutura tá como é que vai
+Operações e Infraestrutura
+11:41
+funcionar a sua estreira de CD como que
+11:43
+a gente vai trabalhar com pontos
+11:45
+operacionais né como que eu rodo o
+11:46
+sistema como que eu reinicio o sistema
+11:48
+quando der um problema né como que eu
+11:50
+consigo ter respostas de incidentes né
+11:52
+como que eu posso fazer um pósmorting ou
+11:53
+seja tem muita coisa interessante desde
+11:56
+documentos de infraestrutura novamente
+11:58
+galera tô mostrando aqui para vocês as
+12:00
+possibilidades que você tem de coisas
+12:01
+que são úteis que são ativos pro seu
+12:03
+projeto e que a sua IA ela pode te
+12:05
+ajudar com isso agora na prática como
+12:08
+que eu crio esses caras dá trabalho
+12:09
+criar qual o tamanho desses documentos
+12:11
+obviamente vai depender da complexidade
+12:12
+do software mas existem formas que faz
+12:16
+com que essa complexidade ela diminua
+12:18
+bastante aqui eu tenho nesse caso o chat
+Gerando documentações com agentes
+12:21
+GPT aqui onde você pode dar uma olhada
+12:23
+mas a grande sacada nesse caso é que eu
+12:26
+criei através de prompts e novamente
+12:28
+galera uma das coisas mais importantes
+12:30
+que você tem que entender quando fala de
+12:32
+inteligência artificial é entender sobre
+12:34
+prompt galera muda a sua vida acredite
+12:36
+né existem diversos tipos de prompts
+12:38
+para cada caso de uso específico pra
+12:40
+documentação você usa um prompt pra
+12:41
+implementação você usa outro prompt pra
+12:43
+correção de bug é um outro prompt e
+12:45
+esses prompts eles têm por exemplo
+12:46
+encadeamentos chafts tree of thoughts a
+12:50
+advance
+12:51
+ah reacting você tem zero shot f shot
+12:54
+one shot tem diversos tipos ali de
+12:57
+prompts específicos para você conseguir
+12:58
+trabalhar aqui tá eu tenho por exemplo
+13:01
+um context generator ou seja é um
+13:03
+documento que vai meio que gerar o seu
+13:05
+PRD para ir a entender o contexto do seu
+13:07
+projeto eu tenho aqui um ADR generator
+13:09
+eu posso falar: "Quero criar uma ADR
+13:12
+sobre a utilização do Reds como cash
+13:16
+certo eu não vou ficar criando
+13:17
+documentação aqui na frente mas eu quero
+13:18
+que você entenda a ideia de como que
+13:20
+você pode trabalhar com esses documentos
+13:22
+aqui ele fala ó antes de começar você
+13:24
+pode falar um pouco sobre sobre o seu
+13:25
+projeto eu vou falar é um e-commerce
+13:29
+desenvolvido em GO mas nessa parte vamos
+13:33
+fazer o a o catálogo e precisamos de
+13:38
+cash tô escrevendo qualquer coisa aqui
+13:40
+que que acontece baseado nisso esse cara
+13:42
+ele começa a perguntar a confirmar a
+13:45
+informação e você vai iterando tá e você
+13:48
+vai perceber que muitas vezes em poucos
+13:49
+minutos você consegue trabalhar com isso
+13:51
+só para esclarecer sim é que você já
+13:53
+possui uma estrutura de de ADR ou criar
+13:55
+do zero vou colar criar do zero olha só
+13:57
+eu fui dando sim aqui porque eu tô
+13:58
+falando com você então ah a gente acaba
+14:01
+não prestando atenção aí ele vai sugerir
+14:03
+até modelos mais detalhados ou modelos
+14:05
+básicos de ADR que eu posso trabalhar
+14:07
+por exemplo ah eu vou colocar sim pode
+14:09
+usar esse modelo e a partir de agora a
+14:11
+gente vai discutir sobre desde o título
+14:13
+da ADR tá ou até mesmo as decisões os
+14:17
+motivos e tudo mais você gostaria de
+14:19
+usar esse título ó uso do Reds como cash
+14:21
+pro catálogo de produtos sim então você
+14:23
+começa a perceber que as coisas elas
+14:24
+começam a ficar um pouco mais simples
+14:26
+pra gente trabalhar qual é o contexto o
+14:28
+catálogo tem ataxa de leitura a lentidão
+14:30
+do banco de dados vocês esperam escalar
+14:32
+o serviço existem restrição de latência
+14:34
+tudo isso e a restrição de latência é
+14:38
+exposta em 50 msegundos então tô
+14:41
+tentando adiantar aqui somente para você
+14:42
+entender a ideia então olha só ele gerou
+14:44
+o contexto catálogo de produtos será um
+14:46
+componente essencial com alta taxa de
+14:48
+leitura em períodos de pico promoções a
+14:50
+consulta direto no banco além disso
+14:52
+espero que o sistema escale
+14:52
+horizontalmente então perceba que ele tá
+14:54
+gerando o contexto e ele confirma comigo
+14:56
+se eu quero isso ou se eu quero alterar
+14:58
+e aí eu vou seguindo nesse fluxo até eu
+15:01
+ter um documento mais ou menos dessa
+15:03
+forma aqui deixa eu abrir meu cursor
+Documentações no Cursor
+15:05
+para você então se você olhar eu tenho
+15:07
+um contexto de um projeto que eu fiz
+15:08
+através daquele geração de contexto
+15:10
+então eu tenho contexto e visão geral o
+15:12
+problema que eu tenho os objetivos e os
+15:14
+resultados que eu espero indicador de
+15:16
+sucesso o que para mim faz com que eu
+15:17
+tenha certeza que esse meu projeto deu
+15:19
+certo isso aqui galera é outcome que a
+15:21
+IA vai olhar e falar: "O meu software só
+15:23
+tá funcionando se isso aqui tiver
+15:24
+funcionando." Quais são os escopos né o
+15:26
+que tá fora do escopo qual que é
+15:27
+arquitetura e abordagem técnica quais
+15:29
+são as dependências quais são as
+15:30
+restrições quais são os riscos as
+15:31
+observações mas além disso eu posso ter
+15:34
+documentos como por
+15:36
+exemplo a estratégia de nesse caso de
+15:40
+qual estratégia de de rate limiting que
+15:44
+eu vou usar então uso de leak bucket né
+15:46
+qual é o contexto qual a decisão né como
+15:48
+que vai ser a implementação concorrência
+15:50
+consequência positiva negativa galera
+15:52
+isso é um ativo pro seu projeto porque
+15:55
+isso vai ser guardado para sempre 5 anos
+15:57
+depois a gente sabe o porque essa
+15:58
+decisão foi tomada e essa se essa
+16:00
+decisão ela está ah deprecada se ela foi
+16:03
+aceita quando ela não foi se ela foi
+16:05
+substituída por alguma outra que você
+16:06
+pode colocar o link aqui embaixo e tudo
+16:08
+isso aá gerando para você agora sabe o
+16:10
+que é mais interessante uma vez que você
+16:12
+tem essas documentações ou você tem até
+16:14
+uma base de código você pode chegar por
+16:16
+exemplo para um cursor da vida e falar o
+16:18
+seguinte ó gera as minhas regras o
+16:20
+cursor hoje em dia ele tem recursos que
+Geração automática de Rules pelo Cursor
+16:23
+é chamado de generate rules tá vou
+16:25
+colocar aqui ó generate cursor rules
+16:27
+quando você dá um enter ou até
+16:29
+mesmo fala algo vou colocar utilização
+16:32
+do Reds o que que ele vai fazer ele vai
+16:34
+entender o seu código tá vai ler todos
+16:36
+os seus arquivos e baseado nesses
+16:38
+arquivos que ele lê o que que ele vai
+16:40
+fazer ele vai criar arquivos aqui
+16:43
+mostrando né como que a Iala deve se
+16:45
+comportar para aqueles tipos de
+16:47
+implementação por exemplo ah como que eu
+16:50
+vou trabalhar com o rate limiting a
+16:51
+implementação né então essa regra foi
+16:54
+gerada pelo cursor mas esses detalhes
+16:56
+foram utilizados pelo código que eu
+16:58
+tinha mas também pela documentação então
+17:00
+a partir daqui já fica muito claro o que
+17:02
+a Soia pode ou não fazer simplesmente
+17:04
+gerando essas regras então entende
+17:06
+baseado num documento eu consigo gerar
+17:09
+regras eu consigo ter mais controle da
+17:10
+minha IA e fazendo esse tipo de controle
+17:13
+simplesmente o meu jogo ele acaba
+17:15
+mudando porque eu sei o que eu tenho que
+17:18
+fazer né a IA ela tem uma clareza muito
+17:21
+maior mas somente isso eu já digo para
+17:23
+você que não é o suficiente tá que ele
+17:25
+trouxe uma sugestão de utilização do
+17:27
+Reds tá então ó ele entendeu a escolha
+17:30
+do Reds o modelo que a gente vai
+17:31
+trabalhar por exemplo a o script para
+17:34
+trabalhar com lua né para eu trabalhar
+17:35
+de forma atômica é super importante isso
+17:37
+pra gente conseguir trabalhar e evitar
+17:40
+problemas de concorrência então aqui ele
+17:41
+trouxe sugestões óbvio que eu vou
+17:43
+revisar e vou trabalhar com isso aqui
+17:44
+mas perceba que as regras do jogo vão
+17:47
+ficar bem mais claras pessoal como eu
+17:49
+disse para você isso aqui não é tudo
+17:52
+você precisa de uma forma geral ter
+17:54
+processos de implementação com IA a
+17:56
+documentação é a primeira fase a segunda
+17:58
+fase é a implementação e para ter essa
+Outras fases do Workflow
+18:01
+implementação você tem todos esses
+18:03
+pontos que você tem que percorrer porque
+18:04
+cada desses tem uma forma de trabalhar
+18:06
+com a quando você entende esse framework
+18:08
+você vai perceber que isso entra no
+18:10
+piloto automático você é muito produtivo
+18:12
+e você minimiza muito o risco da IA
+18:14
+fazer besteira ela ainda faz besteira
+18:16
+faz mas muito menos do que você sair
+18:18
+escrevendo para ela melhorar ou
+18:19
+implementar uma feature o o nível do
+18:21
+jogo muda e conforme o tempo vai
+18:23
+passando e cada dia mais a IA né ela vai
+Conclusão
+18:26
+melhorando né ali para você o que que
+18:29
+isso vai significar que o nível de
+18:31
+precisão seu vai aumentar para caramba
+18:34
+então se você quer trabalhar muito bem
+18:37
+com IA hoje tente ter um framework um
+18:39
+workflow né e pontos como eu coloquei
+18:42
+aqui para você comece a fazer seus
+18:44
+testes você vai ver que o seu projeto
+18:46
+ele vai mudar da água pro vinho e óbvio
+18:49
+né se você quer aprender mais sobre isso
+18:50
+clica no link aqui abaixo nos nossos
+18:53
+cursos a gente tá adicionando pilares
+18:55
+bem fortes de A para você conseguir
+18:57
+fazer exatamente isso que eu tô falando
+19:00
+aqui para você fechou eu também quero
+19:02
+que você deixe um comentário de como
+19:04
+você tá trabalhando com IA hoje se tá
+19:06
+sendo produtivo se tá sendo improdutivo
+19:08
+se você passa raiva se você não passa
+19:10
+raiva como que se você faz algo parecido
+19:13
+com o que eu tô fazendo deixa aí um
+19:15
+comentário eu quero entender como é que
+19:16
+você tá trabalhando fechou é isso aí
+19:19
+galera então até o nosso próximo vídeo
+19:21
+aqui no canal Full Psycho um abraço aí
+19:23
+para vocês
+19:25
+[Música]

@@ -1,0 +1,1186 @@
+vídeo: Os 3 Layers da IA que todo desenvolvedor precisa saber
+
+Introdução
+0:00
+direto vem uma galera nova aqui em casa
+0:02
+para eu conhecer e tudo mais E daí eu
+0:04
+pergunto assim para eles: "Cara com que
+0:05
+que você trabalha?" E eles falam assim
+0:07
+para mim: "Eu trabalho com TI." Eu não
+0:09
+sei se você já passou por esse tipo de
+0:11
+situação mas falar que trabalhar com TI
+0:13
+é a coisa mais abrangente do mundo nos
+0:16
+dias de hoje E o por que que eu tô
+0:18
+falando isso porque hoje em dia você
+0:20
+falar que trabalha com IA é quase a
+0:23
+mesma coisa de a gente falar que a gente
+0:25
+trabalha com TI de tão amplo que é toda
+0:28
+essa parada E eu tenho que admitir para
+0:29
+você que todas as vezes que eu ouvia
+0:31
+falar inteligência artificial isso já me
+0:34
+remetia a ciência de dados machine
+0:36
+learning deep learning ficar treinando
+0:38
+modelos E isso tava tão fora mas tão
+0:41
+fora da minha bolha que simplesmente
+0:43
+esse assunto ele nem me interessava
+0:44
+muito Obviamente que eu tentava ter uma
+0:47
+base né me terar um pouco sobre isso mas
+0:49
+de forma geral zero profundidade nesses
+0:52
+tipos de assunto até a todo esse boom
+0:55
+que a IA ela vem fazendo no mercado e
+0:58
+agora falando diretamente com
+1:01
+desenvolvedores E o por que que eu tô
+1:03
+falando isso porque no na newsletter do
+1:05
+The Pragmatic Engineering sai um artigo
+1:08
+muito interessante falando sobre os três
+1:10
+layers da IA E quando eu vi isso trouxe
+1:14
+uma clareza extremamente forte para mim
+1:17
+porque esses layers mostram exatamente
+1:21
+onde nós desenvolvedores nós nos
+1:23
+encontramos agora nesse universo da IA
+1:26
+Então vamos falar sobre isso Hoje eu
+1:28
+tenho não tenho dúvidas que vai ficar
+1:31
+tudo muito claro na sua mente quando a
+1:33
+gente fala sobre a o nosso papel e
+1:36
+talvez a redefinição da nossa profissão
+1:38
+Mas seguinte antes da gente ir direto ao
+1:41
+assunto eu queria já pedir para você dar
+1:43
+um joinha nesse vídeo se inscrever aqui
+1:45
+no canal e também escreve aí um
+1:46
+comentário né ah você já tá trabalhando
+1:49
+com IA já tá passando raiva tá feliz tá
+1:52
+sendo mais produtivo e também se você já
+1:54
+está desenvolvendo aplicações e agentes
+1:56
+para IA coloca aí aí a sua opinião como
+1:59
+é que tá sendo essa jornada aí para você
+2:01
+como desenvolvedor E obviamente galera
+2:03
+não posso deixar de citar aqui na Full
+2:05
+Cycle nós acabamos de lançar um MBA em
+2:11
+engenharia de software com IA tá é o
+2:14
+único MBA no mercado hoje em dia que tem
+2:17
+o foco exatamente no desenvolvedor tá
+2:21
+então se você quiser saber mais clica
+2:23
+aqui no link aqui abaixo Você vai bater
+2:25
+um papo com a nossa equipe vai entender
+2:27
+inclusive né no site com todos os
+2:29
+detalhes que a gente tá trazendo para
+2:31
+você Então aproveita dá uma olhada
+2:34
+porque tem bastante coisa interessante
+2:36
+que vai fazer sentido para você
+2:38
+Maravilha Mas galera sem mais delongas
+2:41
+deixa eu trazer aqui né esses três
+2:43
+layers da IA E é importante inclusive eu
+Os 3 Layers da IA
+2:46
+citar aqui o o artigo que saiu tá chama
+2:50
+de AI Engineering Stack Basicamente ele
+2:55
+traz três camadas tá de como é que
+2:58
+funciona esse mundo de AI engineering
+3:01
+nos dias de hoje e como que isso acaba
+3:03
+se diferenciando por exemplo da parte de
+3:06
+machine learning e até mesmo aonde fica
+3:08
+o papel de full stack developer no meio
+3:11
+de toda essa história tá então recomendo
+3:14
+que você dê uma olhada aqui nesse artigo
+3:17
+tá de qualquer forma o que eu fiz foi a
+3:20
+pegar umas partes desse artigo pra gente
+3:22
+discutir aqui e também eu trouxe algumas
+3:24
+observações e coisas que eu acredito
+3:27
+para onde que o mercado tá indo hoje
+3:28
+Então vale a pena a gente discutir sobre
+3:31
+isso porque esse assunto cada dia mais é
+3:34
+importante principalmente para você
+3:35
+desenvolvedor saber aonde você está
+3:38
+nesse mundo da parte de engenharia de
+3:40
+software com IA Beleza então o seguinte
+3:43
+três camadas interessantes que ele traz
+3:45
+aqui E começando de baixo para cima ele
+Camada de Infraestrutura
+3:48
+tem a camada de infraestrutura onde foca
+3:50
+bastante na parte de computação né ou
+3:53
+seja como essa parte de infracomputação
+3:55
+GPUs e tudo mais ah acaba impactando né
+3:59
+numa profissão onde cada vez mais as
+4:02
+pessoas têm que estar especializadas
+4:03
+também nesse mundo de a segunda camada
+IA Engineering vs Machine Learning
+4:06
+aqui é a parte de model E honestamente
+4:09
+era aqui onde par acabava todo o meu
+4:12
+interesse com inteligência artificial
+4:13
+Focava muito na parte de ciência de
+4:15
+dados machine learning ah treinar
+4:17
+modelos entender se os modelos eles
+4:20
+estão realmente confiáveis entender a
+4:22
+parte de inferência Então tem muita
+4:25
+coisa que é uma bolha completamente
+4:27
+diferente Inclusive ele traz alguns
+4:29
+pontos aqui bem interessantes fazendo um
+4:32
+uma coisa versus outras Ele fala assim ó
+4:35
+AI engineering versus machine learning
+4:37
+engineer O que ele fala é que
+4:40
+basicamente a parte de engenharia com IA
+4:43
+né ela usa modelos que outras pessoas
+4:47
+treinaram O que que significa que a
+4:50
+parte de IA engineering ele foca menos
+4:53
+na parte de modelagem e treinamento e
+4:56
+mais na parte de adaptação do modelo E
+5:00
+essa adaptação do modelo é utilizar os
+5:03
+modelos que a gente tem hoje adaptando e
+5:06
+a gente vai falar um pouco mais sobre
+5:07
+isso daqui a pouco tá pra gente poder
+5:09
+trabalhar E uma outra coisa aqui que ele
+5:11
+coloca é que a parte de AI engineering
+5:14
+né ele acaba trabalhando com modelos
+5:16
+muito grandes e que tem um openended
+5:19
+outputs ou seja são outputs extremamente
+5:22
+abrangentes que é o que acontece quando
+5:24
+a gente tá trabalhando com esses modelos
+5:25
+grandes Então é algo muito diferente de
+5:28
+isso é um cachorro isso é um gato né
+5:31
+isso é um spam isso aqui é uma mensagem
+5:33
+com esse sentimento Não as coisas elas
+5:36
+vão muito mais ah de forma mais
+5:39
+abrangente onde um modelo a gente pode
+5:41
+perguntar para ele sobre programação
+5:42
+sobre medicina e ainda assim ele
+5:44
+consegue trabalhar Então tem algo bem
+5:47
+interessante aqui que ele mostra que é
+5:49
+uma separação bem interessante quando a
+5:51
+gente pensa em machine learning
+5:53
+engineering onde o foco está no dado
+5:55
+depois o modelo e depois o produto e a
+5:58
+parte de AI engineer onde a gente tem o
+6:00
+produto né central né como centro do que
+6:04
+a gente precisa que utiliza dados que
+6:06
+ali vai utilizar modelos tá então isso
+6:08
+aqui é extremamente importante pra gente
+6:10
+se ligar Nós desenvolvedores nós estamos
+6:14
+nesse layer aqui onde ele fala sobre AI
+Layer Application Development
+6:17
+interface prompt engineer context
+6:19
+construction e evaluation Vamos dar uma
+6:22
+olhada porque é aqui que a coisa fica
+6:24
+interessante pra gente entender qual é o
+6:26
+local né em qual layer a gente tá nesse
+6:29
+momento tá então vamos lá Application
+6:32
+development in AI engineer Então uma das
+6:36
+coisas assim extremamente importantes é
+6:37
+a gente entender que as interfaces que a
+AI interface
+6:40
+gente tá acostumada a utilizar nos dias
+6:43
+de hoje elas estão sendo reduzidas né
+6:46
+então quando a computação evolui a gente
+6:49
+diminui interfaces A gente tinha
+6:51
+computadores grandes depois a gente tem
+6:52
+computadores menores depois a gente tem
+6:54
+celular depois a gente tem relógio
+6:56
+depois a gente tem óculos E por muitas
+6:59
+vezes a gente só vai ter um simples
+7:00
+áudio onde muitas coisas vão acontecer
+7:03
+por baixo dos panos Então a EA interface
+7:05
+é a interação com o usuário final E
+7:08
+quando eu coloco aqui usuário final é
+7:10
+que esse usuário normalmente é o user
+7:13
+que trabalha ali no modelo né então pode
+7:16
+ser um client né e esse client pode ser
+7:19
+um humano ou pode ser uma outra IA ou
+7:22
+pode ser um software chamando essa IA E
+7:24
+aqui ele coloca algumas categorizações
+7:26
+né como standalone software que trabalha
+7:28
+especificamente com IA como um chat GPT
+7:30
+da vida Ele tem embeded onde você tem
+7:33
+por exemplo um GitHubilot que funciona
+7:35
+como uma extensão né do VS Code ou seja
+7:39
+você plugando IA num software existente
+7:42
+e chatbots que você consegue ali
+7:44
+conversar e trabalhar ali com a IA o
+7:48
+tempo todo né e muita gente acaba
+7:51
+confundindo né agentes de A com chatbots
+7:55
+de A E são coisas extremamente ah
+7:59
+diferentes Na realidade você pode ter um
+8:01
+chatbot ah como um agente mas não
+8:04
+necessariamente todo agente é um chatbot
+8:06
+Depois a gente vai falar um pouco mais
+8:08
+sobre isso tá ah outro ponto importante
+Prompt Engineering e Context cosntruction
+8:12
+é a parte de prompt engineering e
+8:14
+context construction Galera eu acho que
+8:17
+nós estamos num momento que é o seguinte
+8:20
+sabe aquela história todo mundo sabe que
+8:22
+fazer exercício faz bem para saúde mas
+8:25
+isso não significa que todo mundo faz
+8:27
+exercício É a mesma coisa com prompt
+8:29
+engineering tá muito todo mundo eu
+8:32
+acredito que já tenha trabalhado com o
+8:35
+IA e esteja num processo ali evolutivo
+8:38
+sabe o quão importante é saber o que
+8:41
+pedir para irá e o contexto que você tem
+8:43
+que dar para ela para ela entender o que
+8:45
+você realmente tá querendo Mas não
+8:48
+adianta apenas saber disso O importante
+8:51
+é você conseguir trabalhar ativamente
+8:53
+para isso você entender realmente os
+8:54
+tipos de prompt a ideia a estrutura o
+8:57
+conceito como eu gero ah contexto para
+9:00
+uma quais são os tipos de documentação
+9:02
+quais são os tipos de docs que a gente
+9:04
+utiliza para programar Então isso é
+9:06
+extremamente complexo muita gente acaba
+9:09
+subestimando e simplesmente os
+9:11
+resultados mudam completamente tá então
+9:15
+quando a gente tá falando em prompt
+9:16
+engineering e context construction
+9:18
+normalmente a gente tá falando em
+9:20
+controlar o comportamento do modelo ou
+9:22
+seja tentar minimizar um comportamento
+9:25
+maluco que o modelo pode ter se você não
+9:27
+souber pedir para ele e não der o
+9:29
+contexto ah exato ali para ele Tem um
+9:32
+exemplo bem interessante de um benchmark
+9:35
+ah que foi feito em relação a um dos
+9:38
+lançamentos do Gemini da Google né e o
+9:41
+que que acontece eles né é nesse
+9:46
+benchmark eles conseguiram mostrar o
+9:48
+quanto que a o Gemini ele estava naquele
+9:52
+benchmark acima do GPT4 por exemplo né e
+9:57
+né o resultado foi ali fantástico né 90
+10:01
+ah% ali em relação de performance
+10:04
+batendo ali o GPT Porém o que que
+10:07
+aconteceu depois disso conseguiram ah
+10:10
+perceber que a Google ela tinha
+10:13
+utilizado tá como uma forma de promptado
+10:17
+de COT chafs a at 32 basicamente dando
+10:22
+diversos exemplos de como resolver a os
+10:25
+problemas se eu não me engano aí 32
+10:28
+exemplos né então você começa a ver né
+10:31
+como que o Gemini ele conseguiu superar
+10:34
+ali né a o GPT em relação a isso Por quê
+10:39
+porque aqui no Gemini eles utilizaram né
+10:43
+um prompt de chain of thoughts com os 32
+10:47
+exemplos E no ah benchmark que a Open AI
+10:52
+tinha saído soltado com o GPT4 ela tinha
+10:55
+dado cinco exemplos tá ou seja foi de 90
+11:00
+para 86% E daí né foi bem ali expressivo
+11:04
+pro Google falando que bateu um modelo
+11:06
+ali da Open AI Porém quando perceberam
+11:09
+que o Google ele trabalhou com um
+11:14
+prompt específico dando mais exemplos
+11:16
+pro modelo aí a coisa mudou Por quê
+11:20
+quando eles fizeram a mesma coisa com o
+11:24
+GPT4 né o GPT4 melhorou também a
+11:28
+qualidade né utilizando a essa
+11:32
+quantidade de exemplos que ele deu Agora
+11:34
+olha só que interessante o próprio
+11:36
+Gemini quando ele deu ali cinco shots né
+11:40
+com cinco exemplos de como resolver a
+11:43
+para passar nesse benchmark ele teve ali
+11:46
+83% ah de performance contra 86 do GPT4
+11:52
+Ou seja nesses exemplos a gente consegue
+11:55
+ver o quanto que um prompt consegue
+11:57
+modificar completamente a qualidade do
+12:00
+resultado Quando o Gemini foi dado
+12:02
+exatamente os cinco shots que foram
+12:04
+dados pro GPT o GPT saiu melhor no meio
+12:07
+da história Para você ver como que isso
+12:10
+muda completamente até mesmo os
+12:12
+benchmarks que são feitos em relação aos
+12:14
+modelos Então meu amigo minha amiga se
+12:16
+você não tá preocupado com os promptes
+12:18
+que você trabalha se você não estuda os
+12:20
+promptes que você os tipos de promptes
+12:22
+que existem por exemplo simplesmente os
+12:25
+seus resultados vão ser ruins e você vai
+12:27
+ficar xingando aí o tempo inteiro tá ah
+12:31
+e aqui a gente vai pra parte de
+Evaluation
+12:33
+evaluation E essa é uma das partes que
+12:36
+eu acho que ah muitos devs têm um
+12:39
+awareness muito baixo né eles não
+12:41
+conseguem ainda se ligar ah de uma nova
+12:45
+do novo momento que a gente tá Por quê
+12:48
+porque quando a gente tá falando em
+12:50
+evaluation ou seja verificar né a
+12:54
+verificar o resultado né a que a gente
+12:58
+tá tendo
+12:59
+com a implementação e a utilização de a
+13:03
+a gente tá falando muito em diminuir
+13:05
+risco Novamente a gente trabalha a gente
+13:08
+tá acostumado com ifs e elsces de forma
+13:10
+extremamente determinística a gente
+13:12
+consegue controlar completamente o fluxo
+13:14
+da nossa aplicação Quando a gente vai
+13:17
+trabalhar com IA isso cai por terra
+13:19
+porque a Ia ela muitas vezes ela toma
+13:21
+decisão própria e ela acaba entrando
+13:23
+numa exceção que a gente nunca previu
+13:25
+Então a gente tem que tentar diminuir os
+13:27
+riscos e isso né a gente tá nessa fase
+13:30
+de evaluation Então a gente consegue
+13:32
+fazendo isso inclusive selecionando os
+13:34
+modelos certos ah especializados a gente
+13:38
+tem que conseguir cortar custo a gente
+13:40
+tem que entender as janelas de contexto
+13:42
+a gente tem que entender a sobre tokens
+13:45
+os embedings a gente trabalhar com os
+13:47
+protocolos e tudo isso tem a ver com o
+13:49
+tipo de modelo especializado em ah
+13:52
+naquilo que você quer fazer e inclusive
+13:55
+a ajudando a sua empresa a economizar
+13:58
+porque não adianta você pegar o melhor
+14:00
+modelo do e daí de repente você gastar
+14:03
+uma fortuna Então você tem que fazer
+14:05
+benchmarks fazer as comparações A forma
+14:07
+de como você faz o deployment também dos
+14:09
+seus agentes por exemplo muda quando a
+14:12
+gente tá trabalhando com IA E também a
+14:15
+parte de oportunidade de melhoria Essa
+14:17
+parte de oportunidades de melhoria a
+14:19
+gente não tá falando de melhorias
+14:21
+necessariamente só do software a gente
+14:23
+tá falando de melhorias do resultado que
+14:26
+a IA tá gerando para mudar o
+14:28
+comportamento do nosso software Então é
+14:32
+algo extremamente mais específico para
+14:35
+os resultados pra gente conseguir
+14:37
+verificar Então muitas vezes você sobe
+14:40
+um software e você começa a verificar
+14:43
+que você tem um determinado problema e
+14:44
+você vai lá e faz o quê muda apenas o
+14:47
+prompt Ah melhorou um pouco Deixa eu
+14:49
+mudar de novo esse prompt Às vezes
+14:52
+somente nessas mudanças sutis você já
+14:54
+tem ali a resultados extremamente ah
+14:58
+expressivos de de melhorias dentro do
+15:02
+software Show Agora galera novamente é o
+15:06
+que eu tenho batido muito na tecla tá a
+15:10
+Iá mudou como os desenvolvedores ah
+IA como Produtividade para o Dev
+15:14
+criam o software ou seja mudou né como
+15:18
+desenvolver software Ou seja hoje em dia
+15:20
+a gente consegue ser muito mais
+15:21
+produtivo Então eu consigo tirar dúvidas
+15:24
+eu consigo gerar os meus testes
+15:25
+automatizados eu consigo refatorar
+15:27
+consigo analisar bugs consigo criar
+15:29
+novas features consigo trabalhar em modo
+15:31
+agente onde né o software vai
+15:34
+programando para você E no final das
+15:36
+contas o que acontece é que a gente tá
+15:38
+num momento de redefinição do nosso
+15:41
+papel como desenvolvedor tá então cada
+O novo papel do desenvolvedor
+15:44
+dia a gente tem mais código e quanto
+15:46
+mais código menos valor o código vai ter
+15:49
+Não estou dizendo que o código não é
+15:50
+importante ele é base pro nosso software
+15:52
+funcionar mas cada dia mais a IA vai
+15:55
+gerar código melhor cada dia mais a IA
+15:57
+vai gerar código mais rápido e cada dia
+16:00
+mais já você não vai conseguir disputar
+16:03
+né é a mesma coisa você
+16:05
+tentando disputar a uma corrida contra
+16:10
+um robô que é especialista em correr por
+16:12
+exemplo né a gente não tem esse robô
+16:14
+ainda mas eu acho que deu para você
+16:16
+entender a ideia Então o que que vai
+16:19
+acontecer né o que que já vai acontecer
+16:21
+não o que já está acontecendo As
+16:23
+empresas estão precisando de
+16:25
+desenvolvedores que tenham conhecimentos
+16:27
+mais sólidos principalmente em
+16:29
+arquitetura tá ou seja eu tenho mais
+16:32
+repertório eu tenho mais experiência eu
+16:34
+consigo na realidade pilotar a minha IA
+16:38
+para ela conseguir para eu conseguir
+16:40
+extrair o melhor dela na hora de eu
+16:42
+desenvolver meu software E para isso
+16:44
+obviamente o que que acontece você não
+16:46
+precisa apenas entender de arquitetura
+16:48
+de software desenvolvimento Você também
+16:50
+precisa entender como né a IA trabalha
+16:54
+como eu consigo ter um workflow decente
+16:57
+para eu conseguir trabalhar com IA Eu
+16:59
+acho que muitos desenvolvedores ainda
+17:00
+estão naquele momento que ele pega o
+17:02
+cursor o VS Code lá com o copilot o
+17:05
+Windsurf e escreve algo do tipo: "Eu
+17:08
+tenho esse problema realize e resolva
+17:10
+esse bug eu tenho isso" Ou seja tá
+17:13
+arranhando a ponta do iceberg E hoje em
+17:15
+dia a gente tem já metodologias
+17:17
+extremamente fortes com workflows com
+17:19
+prompts corretos que você faz para cada
+17:22
+tipo de atividade fazer a IA programar
+17:25
+de forma diferente Então o desenvolvedor
+17:27
+que não conseguir acompanhar e aprender
+17:30
+de forma profunda como realmente ser
+17:32
+mais produtivo com IA também vai ficando
+17:34
+para trás galera tá então a gente não tá
+17:37
+falando ali de da substituição da
+17:40
+empresa falar Wesley você vai ser
+17:41
+demitido pelo MA Mas obviamente você tá
+17:44
+trabalhando numa equipe onde todo mundo
+17:46
+é cinco vezes mais produtivo do que você
+17:49
+né o que que vai acontecer né então esse
+17:51
+aí é o grande ponto Mas lembrando aqui
+17:54
+né ainda em Soft Application Development
+17:57
+isso aqui tá mudando como a gente
+17:59
+desenvolve software Agora o que tá
+18:03
+mudando também é qual é o tipo de
+18:05
+software que a gente desenvolve
+Integração de sistemas vs Agentes de IA
+18:07
+Novamente a gente vai para aquela parte
+18:09
+do AI interface né ou seja a gente vai
+18:12
+pegar as aplicações que nós já temos né
+18:15
+e a gente vai entregar integrar essas
+18:17
+aplicações com IA E aí muita gente se
+18:20
+engana pensando que é só né botar o SDK
+18:24
+sei lá da Open AI da Google e fazer as
+18:27
+chamadas e ter o chat completion e fazer
+18:31
+alguma coisa Mas assim tem muito mais
+18:33
+coisa que abrange a trabalhar e plugar e
+18:37
+a no software da empresa que você já tá
+18:40
+né é um acaba sendo um universo quase
+18:44
+que paralelo para quem não estudou isso
+18:47
+a fundo E o fato é que você que é
+18:49
+desenvolvedor você precisa agora né
+18:53
+aprender a fazer isso porque eu duvido
+18:56
+que daqui paraa frente os softwares que
+18:58
+a gente tá acostumado a trabalhar não
+18:59
+vão ter IAs ali embutidas nele né acho
+19:03
+muito difícil no sistema no CRM da sua
+19:05
+empresa no sistema no RP no sistema de
+19:08
+relatório ah nos processos que o seu
+19:10
+sistema executa a gente não vê daqui
+19:12
+para frente a embutida e quem vai
+19:14
+instalar quem vai programar para essa IA
+19:18
+trabalhar dentro do software que você já
+19:20
+tem Provavelmente é você desenvolvedor
+19:22
+Logo você vai ter que aprender a fazer
+19:24
+isso e não apenas aprender a fazer isso
+19:26
+fazer isso muito bem E aqui a gente
+19:29
+entra num outro tipo de aplicação que a
+19:32
+gente tem que aprender a desenvolver que
+19:33
+é o desenvolvimento de agentes E galera
+19:37
+sim agente é um software também tem
+19:38
+código você faz deploy e etc né mas
+19:42
+normalmente quando eu falo de agente de
+19:44
+a me lembro mais ou menos há uns 7 anos
+19:48
+atrás quando eu falava e tentava
+19:51
+explicar o que que era um microsserviço
+19:54
+Poxa microsserviço é um software ele
+19:55
+roda de forma autônoma ele faz isso ele
+19:57
+faz aquilo E a galera falava: "Pô mas um
+20:00
+sistema normal né e como os outros
+20:03
+sistemas" Então gerou-se muito a
+20:05
+discussão do que era o microsserviço
+20:07
+qual que era a diferença de um sistema
+20:09
+normal para um sistema com microsserviço
+20:11
+E hoje eu sinto que a gente tá mais ou
+20:13
+menos nessa mesma pegada mas com agentes
+20:16
+de a né eu percebo que ainda há muitos
+20:19
+desenvolvedores que não conseguiram
+20:21
+entender a diferença de você pegar uma
+20:23
+IA e adicionar dentro da sua aplicação e
+20:26
+de você desenvolver um agente de A e que
+20:28
+não é um chatbot tá ou seja a gente de a
+20:32
+acaba sendo uma entidade tá ah dentro de
+20:36
+um software onde ele consegue perceber o
+20:40
+ambiente ele sabe o que ele tem que
+20:42
+fazer quais as ferramentas que ele tem
+20:44
+em qual contexto que ele tá e qual a
+20:46
+especialidade dele Ele consegue planejar
+20:49
+as ações que ele vai fazer para
+20:51
+conseguir resolver determinadas tarefas
+20:54
+né e ele toma a decisão de forma
+20:56
+autônoma De acordo com o que acaba
+20:58
+chegando ali para ele Ele vai rodar ali
+21:02
+a a LLM vai pegar um determinado
+21:06
+resultado Baseado nesse resultado ele
+21:08
+pode chamar uma ferramenta ele pode
+21:09
+chamar um servidor MCP ele pode chamar
+21:11
+um outro agente ele pode delegar aquilo
+21:13
+ele pode retentar Então vai depender
+21:16
+muito de como que o agente ele trabalha
+21:19
+tá então basicamente a principal
+21:21
+diferença de uma aplicação que o IA e de
+21:24
+um agente de A é que o agente é o núcleo
+21:28
+para tomada de decisão da aplicação Ou
+21:31
+seja quem define o que a aplicação vai
+21:34
+fazer e como ela vai se comportar em
+21:36
+qual if em qual ele em qual situação que
+21:38
+ela vai trazer é a IA não é mais você de
+21:41
+forma extremamente determinística que
+21:43
+faz isso dentro do seu software Ou seja
+21:45
+e ela não trabalha apenas de forma
+21:47
+reativa ela consegue trabalhar de forma
+21:50
+proativa desenvolvendo tomando ações
+21:53
+tomando cada vez mais decisões No último
+21:56
+Microsoft Build que teve a Microsoft
+21:59
+mostrou um agente de SRE depois eu posso
+22:02
+até trazer aqui no canal para vocês
+22:04
+mostrando né um agente percebendo que há
+22:07
+um um sistema ali com problema onde ah
+22:13
+tá tendo um problema ali no Redis e daí
+22:15
+o agente começa a verificar e daí ele
+22:16
+consegue perceber o problema e daí de
+22:19
+repente ele fala: "Esse sistema aqui tá
+22:21
+fora não tá com a rede aberta disponível
+22:25
+você quer que eu abra o cara dá um
+22:26
+clique e o agente já fez tudo isso e
+22:29
+conseguiu resolver um problema
+22:30
+basicamente sozinho tá sem a gente ter
+22:33
+que ficar debugando e fazendo esses
+22:35
+tipos de coisa Agora a gente já tem o
+22:37
+copilot que você pede para ele fazer
+22:38
+code review o Codex a cloud que lançou
+22:42
+agora recentemente da Open AI fazendo
+22:45
+essas tarefas em backgrounds no formatos
+22:47
+de agente Então a gente vai precisar
+22:50
+aprender de verdade a desenvolver
+22:52
+agentes Existem diversos frameworks
+22:54
+existem a equipes de agentes frameworks
+22:57
+que coordenam diversos agentes que vão
+23:00
+conversar entre si em linguagem natural
+23:02
+na maior na maioria das vezes para eles
+23:04
+conseguirem realizar diversas tarefas
+23:07
+Então daqui para frente galera se você
+23:09
+não souber a implementar IA nas
+23:12
+aplicações que você trabalha se você não
+23:14
+entender o que é um agente como
+23:16
+desenvolver um agente sem dúvidas você
+23:18
+vai começar como eu digo eu não quero
+23:20
+dizer que você vai ficar para trás mas
+23:22
+basicamente é que a tecnologia ela
+23:25
+sempre evoluiu a gente sempre teve que
+23:27
+aprender coisa nova e tá aí mais coisa
+23:29
+nova que a gente tem que aprender para
+23:30
+conseguir entregar em qualquer lugar que
+23:32
+você vá trabalhar para você manter aí a
+23:35
+sua carreira ah up to date vamos dizer
+23:38
+né então você tem que aprender a
+23:40
+desenvolver software com IA e colocar IA
+23:43
+no softwares que você desenvolve
+23:45
+incluindo fazendo agentes Então galera
+23:48
+ah gostaria que você refletisse bastante
+23:50
+nesses pontos que eu trouxe e
+23:52
+principalmente que você entenda agora
+Conclusão
+23:54
+que no mundo gigante que existe na parte
+23:57
+de inteligência artificial a gente tá
+23:59
+nessa camada Então para você trabalhar
+24:02
+com IA hoje né você não tem que ser
+24:05
+especialista nesse cara Você não tem que
+24:08
+necessariamente entender deep learning
+24:10
+machine learning como treinar modelo
+24:11
+esse tipo de coisa É importante você
+24:13
+saber sempre layers abaixo mas a sua
+24:16
+prioridade hoje como desenvolvedor está
+24:18
+aqui tá então essa é a dica Eu acho que
+24:21
+é o grande ponto que eu queria trazer
+24:23
+aqui nesse vídeo para você Maravilha E
+24:26
+galera deixa aí os seus comentários para
+24:29
+dizer para mim o que que você está
+24:31
+fazendo já com IA nos dias de hoje tá e
+24:34
+novamente tô deixando um link aqui
+24:36
+abaixo caso você queira aprender mais
+24:39
+sobre engenharia de software com IA no
+24:42
+MBA que a gente lançou recentemente da
+24:45
+Full Cycle tá então clica no link para
+24:47
+você conferir todos os detalhes tudo que
+24:49
+a gente tá cobrindo nesse MBA que você
+24:51
+pode fazer sendo formado ou não sendo
+24:53
+formado A gente tem diversas opções a
+24:56
+gente tem uma faculdade e o MBA que a
+24:58
+gente fez ele é especificamente para
+25:01
+desenvolvedores focando exatamente aqui
+25:05
+nessa camada que eu acabei de falar aqui
+25:07
+para vocês beleza então é isso aí galera
+25:10
+Grande abraço para vocês e até o nosso
+25:11
+próximo vídeo aqui no canal Full Psycho
+25:14
+He
+25:15
+[Música]

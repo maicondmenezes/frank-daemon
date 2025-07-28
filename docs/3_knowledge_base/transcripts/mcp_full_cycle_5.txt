@@ -1,0 +1,2638 @@
+vídeo: Cursor em Modo Agente: IA e Prompt Engineering na Prática + Abertura de matriculas
+
+0:00
+tô feliz e contente vamos que vamos galera aí ó para quem não tava para quem
+0:08
+não tava conseguindo compartilhar a tela hoje temos aí a minha tela compartilhada
+0:14
+aí com a gente galera lance o seguinte tá a gente vai separar esse nosso
+0:21
+bate-papo em algumas partes tá primeira parte que eu vou falar tá e eu não vou
+0:26
+ficar muito tempo nisso se você quiser aprender de forma mais aprofundada você vai fazer o curso com a gente porque
+0:32
+isso faz muita diferença tá isso não tenho dúvidas a gente vai falar sobre promptes tipos de promptes daí em
+0:39
+seguida eu vou falar para vocês sobre
+0:44
+alguns assistentes tá para gerar ADRs tá e contextos de projeto deixa eu
+0:54
+diminuir a fonte aqui para todo mundo conseguir ver tá então deixa eu diminuir
+1:00
+aqui então ó a gente vai falar sobre tipos de promptes a gente vai falar de
+1:06
+assistentes alguns que eu criei que eu vou mostrar aqui para vocês para gerar a architecture e decision records
+1:13
+contextos de projetos para que a gente utilize pra gente conseguir desenvolver os nossos projetos aí utilizando IA
+1:21
+perfeito tudo isso vai ser baseado na ideia de um projeto exemplo que a gente
+1:27
+que eu vou trazer as especificações que a gente vai falar das specs desse projeto legal aí a gente vai falar sobre
+1:35
+a o gerenciamento de tarefas tá e o
+1:41
+desenvolvimento desse cara aí em modo agente maravilha então isso aí é um
+1:49
+ponto aí extremamente importante que eu quero que vocês sigam a ideia para que a gente
+1:58
+consiga vamos dizer assim fluir né a na nossa aula de hoje então galera
+2:06
+primeira coisa que todo mundo já deve ter ouvido falar e eu também sempre
+2:12
+ouvia mas entrava num ouvido e saía pelo outro né ah o importante da IA é saber
+2:18
+como perguntar para IA o importante da IA é se você pergunta bem a resposta sai melhor ah tem o negócio de prompt prompt
+2:26
+engineering que ah tenho querendo inventar mais uma profissão galera tem um monte mais um monte dessas coisas
+2:33
+assim que entra para um ouvido e sai pelo outro tá mas a real galera é que se
+2:39
+você não tiver fundamento você simplesmente você só fica arranhando a superfície daá você só
+2:46
+vai criar software que só vai dar dor de cabeça para você porque você não
+2:52
+consegue ter base para inclusive eu não digo nem para perguntar para ajudar a
+3:00
+especificar o que você quer que seja feito pela inteligência artificial a realidade é essa doua quem doê a maioria
+3:08
+da galera que eu conheço não entende picas nenhuma disso simplesmente escreve lá desenvolvam não sei o que para mim aí
+3:15
+sai desenvolvendo ou corrija aquele bug não que isso não tenha valor tem muito valor mas quando a gente tá querendo
+3:22
+colocar numa outra régua tá os projetos que você vai desenvolver utilizando IA
+3:27
+aí a gente tá falando de coisas um pouco diferentes tá o lance é o seguinte galera quando a
+3:33
+gente tá falando em prompts eu quero simplesmente fazer um apanhado bem
+3:39
+simples aqui para vocês de alguns tipos de de prompts que você tem que se ligar
+3:44
+que existem mas a gente vai focar em três específicos depois tá a gente tem o
+3:49
+famoso zero shot que é quando você simplesmente pede algo diretamente para
+3:56
+ir para ela responder você não passa muito contexto e ela ajuda a maioria das vezes no GPT da vida a gente faz isso ó
+4:03
+escreva isso em inglês pronto é um zero shot tá você tem um cara chamado de F shot que normalmente o que você vai
+4:10
+falar para ele você dá exemplos né de como que você quer que a ele te responda
+4:17
+você dá uma uma base contextual um pouco maior para ele mas ainda assim são prompts bem pequenos que te ajudam em
+4:24
+coisas específicas o que acontece no dia a dia é que nós desenvolvedores a gente
+4:30
+fica nessa parada aqui ó corrija o bug desenvolva isso tá e isso aqui é
+4:38
+extremamente pobre para o que a gente precisa fazer tá isso aqui simplesmente
+4:46
+num quando você tá pensando em desenvolvimento de projetos com IA cara isso aqui só vai te dar dor de cabeça a
+4:54
+realidade é essa tá vai poder te ajudar numa uma coisa ou outra mas de forma geral isso aqui não funciona e é o que a
+5:01
+maioria das pessoas acabam utilizando no dia a dia tá então assim não tem muito para onde correr é o que é galera tá
+5:09
+agora existem tá pessoal um monte de outros papers de formas de prompts que
+5:16
+você trabalha e quando eu falo papers galera são papers científicos tá não é
+5:22
+simplesmente alguém na área de marketing que inventou um nome bonito não são
+5:28
+papers com pesquisas publicados pessoas especialistas nessa área de a e tudo
+5:34
+mais tá e uma das coisas assim que eu acho mais interessante em relação a tudo isso é o seguinte: existem outros tipos
+5:43
+mas muitos outros na realidade tá de formas de você trabalhar interagir com a IA tá a gente tá hoje nós vamos ter um
+5:51
+foco um pouquinho mais nesse cara aqui tá que é
+5:58
+chaft tá a gente vai ter um foco também nesse cara aqui chamado de skeleton
+6:06
+skeleton off tá e a gente vai ter um outro também chamado de tree
+6:13
+of legal existem também outros pontos que a gente
+6:18
+vai acabar trabalhando aqui e que aqui dentro a gente também
+6:23
+vai falar sobre self consistency tá aqui também pra gente que
+6:29
+vai ser importante legal quem aqui galera deixa eu olhar aqui no meu
+6:35
+querido chat a minha janela do meu chat desapareceu mas ok deixa eu olhar como é
+6:41
+que eu faço para ela minha janelinha voltar aqui vamos ver cadê o meu
+6:50
+chat cadê o meu chat galera aqui Stream Art Studio show de
+6:55
+bola galerinha o lance é o seguinte nós temos esses caras aqui quem aqui tá
+7:04
+já ouviu falar pelo menos nesses nessas estruturas nessas formas de trabalho
+7:10
+aqui com prompts e quem usa isso de forma intencional queria saber aqui para vocês
+7:17
+quem usa isso aqui de forma intencional tá galera eu vou tentar passar de uma forma
+7:25
+geral um resumo interessante comparativo aqui para vocês tá toda vez que você tá
+7:30
+falando aqui em cha tá vamos vamos falar desse cara aqui especificamente toda vez
+7:36
+que a gente tá falando aqui desse cara a gente tá falando de uma forma para ela
+7:42
+pensar no final das contas tudo que ela vai fazer passo a
+7:48
+passo no final das contas ela vai te explicar o raciocínio tá que ela tá usando para
+7:56
+fazer alguma coisa raciocínio tá ela basicamente ela vai trazer o raciocínio
+8:02
+de como ela chega numa determinada resposta de uma forma encadeada então é
+8:08
+um encadeamento né de pensamentos que a IA acaba trabalhando tá
+8:13
+isso aí é muito importante porque às vezes a gente quer explicação de como
+8:19
+que a IA ela vai chegar num determinado raciocínio e baseado nesse passo a passo
+8:25
+a gente consegue utilizar isso de forma documental pra gente falar por exemplo
+8:30
+na hora que nós formos criar uma especificação e explicar um determinado tipo de algoritmo um tipo de decisão
+8:37
+como que ela deve fazer essa implementação usando ela mesma tá então
+8:43
+normalmente quando a gente tá falando em chain of thought a gente tem vamos
+8:50
+dizer assim um raciocínio passo a passo você não tem muito controle do que ela
+8:57
+vai retornar e isso aí normalmente é um problema muito grande e por isso existem
+9:03
+outros formatos de você trabalhar tá ah mas você tem relativamente uma ótima
+9:10
+clareza técnica tá então eu tenho uma clareza ah não sei se não sei se eu digo
+9:18
+é uma clareza técnica tá razoável legal a gente tem também uma
+9:26
+transparência no processo dela extremamente forte tá e ela vai te
+9:32
+ajudar muito para quê para fazer diagnóstico ela vai te ajudar muito para fazer debuging de código ela vai te
+9:39
+ajudar para fazer cálculo qualquer coisa desse tipo de coisa eh desse tipo de
+9:45
+situação diagnóstico tá
+9:52
+diagnóstico ah aí ela vai te ajudar muito se você trabalhar aqui dessa forma
+9:57
+e às vezes galera dá dó da gente ver como um parágrafo da forma como você
+10:03
+escreve a forma de como que ela se comporta completamente diferente tá aí a
+10:09
+gente tem esse outro cara aqui que é o Skeleton of tá esse cara aqui ele é
+10:15
+super importante pra gente que vai trabalhar com muita documentação e que
+10:21
+você vai trabalhar de uma forma extremamente clara para que a IA consiga te ajudar a desenvolver em modo agente
+10:28
+inclusive as suas aplicações por que que eu digo isso porque esse cara ele ajuda
+10:34
+a você a você guia o modelo
+10:40
+trazendo uma estrutura lógica como resposta ou seja
+10:47
+você cria uma estrutura de pensamento de como que você quer que a IA ela trabalhe
+10:53
+ali para você tá então ela tem clareza técnica aqui nesse caso quando a gente
+10:58
+tá falando de skeleton of thought ela tem uma clareza muito técnica né ela
+11:04
+consegue ser transparente no processo ela não consegue ela consegue ser transparente mas você consegue compor
+11:12
+ainda esse chain of thought com o skeleton of thought inclusive aí no meio dessa história tá então isso aí é bem
+11:18
+interessante na hora que você consegue fazer e você tem um controle muito forte
+11:26
+controle do output muito maior do que vai ser gerado eu vou dar todos esses
+11:31
+exemplos aqui para vocês tá galera é que eu realmente preciso que vocês entendam
+11:37
+esses conceitos para que na hora que a gente for fazer vocês saberem o que a gente tá aplicando em cada momento
+11:44
+beleza e a gente tem um outro cara que é o Tree of Thought tá esse cara aqui ele
+11:51
+é interessantíssimo porque ele vai fazer com que a gente consiga
+11:59
+buscar soluções com diversas alternativas beleza basicamente é isso
+12:06
+que a gente consegue trabalhar ou seja a gente consegue ter ramificações de solução e baseado nessas ramificações a
+12:14
+gente consegue compor e escolher qual é o melhor resultado que a IA acabou gerando e baseado nisso nós temos uma
+12:22
+parada chamada de self consistence que ela vai testar pra gente a consistência
+12:30
+do resultado que a gente tá tomando de acordo com uma estratégia ela testa a
+12:37
+consistência da sua decisão basicamente é isso que vai
+12:42
+acontecer ali com a gente eu vou mostrar isso aqui para vocês galera fez sentido
+12:48
+eu sei que é uns uns nomes às vezes até meio estranhos e tudo mais mas fez sentido isso aí para vocês galera então
+12:55
+isso aí é um ponto assim importantíssimo porque se vocês não entendem nem esse
+13:00
+conceito tudo que eu acabo passando daqui paraa frente a parada não vai funcionar muito legal eu vou dar um
+13:07
+exemplo aqui pessoal claro aqui para vocês tá eu tenho eu tenho eu tô olhando
+13:12
+aqui aqui no meu monitor porque eu vou copiar e colar alguns exemplos ah para
+13:19
+vocês sentirem um pouco a diferença ali pra gente tá eu vou dar um exemplo deixa
+13:26
+eu pegar aqui um prompt somente para vocês entenderem aqui ó vou copiar vou abrir
+13:34
+aqui o meu GPT beleza e no meu GPT aqui o que que acontece eu vou colar o
+13:41
+seguinte o seguinte ponto tá o seguinte preto deixa eu aumentar aqui a minha tela para ficar melhor você é um
+13:47
+engenheiro de software com 10 anos de experiência e sistemas concorrentes distribuídos seu trabalho é revisar
+13:52
+código e seguir identificar falhas ou melhorias pense passo a passo justificando cada ponto com base nas
+13:59
+práticas recomendadas em GO ao final revise a sequência das etapas que você
+14:05
+forneceu tá eu não sei se você consegue entender o que que isso
+14:11
+acaba significando aí pra gente tá isso aqui no final das contas significa
+14:18
+assim: tudo que você vai fazer justifique para mim tá então é
+14:24
+basicamente isso que eu acabo passando ali para ele deixa eu copiar um código bobo aqui para mim só para eu colar aqui
+14:31
+para você ó etapa um etapa dois resultado conclusão eu vou colar um código aqui de
+14:38
+uma função de validar o usuário e aqui ele vai trazer para mim deixa eu diminuir um pouquinho a fonte aqui ele
+14:44
+vai falar ó etapa um análise da assinatura da função a função recebe um parâmetro o nome da função está em
+14:50
+português etapa dois analise a lógica de validação sugestão: Etapa três use os
+14:57
+tipos de padronização etapa quatro consideração concorrência e escalabilidade testabilidade epa seis
+15:05
+proposta de melhorias desse cara resultado final e conclusão galera eu
+15:11
+não sei se vocês perceberam tá eu dei um exemplo qualquer mas vocês conseguem perceber que nesse caso você tá
+15:18
+conseguindo fazer com que a IA ela pense passo a passo naquilo que você tá
+15:23
+pedindo para ela isso aqui galera é importantíssimo guarde bem porque a
+15:29
+gente vai usar isso na prática hoje no projeto que a gente vai falar beleza então isso aí pra gente é importante
+15:35
+esse é um exemplo simples vou pegar um outro exemplo agora mas esse exemplo ele
+15:42
+vai ser baseado no Skeleton of Thought por que que eu tô dizendo porque é o seguinte olha só como
+15:50
+é que vai ser a minha pergunta aqui para esse cara tá somente pra gente vocês não ficarem tão boiando você é engenheiro de
+15:56
+software especializado em performance e escalabilidade sua tarefa é propor uma solução para implementar um rate limiter
+16:02
+robusto que limite a taxa de requisições por cliente estruture sua respostas com
+16:08
+seguintes tópicos vocês conseguem perceber agora que eu estou criando um
+16:14
+esqueleto para ele tá no qual ele vai se basear nessa estrutura para conseguir
+16:21
+responder para mim tá então isso aqui ele vai trazer provavelmente usando essa
+16:28
+estrutura uma forma mais clara aí de trabalhar então ele gerou um contexto do problema ele gerou os requisitos
+16:35
+funcionais e não funcionais então provavelmente muitos de vocês muito da
+16:40
+gente a gente acaba fazendo às vezes isso né ah mas não de uma forma tão
+16:47
+intencional né e o grande ponto aí nesse caso quando você não tem
+16:53
+intencionalidade é que você não consegue manter consistência na forma como você trabalha e como a gente tá falando isso
+16:59
+para desenvolvimento de projetos de sistemas de software a gente precisa de
+17:05
+padronização e consistência então sem isso a gente fica boiando agora olha só
+17:11
+que interessante pessoal ele gerou exatamente na estrutura que eu pedi aqui
+17:16
+para ele concordam comigo agora eu poderia por exemplo
+17:22
+compor o o chain of thought com skeleton of thought olha só que interessante eu
+17:29
+vou colocar aqui para ele o mesmo prompt e eu vou colocar estruturos tópicos e eu
+17:34
+posso colocar assim ó e para cada tópico explique o passo a passo de
+17:42
+como isso deve
+17:49
+ser implementado ou sua linha de
+17:56
+raciocínio para esses pontos vou colocar aqui agora
+18:02
+o que que você vai perceber tá você vai perceber agora que ele vai
+18:08
+pegar o contexto do problema e lembra aquele passo a passo anterior ele vai trazer agora aqui para
+18:15
+mim o passo a passo de cada linha de raciocínio que ele tá fazendo mas ainda
+18:21
+dentro do esqueleto que eu pedi aqui para ele tá então isso aqui já começa a
+18:28
+melhorar ou eventualmente a compor o nível de resposta ou de informações que
+18:34
+eu quero passar aqui para ele tá então isso aí é um um exemplo aí claro de uma
+18:40
+composição de um chain of thought com o skeleton of thought tá então aqui você
+18:46
+já consegue ver uma outra composição porém novamente galera eu tô
+18:51
+passando isso de uma forma bem superficial porque dá para passar um dia
+18:56
+só para cada tipo de de caras aí nesse caso tá mas aqui olha só eu vou pegar um
+19:04
+outro exemplo aqui de
+19:10
+promptinha só você é um engenheiro de software em sistema distribuído um cliente quer limitar acesso à sua API e
+19:16
+recebe 100.000 requisições por segundo gere múltiplas abordagens caminhos de raciocínio para resolver esse problema
+19:23
+para cada abordagem exponha os prós e contras afinal ao final selecione a mais
+19:28
+adequada com base na escalabilidade confiabilidade e latência quando você fala isso para Iá o que que
+19:35
+acontece cada vez que ela gera uma linha de raciocínio ela usa o próprio conteúdo
+19:41
+que ela gerou para se retroalimentar e quando ela faz isso ela consegue sabe quando você fala alto três
+19:49
+soluções daí você para para pensar e fala: "Ah eu acho que a solução dois é a melhor" é mais ou menos isso que ela tá
+19:57
+fazendo aqui você pede para ela dar diversas soluções ou seja ela cria
+20:02
+ramificações de pensamento baseado nessas ramificações de pensamento o que
+20:08
+o que ela faz ela analisa todos esses dados e traz ali para você qual seria
+20:13
+por exemplo a melhor abordagem desse tipo de solução tá então aqui ela trouxe
+20:19
+uma conclusão técnica mas o que eu poderia fazer nesse caso é também além
+20:25
+de prós e contras e etc eu posso colocar para cada prós coloque a sua linha de
+20:31
+pensamento para explicar o por o algoritmo é justo e
+20:36
+preciso fez sentido isso para vocês galera vocês conseguem perceber que às
+20:41
+vezes com quatro linhas de escrito da forma como você coloca né o nível de
+20:50
+resposta mas o nível de entendimento que você pode ter de um problema aumenta
+20:56
+muito muito mais inclusive para você tomar decisões técnicas isso vai te ajudar no dia a dia para tomar suas
+21:02
+decisões mas o fato é que é o que eu tava falando para vocês galera nosso
+21:08
+principal ponto aqui não é apenas também ficar né estudando tipos de prompt eu
+21:16
+preciso que vocês pelo menos consigam identificar esses caras tá ou seja passo
+21:24
+a passo cha skeleton você define a estrutura de
+21:29
+como que você quer que as coisas aconteçam tá e o tre você tem múltiplas
+21:34
+decisões e você pode pedir para ela escolher uma mas isso vai permitir você
+21:39
+sempre compor esses tipos de coisa e tirar prova real através de algo que a gente chama de self consistence tá então
+21:46
+isso aí é um ponto importante agora o grande ponto é que todas as vezes que
+21:52
+nós vamos criar um software ah ou desenvolver um módulo ou fazer qualquer
+21:58
+coisa o que que vocês fazem galera como é que funciona o processo seu chefe chega e fala: "Eu preciso fazer isso
+22:05
+isso aquilo ah você tem documentação isso fica de boca como é que funciona
+22:11
+internamente aí para vocês galera vocês conseguem trabalhar isso vocês conseguem me dar exemplos de como
+22:17
+que vocês trabalham aí no dia a dia somente para eu ter mais ou menos uma ideia porque existem duas coisas muito
+22:24
+claras tá uma coisa é o contexto do seu projeto tá e quando eu digo que é o
+22:30
+contexto do seu projeto é do que se trata aquilo que eu vou fazer vai ser uma fat OK eu preciso do contexto quer
+22:37
+eu preciso entender o porquê como que elas funcionam como é que a ideia geral né quem vai usar quem não vai usar o
+22:43
+para que que ela tá sendo feita né o que que ela vai usar de tecnologia o que que ela afeta no produto e coisas desse tipo
+22:50
+tá então isso aí é uma coisa mas existem outras coisas que também são importantes
+22:57
+que normalmente né e eh você utiliza em projetos talvez não de forma tão
+23:04
+formalizada mas hoje em dia com IA isso ajuda demais que é algo chamado de ADR e
+23:10
+todo mundo já ouviu falar em ADR né eu acredito que espero que sim eu fiquei bem surpreso porque o Elemardo na
+23:18
+segunda-feira ele trouxe as ADRs eu tava trabalhando exatamente com isso para organizar os projetos de A tá mas
+23:24
+basicamente para quem não sabe ADR significa aqui ó
+23:30
+ADR tá architecture decisions decision
+23:39
+records basicamente uma ela é uma forma de você documentar
+23:46
+decisões de arquitetura da sua aplicação tá basicamente é isso que esse cara faz
+23:54
+o grande ponto tá é [Música] que é chato escrever isso dá trabalho
+24:02
+escrever isso mas se todos os nossos projetos nós tivéssemos isso nós seríamos pessoas muito mas muito mais
+24:09
+felizes tá e o por que eu tô dizendo isso porque quando você trabalha com
+24:14
+ADRs você deixa muito claro no seu projeto o por você tá tomando uma decisão tá se essa decisão ela ainda é
+24:22
+válida se ela ainda é ativa no seu projeto e você tem o histórico de tudo isso o grande ponto é que tomar essas
+24:30
+decisões e documentar isso toma tempo mas se você tá tiver ferramentas e
+24:36
+formas de como você consegue trabalhar você muda o jogo porque essas ADRs vão
+24:43
+ser lidas pela sua IA em modo agente para quê para que ela consiga desenvolver o software baseado nas
+24:49
+decisões arquiteturais que você já teve tá então o que que acontece eu vou dar um exemplo aqui para vocês eu tenho um
+24:57
+assistente do GPT que eu fiz com super prompt né ah cara foi complexo inclusive
+25:03
+gerar esse tipo de prompt mas basicamente eu consigo criar na
+25:08
+realidade a diversos tipos de ADR tá ah
+25:14
+e essas ADRs elas conseguem me ajudar a documentar os projetos e coisas desse
+25:20
+tipo né eu poderia colocar assim para ela: "Quero criar uma
+25:28
+ADR ah colocando que a linguagem de programação a ser desenvolvida é o GO
+25:37
+agora o que que acontece nesse tipo de assistente e coisas desse tipo eu criei
+25:43
+aqui de forma geral um entrevistador tá então ele fala: "Antes de criar DR como que é o nome do meu sistema?" Eu vou
+25:49
+falar aqui ó um sistema de rate limiter tá né ah quais outras tecnologias estão
+25:54
+sendo utilizadas ah eu tô usando Docker tô usando Kubernets tô usando Reds aqui
+26:01
+né e o projeto ele é novo perceba galera que
+26:07
+ele já tá até perguntando em relação se eu tô migrando se essa aplicação já existe ou não e ele pergunta: "Você já
+26:14
+eh você já possui alguma a estrutura de EDR ou preciso criar do zero?" Eu eu vou
+26:20
+colocar eu quero modelo básico provavelmente ele vai trazer aqui meu modelo básico que é basicamente isso
+26:26
+aqui ó título data status consequência etc qual o título né eu vou colocar a
+26:31
+escolha da linguagem GO para desenvolvimento vou colocar isso aqui como título tá galera eu não vou ficar a
+26:37
+live inteira mexendo no GPT aqui em cima de vocês tá mas acreditem que isso vai fazer muito sentido para vocês qual data
+26:44
+decisão sim prefere essa hoje tá beleza agora o status da DR eu vou colocar que
+26:49
+ela tá aceita já porque já foi aceito pode me contar qual foi o problema o
+26:55
+cenário que levou a usar o Gol ah precisava de baixa
+27:01
+latência uso baixo de memória
+27:07
+facilidade de deploy tô dando um exemplo aqui muito claro aqui pra gente tá ah
+27:14
+não tenho restrições vou colocar aqui por
+27:19
+hora e aqui ele tá trazendo aqui para mim então isso dá uma base ó o contexto do projeto é esse etc você acha que o
+27:26
+contexto é esse sim quero quero deixar assim galera perceba que eu tô indo meio que no piloto automático aqui
+27:32
+tá ah detalhes técnicos quero a versão 1.24 da
+27:39
+linguagem aqui para mim beleza aqui tá a versão atualizada
+27:46
+ok pisando veloc então ão eh está de acordo sim
+27:52
+pode seguir pra decisão então perceba que ele vai trabalhando aqui para mim né como que foi ficando a decisão e
+27:59
+etc aqui pra gente pode ajustar paraas consequências pode ir para as consequências então se você perceber
+28:06
+você acaba ganhando um assistente aqui pra gente ó alguns pontos ao considerar benefícios riscos implicações futuras ah
+28:14
+as consequências são essas tá ok tô dando um avançar aqui para vocês tá
+28:19
+depois vocês vão ver um monte de ADR que eu criei paraa live de hoje inclusive tá decisão consequências e etc deseja que
+28:27
+eu crie esse documento ou editar ou salvá-lo não aqui ele gerou uma DR básica aqui para mim se você olhar deixa
+28:34
+eu pegar o meu cursor aqui somente para você dar uma olhada eu criei uma pasta aqui chamada
+28:41
+docs tá dentro dessa pasta docs eu tenho algumas ADRs que eu fiz por exemplo ADRs
+28:50
+para bibliotecas que eu vou utilizar na linguagem então ó architecture decision
+28:56
+record tecnologias e pacotes utilizado no projeto tô dando o contexto as opções
+29:01
+consideradas as decisões quais são as bibliotecas os pacotes externos as variáveis de ambientes identificadores
+29:08
+únicos consequências riscos e etc mesma coisa eu tenho isso até para definir que
+29:14
+eu vou trabalhar com variáveis de ambiente né defini eu considerei essas opções a minha decisão foi usar
+29:20
+variáveis de ambiente dei exemplos de principais configurações consequências pontos positivos negativos mesmo esquema
+29:27
+aqui de convenções da linguagem go que eu quero trabalhar né então ó opções
+29:32
+consideradas decisão convenções definidas estruturas de pastas nome de interfaces variáveis exemplos tratamento
+29:40
+de erro documentação tem a mesma coisa pra parte de testes por exemplo né como
+29:45
+que eu vou testar o meu software né decisão regras e convenção nomenclatura
+29:51
+execução as práticas execução com docker Mox stubs testes de integração traz
+29:57
+riscos então eu tenho né diversas formas que eu acabo documentando esses tipos de
+30:03
+decisão e galera se vocês perceberem deixa eu voltar aqui pro chat inclusive
+30:08
+cadê o chat de vocês se vocês começarem a perceber isso aqui né a gente gerou em 2
+30:16
+minutos obviamente que a gente teria que pensar melhor um documento estruturado de uma forma extremamente
+30:22
+clara do que a gente espera de como são as partes e os princípios básicos de arquitetura do nosso software tá a minha
+30:30
+principal ponto aqui é que raramente a gente vê isso nos dias de hoje num projeto essas documentações elas vão
+30:37
+ajudar a gente no início no meio no final do projeto para as pessoas que começaram o projeto paraas pessoas que
+30:43
+chegaram no meio do projeto isso tudo vai tá claro mas nos dias de hoje quem
+30:49
+vai ler isso ainda mais vai ser as nossas queridas inteligências
+30:54
+artificiais porque baseada nesses documentos elas têm muito mais informações para na hora de ela
+31:00
+trabalhar por exemplo na hora que ela for criar um teste né baseado naquela DR
+31:06
+ela consegue saber como que ela vai fazer o processo de desenvolvimento de testes fez sentido isso para vocês
+31:13
+pessoal fez sentido isso por favor deixem-me saber se isso aí ficou claro aí para
+31:21
+vocês escrevam aí meu povo tá então primeira coisa que a gente
+31:27
+precisa saber é são dados obviamente arquiteturais do nosso software e eu não
+31:32
+sei se vocês perceberam nesse GPT ADR Generator que eu fiz aqui quais são as
+31:39
+técnicas de prompts que eu tô utilizando aqui alguém já acabou percebendo alguém
+31:44
+conseguiu sentir o que que eu acabei fazendo você percebeu o nível de fluidez
+31:52
+que eu tive aqui nessas perguntas nessa entrevista que eu tive
+31:59
+aqui galera para fazer isso né pode parecer
+32:06
+algo inocente mas não é porque tem técnica por trás disso exatamente para
+32:12
+você ter esse nível de interação para ele explicar o raciocínio que ele entendeu para você confirmar esse
+32:18
+raciocínio que ele entendeu para ele gerar opções aqui ele usou e chas ele
+32:25
+utilizou tree of thoughts e ele também utilizou skeleton of thoughts ele
+32:32
+utilizou todos esses caras tá isso aí é muito claro então esses
+32:40
+tipos de flow que você acaba tendo na hora de você trabalhar você só consegue
+32:46
+se você tem clareza desses formatos existem muitos outros formatos de promptes tá eh para tem muitos
+32:54
+frameworks para você conseguir trabalhar em relação a isso tá mas isso aí é um ponto importante outra coisa por exemplo
+33:01
+que você precisa e não tem como galera se você quer trabalhar com um projeto de
+33:07
+a principalmente num modo agente para ele sair desenvolvendo código para você
+33:12
+você precisa ter a contextualização do projeto para Iá mas novamente o que que
+33:20
+acontece contextualizar dá trabalho escrever tudo isso dá trabalho né você
+33:27
+ficar como desenvolvedor chegar lá ah deixa eu definir o projeto 10.000 páginas para ir a ler paraas coisas cara
+33:34
+parece que eu já poderia sair codificando eu olhei meu card lá no Gira e já vou programar entendeu mas o grande
+33:41
+ponto é que quanto mais dados você tem vai ser melhor para você pro seu time
+33:46
+pra sua equipe e pra IA tá para Iá essas informações são ouros e são essas coisas
+33:52
+que vão fazer com que a IA ela não fique ah divagando e ela tente sempre ficar
+33:58
+dentro de um de uma linha né dentro de uma linha você tenta manter né você minimiza esse tipo de problema
+34:06
+agora olha só eu também tenho um cara aqui usando técnicas bem parecidas que é
+34:11
+um context generator o que que é um context generator o context generator é
+34:17
+algo desse tipo eu quero desenvolver um rate limiter para a minha API que está
+34:27
+ficando indisponível o tempo todo e os clientes
+34:33
+mais importantes estão ficando bravos tá então o que que acontece aqui
+34:40
+olha só que interessante primeiro vamos começar com o contexto e a visão geral do projeto a sua PE está hospedada na WS
+34:47
+qual tecnologia você tá usando quais são os principais usuários e clientes o sistema já possui alguma proteção né eu
+34:54
+vou falar assim eh está rodando na
+35:00
+AWS mas ela é cloud native ah estou
+35:05
+usando GO né a minha API é pública mas com um plano
+35:14
+pago você pode ter mais
+35:20
+informações logo ela fica aberta para todos
+35:27
+não tenho controle de acesso se vocês começam a perceber tá
+35:34
+galera ele já começa a gerar para mim um contexto uma visão geral tá correto isso que você falou eu falo sim eu nem tô
+35:40
+lendo tá porque eu tenho esse documento porque eu já fiz ele antes de a gente tá
+35:46
+aqui na live porque eu não ia passar a live inteira escrevendo no GPT aqui com vocês agora ele falou assim: "Olha essa
+35:52
+indisponibilidade acontece por excesso de requisições?" Sim por excesso excesso de
+35:59
+requisições já perdemos dinheiro e cliente e eu quero poder setar um limite
+36:08
+de requisições então se você perceber galera a gente ele já começa a entender
+36:14
+o problema daí eu vou colocando sim e ele vai seguindo é um processo totalmente interativo que a gente vai
+36:20
+seguindo aqui tá então galera esses são
+36:25
+ideias ferramentas que eu acabo usando aqui no dia a dia que vão me dar todo o
+36:32
+material que eu preciso para eu poder desenvolver meu software utilizando o IA
+36:37
+novamente galera sem documentação você só vai sofrer com IA e você só vai ficar
+36:43
+no no auto complite ou com um monte de código com um monte de problema não que desenvolver dessa forma seja a coisa
+36:49
+mais perfeita do mundo não é a IA ela é incontrolável mas você minimiza né os
+36:56
+riscos que você acaba tendo porque eu digo galera eu já testei muito IA no modo go horse tem um módulo quero
+37:03
+desenvolver escrevo ele começa a fazer um código depois ele para mexe na outra parte larga um rabo para lá e daí
+37:09
+continuou quem aqui já passou por isso galera quem aqui já pediu para ela sair desenvolvendo em modo agente aí ela não
+37:16
+termina nenhuma feature vai paraa outra daí o outro fica com problema e daí você fala para daí ela começa a perder o
+37:22
+contexto a coisa fica maluca dá raiva fala a verdade meu eu passei e ainda
+37:28
+passo muita raiva com hora que a coisa foge do controle o
+37:34
+problema ah é que a gente não tem método
+37:39
+a gente não tem framework a gente não tem formas para conseguir manter ela na
+37:45
+linha tá então isso aí é interessantíssimo pessoal tá porque se
+37:50
+você tem uma metodologia se você tem um framework se você sabe como preparar as
+37:55
+coisas aí tudo começa a mudar um pouquinho de figura tá eu vou dar um exemplo aqui para vocês tá eu tenho aqui
+38:04
+no meu cursor tá eu fiz o seguinte só
+38:10
+para vocês saberem eu criei tá um context eu criei ele primeiro na
+38:18
+realidade tá e esse context aqui ele foi usado
+38:24
+baseado nesse meu context generator que eu criei aqui tá então é basicamente
+38:30
+isso então o que que acontece é um projeto do rate limiter contexto e visão geral o projeto visa implementar um rate
+38:39
+limit por minuto o objetivo é é evitar abusos no consumo o problema a API não
+38:45
+possui o mecanismo de rate limiting não existe o controle granular pro cliente os objetivos resultados esperados é o
+38:51
+principal objetivo é aumentar a estabilidade ah os indicadores de sucesso aumento da a estabilidade e
+38:58
+disponibilidade da API evidência de que o rate limiter tá bloqueando os acessos possibilidade de aplicar rate limites
+39:04
+diferentes por clientes scope e funcionalidades aí tem ó funcionalidade dentro do escopo é o que que tá fora de
+39:11
+escopo ou seja que não é para implementar arquitetura abordagem o rate limiter vai ser um componente externo ah
+39:18
+eu falei que ele a gente pode trabalhar com tokens falei dependências eu falei que a gente vai depender de Docker e
+39:25
+Reds também a restrições técnicas que eu preciso uso eficiente de memória e
+39:31
+controle de concorrência riscos bloqueio indevido impacto observações finais e
+39:36
+próximos passos que ele pode trazer aqui para mim então se você perceber é um
+39:42
+documento bem simples óbvio que num projeto grande um projeto maior esse documento ele fica muito mais robusto
+39:48
+mas a partir daqui a gente já tem um norte por quê nós já temos nesse momento
+39:54
+um contexto do projeto tá e eu tenho tá
+40:00
+decisões arquiteturais que eu tô tomando aqui pra gente tá e antes de eu ir para
+40:07
+essas decisões arquiteturais existe uma decisão arquitetural que eu quero
+40:12
+mostrar também para vocês num formato de prompt que nesse caso é o three of
+40:17
+thoughts que vai te ajudar inclusive a gerar novas linhas de raciocínio ah para
+40:24
+isso por quê quem é que manja como é que funciona o rate limit galera quem é que
+40:29
+manja como é que funciona um rate limiter não sei se vocês sabem mas um rate
+40:36
+limiter ele tem diversas estratégias tá ou seja um rate limiter ele tem janela
+40:43
+fixa janela deslizante janela deslizante com com contador tem licked buckets tem
+40:51
+cara tem um monte tem um monte de estratégias de rate limiter tá ah quando
+40:56
+fala um rate limiter pensa que é só basear mas tem muitas estratégias e cada estratégia ela tem a um tipo de
+41:03
+aplicabilidade por exemplo você vai usar o leak bucket é quando você quer evitar uma enchurrada de acessos ao mesmo tempo
+41:10
+naquele segundo então ele consegue distribuir aquilo melhor né ah você vai trabalhar com janela deslizante slide
+41:17
+window ah você vai trabalhar com janela fixa então para cada situação para cada
+41:23
+caso tem uma estratégia diferente de rate limiting tá então não é só a
+41:29
+quantidade de requests por segundo é a forma dessas requests por segundos elas vão ser interpretadas dentro do seu
+41:37
+software ou seja tem muitas implementações de rate limiter a a
+41:43
+verdade é essa aí que você tem que se ligar tá e o por que que eu tô dizendo isso
+41:49
+porque eu posso tá baseado
+41:55
+a baseado no que eu quero trabalhar eu posso chegar e fazer o seguinte tá eu
+42:01
+posso colocar esse prompt aqui que eu vou copiar e colar aqui pra
+42:07
+gente vou copiar e colar somente para vocês darem uma olhada você é um arquiteto de software com conhecimento
+42:14
+em sistemas de alta concorrência com múltiplos acessos preciso desenvolver o rate limiter gere múltiplas abordagens
+42:20
+caminhos de raciocínio para resolver esse problema para cada abordagem cinco exponha cinco pross e cinco contras ao
+42:26
+final selecione a mais adequada com base nisso não sugira a combinação de ferramentas externas como API gateways
+42:32
+proxis cloud flare etc reds pode ser uma opção considerada se necessário quando
+42:37
+eu tô colocando aqui tá ah putz ele já tá me dando qual resposta
+42:44
+que eu gosto mais aqui vamos aguardar ele ele escrever todas as
+42:50
+responses o GPT ele tá fazendo three of thoughts do three of thoughts na realidade né com a resposta um e
+42:56
+resposta dois então olha só aqui ele tá trazendo aqui abordagem um tucken bucket
+43:03
+que é local em memória pró baixa latência e etc contras Fixed window com
+43:08
+counter usando reds ele tá trazendo slide window log com reds isso aqui é
+43:14
+bacana mas o problema com log ele fica muito mais pesado consome mais memória
+43:20
+sabia ah leak bucket com reds tá e ele traz aqui né a ideia conclusão técnica
+43:28
+aqui para mim recomendada fixed window com reds aqui nesse caso tá aí o que que
+43:34
+acontece vamos ver aqui embaixo o que que ele colocou ele gerou um parismo
+43:41
+final e aqui ele já tá falando uma outra opção token bucket com reds mais lua
+43:49
+script você conseguiu perceber galera que eu pedi a mesma coisa pro GPT mas
+43:56
+ele trouxe ramificado em duas partes e é
+44:01
+e cada uma dessas partes é um three of thoughts então aqui eu tô com muita opção para eu conseguir decidir eu vou
+44:08
+colocar aqui essa resposta porque eu achei ela mais completa ele trouxe uma tabelinha aqui para mim tá então aqui
+44:14
+ele trouxe um comparativo de token buckets com reds fixed window slide on window licket bucks com reds middleware
+44:21
+go aqui ele trouxe algumas opções aqui para mim mas o grande ponto aqui é o
+44:27
+seguinte galera vamos imaginar tá vamos imaginar que eu quero
+44:35
+verificar se realmente essa abordagem que ele acabou de falar eu ele é
+44:41
+consistente pro estudo pelo use case que eu tenho no meu momento tá por que que
+44:47
+eu tô dizendo isso porque às vezes a gente pede uma opinião para IA e ela dá essa opinião mas daí você quer meio que
+44:54
+tentar tirar a prova real e aí que nesse momento você entra em algo que chama selfcistence
+45:01
+basicamente o que você faz aqui com esse tipo de técnica
+45:07
+ah esa um pouquinho rate limit abordagens basicamente o que você acaba
+45:13
+fazendo aí nesse caso é né você pode passar diversos cenários
+45:19
+aqui para ela por exemplo você usaria essa estratégia para eu vou
+45:30
+colocar aqui ó ó eu passei a estratégia foi o seguinte
+45:37
+eu tenho um cenário que eu quero fazer um limite de envio de e-mails de mensagens e um sistema de notificações
+45:42
+tipo um mailogan ou seja um sistema envia notificações para usuários determinados eventos mas precisa usar
+45:48
+usar a precisa evitar fluid ou seja quando você tem imagina que você tem uma
+45:54
+janela de 1 minuto 100 requisições por minuto beleza mas imagina que no
+46:00
+primeiro segundo eu já recebo 100 requisições não adianta nada meu sistema pode cair entendeu então como que eu
+46:06
+consigo espalhar essas requisições ao longo desses 1 minutos por isso que eu tô dizendo existem várias estratégias de
+46:12
+rate limit então aqui ó ele falou que ok para esse cenário né essa
+46:18
+estratégia é boa atenção para pontos específicos aqui ele trouxe algumas outr algum outros pontos e algumas sugestões
+46:25
+aí eu vou passar para ele uma outra situação aqui ó tá uma API
+46:33
+pública que permite 60 requisições por minuto com clientes gratuitos e 1000
+46:38
+para clientes premium esse cenário também vale com Token Bucket com Reds ele tá também
+46:44
+falou que sim tá aqui ele tá falando que sim que pode
+46:49
+ser uma boa com reds aí eu vou passar um outro caso aqui para ele
+46:57
+tá que vai ser o seguinte um outro cenário que eu vou passar deixa ele terminar esse cara aqui um outro cenário
+47:04
+aqui que eu vou pedir para ele passar aqui para mim que vai ser o cenário tá que ele não para nunca de
+47:10
+responder deixa eu dar um pause nele aqui e vou pedir para ele ir pro próximo eu vou passar um outro
+47:17
+cenário né ele pega esses recursos e
+47:23
+etc estratégia com token bucket concurrency limiter semfórico ele trouxe
+47:29
+uma abordagem híbrida mas ainda assim ele trabalha com token bucket galera vocês conseguiram perceber que o que eu
+47:37
+tô fazendo aqui é que eu perguntei as diversas estratégias para ele tá e
+47:43
+baseado nessas estratégias eu tô agora falando deixa eu ver se ela me atende
+47:50
+então vamos imaginar que você pede opinião pra sua IA ela vai te dar várias daí ela fala: "Essa é melhor" daí eu
+47:56
+falo: "Vamos ver se ela é melhor mesmo." Na no meu cenário eu tenho isso essa solução realmente é melhor daí ela pode
+48:03
+falar: "Sim essa solução é melhor?" Ela pode falar sim essa solução é melhor não "essa mais sim" quando você começa a
+48:10
+pegar maiss do que não você consegue ver que existe uma consistência no que a IA
+48:15
+tá respondendo porque a gente sabe IA alucina então quanto mais perguntas repetitivas você fizer de formas
+48:22
+diferentes com cenários diferentes mas tendo querendo ter o mesmo output no
+48:27
+final das contas você usa esse conceito de self consistence fez sentido para
+48:33
+vocês galera alguns de vocês já tinham ouvido falar em self consistence escrevam aí meu
+48:43
+povo e eu sei que muitos aí de vocês com certeza querem né ver a gente botar a
+48:51
+mão no código que a gente já vai fazer inclusive tá que a gente já vai fazer
+48:57
+mas o lance é o seguinte vamos imaginar então ó que a gente criou os nossos ADRs
+49:04
+as nossas architecture Decision Records a gente criou contextos do nosso projeto e agora a gente foi de uma forma mais
+49:11
+exploratória para ver de acordo com o nosso projeto qual era a melhor estratégia pra gente implementar né
+49:18
+trabalhando com ah nesse caso com um token bucket ah ele trouxe aqui
+49:26
+pra gente qual foi eu nem lembro qual que foi que eu qual que eu acabei
+49:34
+utilizando eu acho que foi token bucket né foi token bucket então o que que
+49:40
+acontece agora galera o lance é o seguinte eu sabendo partindo do princípio tá que
+49:48
+eu estou querendo trabalhar ali com token bucket o que que eu posso fazer eu
+49:55
+posso querer gerar um encadeamento de de pensamento passo a passo para quê para
+50:04
+que eu consiga especificar um pouco mais essa ideia tá ah da forma como a gente tá
+50:13
+querendo fazer então vamos imaginar opa pera um pouquinho vamos imaginar que eu
+50:19
+tô fazendo o seguinte tá eu vou pegar aqui eu vou falar que eu vou usar leak
+50:24
+bucket ah como estratégia de de trabalho aqui para mim então o que que eu vou
+50:30
+colar eu vou colocar aqui ó vou optar por desenvolver um rate limiter com a estratégia de leak bucket com reds me dê
+50:36
+um passo a passo de como funcionará o algoritmo do leak bucket e como ele deve se comportar quando eu falo o passo a
+50:44
+passo novamente eu caí para qual galera em qual em qual cara que eu
+50:50
+acabei caindo no chain of thoughts porque eu pedi um passo a passo de como que ele vai trabalhar então ele vai
+50:57
+explicar aqui para mim ó o objetivo do leak bucket o conceito do algoritmo com o Reds como é que funciona o passo a
+51:04
+passo capacity leak rate e ke como recuperar os dados como é que funciona
+51:11
+isso inspiração automática um exemplo prático que ele trouxe para mim considerações técnicas e etc tá eu posso
+51:19
+perguntar como como é o algoritmo passo a
+51:26
+passo posso colocar de formas da forma como eu quiser se você perceber olha só
+51:31
+que interessante ele tá me dando o passo a passo quando eu tenho o passo a passo
+51:37
+né esse encadeamento de pensamentos eu tenho uma linha de raciocínio e toda vez
+51:42
+que eu tenho essa linha de raciocínio o que que eu tô fazendo no final das contas aqui galera eu estou
+51:49
+simplesmente especificando como que eu quero que o meu software funcione com ifs e elses se
+51:57
+caso o contrário atualize isso passo a passo óbvio que a gente vai ter que ler criticar e entender mas aqui eu já tenho
+52:04
+toda essa base baseado nisso tá você pode ter um outro assistente ah que eu
+52:13
+tenho mas eu não compartilhei aqui que é para exatamente para fazer a o passo a
+52:19
+passo de soluções de software para gerar um documento num formato de uma ADR
+52:25
+decente tá eu usei esse cara aqui para essa ADR olha
+52:31
+só ficou aqui dessa forma aqui pessoal deixa eu olhar aqui para vocês para vocês conseguirem ver
+52:38
+adr uso de leck buckets com reds para controle de taxa de requisição contexto aplicação alvam API
+52:45
+de uso intenso o objetivo é esse a decisão optou-se por implementar o Reds foi excluído o liquid bucket foi
+52:52
+preferido em relação a essa relação a implementação do algoritmo para cada cliente funciona assim a lógica funciona
+52:58
+dessa forma a concorrência vai ser assim o exemplo de armazenado no Reds vai ser dessa forma as consequências são essas
+53:05
+as negativas são essas ou seja eu tenho a especificação desse meu cara aqui
+53:11
+beleza pessoal eu vou partir do princípio tá tá que minimamente agora eu
+53:20
+tenho ah como que eu posso dizer eu tenho minimamente aqui comigo o
+53:27
+básico para eu iniciar o meu projeto desse meu rate limiter tá então esse é o
+53:32
+grande ponto por quê porque agora a gente vai pro cursor e com esses documentos a minha vida vai mudar
+53:40
+completamente pro cursor tá por quê porque na hora que eu for trabalhar com
+53:45
+cursor eu também vou usar uma outra ferramenta tá e galera acreditem eu tô
+53:51
+fazendo uma outra ferramenta substituta dessa essa ferramenta não fui eu que criei eu tô criando uma muito parecida
+53:58
+mas modéstia parte se Deus quiser ela vai ficar muito melhor tá ah tem muitas
+54:03
+coisas nessa ferramenta que graças a Deus alguém fez teve toda a boa vontade mas tem pontos que eu não gosto muito
+54:10
+dela por isso que eu tô criando a minha em breve aí espero poder compartilhar com toda a comunidade tá inclusive ela
+54:16
+funciona como MCP e tudo mais mas o nome da ferramenta eu usei inclusive no
+54:21
+último dia da imersão quem assistiu o último dia que eu fiz toda a parada com Cafa teve gente ficou bravo comigo
+54:27
+porque eu não expliquei o Cafka né porque eu fiz tudo em modo agente mas a ideia era da provocação era essa mesmo é
+54:33
+fazer em modo agente a pelo menos um dos dias da imersão pra galera ver funcionando tá mas a ferramenta ela
+54:40
+chama Tesk Master tá essa ferramenta aqui tá no
+54:46
+GitHub depois eu compartilho aqui com vocês tá qual que é a ideia dessa ferramenta pessoal o segredo da IA tá o
+54:55
+segredo da Iá tá sempre no passo a
+55:01
+passo ela tem que entender o estado da sua aplicação onde ela está e para onde ela
+55:11
+vai esse aqui galera se eu pudesse dar uma dica para vocês de desenvolvimento
+55:17
+com IA hoje eu daria essa dica se você não dá o passo a passo do que a
+55:24
+IA precisa fazer para desenvolver o seu software você vai sofrer e vai continuar
+55:30
+sofrendo e odiando e para sempre basicamente é isso que vai acontecer
+55:36
+a diferença aqui é que para mim sempre foi muito claro da mesma forma que eu
+55:42
+tenho tarefas que eu tenho que desenvolver no dia a dia para eu me controlar a Iá precisa ter tarefas dela
+55:48
+e ela tem que poder controlar o estado dessas tarefas para ela saber aonde ela parou para ela não perder o foco quando
+55:54
+ela perdeu o contexto faz sentido isso para vocês pessoal faz sentido
+56:02
+aá sempre vai perder contexto como que ela vai saberonde ela tá você vai ficar
+56:08
+ali perdido no meio quando acabou o contexto dela você vai ficar com um monte de código pela metade e aí você
+56:15
+acabou brincadeira você vai passar raiva entendeu então se você não tiver
+56:21
+uma forma de gerenciar as tarefas da IA fica complexo mas não é só gerenciar
+56:27
+tarefas da IA se você tá trabalhando com modo agente a IA ela tem que ter um workflow
+56:34
+para ela fazer uma tarefa testar a tarefa concluir a tarefa ir pra próxima tarefa testar a tarefa implementar e
+56:40
+você vai aprovando todo esse fluxo a IA ela precisa ter detalhes específicos de
+56:46
+cada tarefa e quando uma tarefa ela é superficial a descrição dela ela precisa
+56:52
+ser expandida para que a gente tenha subtarefas muito bem definidas pro passo
+56:57
+a passo ainda ficar mais claro fez sentido para vocês o que eu tô falando faz sentido né galera né
+57:05
+agora entre fazer sentido e a gente implementar é outro mundo isso aqui que
+57:10
+é o grande ponto os desenvolvedores se frustam porque não tem o passo a passo e é muito difícil ter esse passo a passo é
+57:17
+muito difícil por isso galera que hoje eu vou fazer o que a gente fez até agora
+57:23
+mas utilizando uma ferramenta que logo logo vocês vão poder usar a minha
+57:30
+substituta se Deus quiser essa ferramenta ela chama Tesk Master tá e
+57:36
+basicamente a ideia dela é ela fazer o gerenciamento e o workflow de desenvolvimento da IA aí no seu nesse
+57:44
+caso tá no cursor mas poderia ser em qualquer lugar eu chamo ela de TM Tesk dou um init e eu vou inicializar o meu
+57:51
+projeto vou colocar o meu projeto ao meu rate limiter aqui para mim description
+57:56
+não vou versão meu nome não quero yes e ponto bom aqui ele vai inicializar o
+58:03
+projeto aqui para mim e beleza coisas que eu já não gosto só para vocês saberem esse projeto locou lotou a minha
+58:12
+pasta de arquivo JavaScript com um monte de coisa esses arquivos aqui eles deveriam estar
+58:18
+numa pasta ponto teskurar com os projetos da minha
+58:24
+aplicação entendem o que eu tô querendo dizer então isso é uma das coisas que me incomoda um pouco porém né o
+58:32
+desenvolvedor que fez isso cara o cara ele mandou muito bem cara tem gente muito inteligente ele conseguiu fazer
+58:39
+exatamente o que eu já estava fazendo por um tempo e eu gostei muito da solução dele então tem muita coisa que
+58:46
+ele tá usando que eu vou implementar na minha na minha solução tá mas basicamente o ele pede né você vai
+58:54
+precisar de um arquivo ponto envu colar aqui porque ele vai ter que ter uma uma
+58:59
+chave né do da Antropic e também da Perplexy porque a Playerpex ele consegue
+59:06
+fazer consultas no formato de research para pegar ter mais dados tá mas a ideia
+59:13
+dele é o seguinte galera olha só que interessante como é que funciona a ideia dele é que ele tem uma pasta aqui com
+59:19
+script chamado um arquivo chamado example p PRD tá prd significa
+59:28
+productir ah product description acho que alguma
+59:34
+coisa assim toda hora eu esqueço mas a grande sacada é que esse documento dele
+59:40
+aqui o que que acontece ele criou uma estrutura básica desse PRD né e esse PRD
+59:48
+ele usa Skeleton of Thoughts para que ele possa gerar as tarefas aqui pra
+59:54
+gente então nesse nosso caso a gente vai ter que fazer uma interação agora com a
+59:59
+IA mas nesse momento a gente vai sair do chat GPT e a gente vai diretamente pro
+1:00:06
+cursor porque nesse momento a gente ter acesso tá ao cursor vai ser muito
+1:00:14
+importante porque ele vai nos ajudar no final das contas a ler os arquivos pra
+1:00:21
+gente gerar esses PRDs a ideia é a gente pegar esses documentos que a gente criou
+1:00:29
+consolidar e fazer esses documentos ficarem nesse padrão aqui desse cara fez
+1:00:38
+sentido se não fez vai fazer agora vamos lá galera cada dia pessoal eu percebo
+1:00:45
+que eu tô trabalhando muito mais assim do
+1:00:51
+que de outra forma mas basicamente o que a gente vai fazer vai ser o seguinte
+1:00:58
+tá eu tenho um prompt aqui tá e esse meu prompt eu vou colocar
+1:01:04
+o seguinte eu vou colar pra gente não ter que fazer digitando você é um especialista em arquitetura de software
+1:01:10
+e em gerar em em gerar e interpretar documentações como ADRs architecture
+1:01:17
+Decision Records PRDs product requirement decisions faça faça agora
+1:01:22
+leia completamente todos os arquivos da pasta
+1:01:30
+@doc tá então tô pedindo para ele ler todos os arquivos da Plaça Docs incluindo os arquivos das ADRs e também
+1:01:37
+o arquivo context que dá todo o contexto
+1:01:42
+do meu projeto agora o que que eu vou falar para ele também
+1:01:48
+né leia também leia o
+1:01:54
+arquivo ptxt e entenda esse modelo de
+1:01:59
+template para o PRD aí o que que eu vou passar o seguinte
+1:02:04
+agora olha só pessoal perceba o que eu estou fazendo agora
+1:02:11
+novamente outra técnica do prompt que a gente acabou de falar outra coisa eu configurei o meu cursor aqui nesse meu
+1:02:19
+caso aqui no formato de ah learn pra gente fazer
+1:02:24
+brainstormings tá depois eu passo a dica aqui para vocês mas pode você pode criar módulos customizados no cursor para
+1:02:30
+trabalhar aqui então eu coloquei assim ó pense passo a passo em como
+1:02:36
+consolidar PRD em como consolidar PARD cadê o meu
+1:02:43
+pense passo a passo como consolidar todas as ADRs e o contexto do projeto em
+1:02:49
+um único arquivo seguindo o padrão do PRD não gere o
+1:02:56
+template quero seu raciocínio passo a passo e vou pedir
+1:03:03
+para esse cara fazer esse cara aqui para mim legal então nesse momento o que que
+1:03:09
+ele vai fazer ele vai ler todos os meus ADRs tá então ele vai ler toda a minha
+1:03:14
+DR e ler todo o meu conteúdo então ele tá lendo o meu context e agora tá lendo a DR docker tá olhando a DR do Goleng
+1:03:22
+variáveis de ambiente convenções da linguagem testes automatizados com
+1:03:30
+GO a estratégia de leak bucket com Reds agora ele vai analisar o template do PRD
+1:03:37
+e ele fala o seguinte: "Olha organizações da informação ó no context já tá bem estruturado as r tem as
+1:03:44
+decisões mapeamento das sessões no exemplo eu tô usando overview como core
+1:03:49
+features e etc abordagem para consolidação é a sessão de context ele vai botar core features user experience
+1:03:56
+na PRD ele vai colocar os dados das ADRs principais
+1:04:02
+ah o Development Roadmap ele tá colocando MVP com a versão em memória
+1:04:07
+porque eu falei que o Reds ia ser no futuro extensões essenciais como logs controle por clientes futura melhorias
+1:04:13
+pro Reds a dependência de como criar né as tarefas a estrutura básica
+1:04:19
+implementação de memória testes midware até o Reds riscos e mitigações apêndices
+1:04:25
+e etc tá considerações especiais ajustes finais mas ele só deu a ideia de como
+1:04:31
+ele está pensando em consolidar o que eu posso falar para ele aqui é o seguinte:
+1:04:37
+existe algo que você melhoraria nessa linha de raciocínio para evitar que informações sejam perdidas
+1:04:43
+principalmente as mais granulares como a versão da linguagem convenções entre outros olha o que eu tô mandando aqui
+1:04:49
+para ele galera tá
+1:04:56
+então o que que acontece aqui ele vai pensar né sobre a
+1:05:02
+preocupação de preservação de detalhes porque eu nas minhas ADRs eu tenho muito detalhe eu tenho detalhe até de
+1:05:07
+algoritmo por exemplo né então isso aí acaba ficando um pouco complexo incluir
+1:05:14
+tabela de referência técnica criar anexos específicos coisas explícitas sessões de
+1:05:20
+padrões técnicos verificações glossário eu vou colocar não quero que mude o
+1:05:28
+template da PRD acho que você pode colocar mais informações
+1:05:38
+granulares no apêndice como escreve appendex como que
+1:05:46
+ele vai ele vai ele vai saber eu não sei como é que escreve em inglês já até esqueci
+1:05:51
+appendeix appendix a
+1:05:57
+appendix o que acha perceba galera que antes de eu pedir
+1:06:03
+para ele sair fazendo qualquer coisa ele já tá formando outras linhas
+1:06:10
+de pensamento de como que ele tava pensando em trabalhar tá agora que vamos
+1:06:17
+né eu não vou ficar 10 horas aqui senão a gente não vai terminar essa live vai ficar só escrevendo mas agora o que que
+1:06:22
+eu vou fazer eu vou falar assim: "OK gere agora um arquivo chamado prd md
+1:06:33
+na pasta
+1:06:39
+@docs na pasta
+1:06:44
+docs seguindo todas essas considerações aqui eu preciso mudar para modo
+1:06:52
+agente e aqui é onde a gente vai dar o pontapé inicial pro nosso projeto
+1:07:00
+começar a ficar mais pronto possível pra gente gerenciar as tarefas tá então tem
+1:07:08
+gente que perguntou: "Você usa o 3.7 Sonet para tudo brainstorming agente?" Cara nesse caso aqui eu tô deixando tudo
+1:07:15
+como padrão tá mas você vai perceber que dependendo da situação eu escolho o
+1:07:20
+melhor modelo para de acordo com os tipos de problema eu posso pegar um GPT
+1:07:26
+ah com mais reasoning eu posso cara dá para fazer muita coisa de forma geral do que eu tenho trabalhado aqui com o Sony
+1:07:32
+tá indo muito bem porque ele manda muito bem código e como ele tá olhando o código o tempo inteiro eu tô meio que
+1:07:38
+usando ele como padrão tá quando eu tenho tarefas muito grandes para fazer eu tô usando o Sonet Max que ele acaba
+1:07:46
+sendo mais rápido eu acho que ele mantém um contexto maior tá apesar dele ser mais caro beleza mas aqui ele tá ali
+1:07:54
+gerando o arquivo aqui pra gente pessoal vocês estão percebendo a ideia de como
+1:07:59
+que você consegue trabalhar aqui com a parada de A esse aqui é um setup galera e esse setup é o
+1:08:07
+que vai definir o sucesso do seu projeto tá ah com o IA se ele for um se ele for
+1:08:16
+um processo vagabundo você tá enrolado você vai sofrer com a IA então esse documento aqui é o documento consolidado
+1:08:23
+onde a gente gruda tudo que a gente fez baseado no product requirements
+1:08:28
+decisions focado né naquele padrão que o Tesk me passou
+1:08:35
+tá então é basicamente isso aqui para mim então é essa a estrutura que eu
+1:08:41
+consegui trazer aqui baseado nisso o apêndice e etc e tudo mais ele tá
+1:08:47
+trazendo várias informações estratégias de teste ele tentou trazer o máximo de informações eu não vou revisar a de uma
+1:08:53
+forma forte a única coisa que eu vou pedir para ele fazer aqui
+1:08:59
+principais aqui nome do pacote deve
+1:09:05
+ser ser ithub.com/devfycle/rate
+1:09:15
+limiter go mod só tô salvando isso aqui quem sabe ele leva em consideração agora que eu tenho
+1:09:22
+esse documento galera agora sim a nossa mágica em tese começa por quê eu vou
+1:09:28
+chegar agora aqui e vou fazer o seguinte eu vou tá ah pedir pro Tesk fazer um
+1:09:37
+paring desse PRD para gerar isso em tarefas tá então é basicamente isso que
+1:09:42
+vai acontecer aqui para mim tá então esse é o grande ponto então eu vou dar
+1:09:48
+um um testk master parse PRD e vou passar o endereço do meu PRD que é
+1:09:55
+PRD.md vou dar um enter agora aqui e ele vai ler esse projeto aí ele vai entender
+1:10:03
+esse projeto ele vai ver a linha de raciocínio e a ordem do
+1:10:08
+roadmapito vai entender todos os requisitos técnicos ele faz alguns researches usando perplex também que é
+1:10:15
+um outro modelo para pesquisa e baseado em tudo isso ele vai gerar para mim as
+1:10:21
+tarefas que a IA vai ter que seguir para trabalhar aí com tudo isso tá então esse
+1:10:29
+aí é um ponto importante ele demora um pouquinho aqui pra gente conseguir trabalhar e prontinho ele gerou aqui
+1:10:35
+para mim 10 tarefas aqui para mim se eu for nesse arquivo tesqu eu vou ver
+1:10:41
+tarefa 01 deixa eu fechar aqui ó tarefa 01 o que tem que ser feito tarefa 02
+1:10:49
+tarefa 03 e perceba que ele define as tarefas aqui para mim e baseado em cada
+1:10:55
+uma dessas tarefas ele mostra as dependências entre as tarefas a prioridade de cada tarefa e tudo mais eu
+1:11:02
+consigo ver isso numa versão gráfica tá se eu der um TM list aqui para mim você vai ver que eu tenho aqui o seguinte a
+1:11:11
+listas das tarefas que a minha IA tem que fazer e o estado de como isso aqui está por exemplo fazer o setup da
+1:11:18
+estrutura do projeto definir o cord interfaces implementação em memória com
+1:11:24
+leak bucket desenvolvimento do middleware implementar o login e monitoramento criar clientes
+1:11:31
+customizados e assim vai indo até chegar nas tarefas finais o grande ponto
+1:11:36
+pessoal é que você acha que às vezes somente que com um arquivinho desse você
+1:11:44
+vai conseguir definir e fazer o a IA fazer tudo que você precisa naquela tarefa às
+1:11:51
+vezes sim porque a tarefa é simples tá mas às vezes não às vezes a tarefa é
+1:11:57
+complexa e você precisa às vezes de subtarefas ou qualquer coisa desse tipo
+1:12:02
+então o que que você pode fazer ele tem um recurso bem interessante aqui que você faz análise de complexidade tá o
+1:12:11
+que que é isso eu chego aqui e ele tem um analyze complexity e quando ele dá um
+1:12:17
+menos menos research é que ele usa o modelo da perplexi então eu vou colocar
+1:12:23
+TM Analyze complexity aqui para mim a partir de agora galera ele vai olhar
+1:12:29
+todo o meu projeto vai olhar todas as minhas tarefas entrar tarefa por tarefa e
+1:12:36
+elencar o nível de complexidade dessas tarefas que ele tem para desenvolver tá
+1:12:42
+então isso aí a gente já vai para um outro para um outro nível aqui pra gente
+1:12:48
+né porque a gente acaba indo para um uma para uma outra área aqui ele gerou resultado mas eu posso agora ver o
+1:12:56
+report desse cara aqui ó né que se eu não me engano o comando é complexity
+1:13:01
+report então eu posso dar um TM Complexity Report scripts
+1:13:07
+complex.jonj que ele gera aqui para mim e agora aqui deixa eu diminuir um pouco o zoom aqui para vocês conseguirem ver
+1:13:14
+melhor galera mas basicamente o que que ele fez aqui para mim
+1:13:20
+ele distribuição de complexidade e ele falou que por exemplo a tarefa 7 tem um
+1:13:27
+score e de complexidade e ele recomenda aqui que tenha pelo menos cinco
+1:13:32
+subtarefas para implementar essa tarefa aqui a tarefa três tem complexidade sete
+1:13:39
+é alta ele recomenda aqui ter quatro subtarefas e eu não sei se você
+1:13:45
+percebeu ele dá aqui pra gente né a uma forma de você dar um expand para ele
+1:13:53
+criar essas subtarefas para você de uma forma ah muito mais clara para que a sua
+1:14:01
+IA ela consiga trabalhar tá então eu vou dar um exemplo aqui para vocês né vou
+1:14:08
+pegar uma tarefa eu vou pegar uma tarefa simples aqui que ela nem precisaria em nível de complexidade vou pegar a tarefa
+1:14:15
+dois aqui eu vou dar um copiar copiar uma imagem né e eu vou
+1:14:22
+pedir aqui para ele expandir tá então vou colocar aqui e vou falar o
+1:14:27
+seguinte: usando o Tesk expanda a tarefa da imagem
+1:14:37
+e passei a imagem aqui agora aqui para ele para ele fazer essa expansão então
+1:14:44
+ã ele vai executar o comando especificado vamos ver ó tesk master
+1:14:49
+expand tá vendo ah a tarefa dois e agora ele está gerando a
+1:14:57
+subtarefa dois ele tá pesquisando as melhores formas de documentar cada uma
+1:15:02
+dessas subtarefas para que a gente consiga fazer com que a IA siga passo a
+1:15:08
+passo nessas tarefas pessoal vocês estão me seguindo ão tá fazendo sentido isso que eu tô falando para vocês olha só o
+1:15:14
+que que ele fez aqui para mim né ele gerou agora uma tarefa 2.1 2.2 2.3 né e
+1:15:23
+cada uma dessas tarefas tem aqui deixa eu dar um stop para ele não ficar fazendo outras coisas
+1:15:29
+ele gerou essa parada deixa eu vir aqui no meu terminal que fica melhor pra gente ver
+1:15:35
+ó tm list- wif
+1:15:41
+subtesks quando você olha aqui olha a tarefa dois aqui ele já gerou um 2.1 2.2
+1:15:47
+2.3 aqui para mim e se eu for olhar nessas tarefas eu já tenho mais clareza
+1:15:54
+e a IA já tem mais clareza do que precisa ser desenvolvido e óbvio galera
+1:15:59
+a gente precisa revisar para ver se não tem grosélia porque tá aqui ó subtesques definir o rate limiter e interface né
+1:16:07
+criar o core limiter da interface implementar os
+1:16:12
+steps testing approach daí a subtarefa do aí a subtarefa três então perceba que
+1:16:18
+ele aumentou né o meu arquivo de tarefas para ir pro próximo ponto como que eu
+1:16:24
+começo a desenvolver nesse caso em modo agente galera eu posso fazer o seguinte
+1:16:29
+tá baseado póstico veja a próxima tarefa via
+1:16:38
+tesquec master e comece implementar não implemente nada fora do
+1:16:46
+escopo da tarefa e agora o que que vai acontecer
+1:16:52
+aqui pra gente pessoal ele vai ver qual que é a próxima tarefa que ele tem que
+1:16:58
+desenvolver ele vai ver que é a um ele vai marcar essa tarefa em
+1:17:06
+progresso marcou em progresso essa minha tarefa e agora ele vai ver a estrutura
+1:17:11
+do meu projeto atual né então aqui ele já tá falando o que que ele vai criar de
+1:17:18
+pastas o go modit perceba que ele já pegou o meu name space que eu tava querendo aqui do Dev Full Cycle já pegou
+1:17:26
+a biblioteca para trabalhar com variáveis de ambiente porque isso era eh era necessário tá gerando aqui um
+1:17:36
+arquivo.g pra parte de configuração vamos inicializar o projeto
+1:17:42
+do
+1:17:48
+logger vamos aguardar mais alguns momentinhos deixa eu diminuir um pouco o zoom galera aqui só para ficar melhor
+1:17:53
+para ver tá editando ponenv.example esse arquivo já existia era o dokmaster por
+1:17:58
+isso que isso aí quer me matar ter o lance do Tesk Master na minha raiz
+1:18:05
+sacou criar um ponto de entrada paraa aplicação que é o meu
+1:18:13
+main.g vamos lá por fim vou criar o Docker File e o Docker
+1:18:22
+Compose e ó ele já errou aqui na versão né o GO é a versão
+1:18:32
+1.24 no Docker Compose eu não preciso da linha
+1:18:41
+version tá
+1:18:47
+então ele já tá mudando aqui para mim galera isso aí meu amigo é pilotar e ela
+1:18:52
+sempre vai querer fazer coisa errada ou fazer coisa mais e é nesse momento que você tem que ser um desenvolvedor para
+1:18:59
+se ligar ó ele já tirou isso aqui porque eu sei que eu não preciso mais disso entendeu ah e eu vou falar ele tá
+1:19:04
+querendo criar um we ele tá querendo usar o go para fazer
+1:19:09
+hot reload ali com a minha informação ponto geraram a
+1:19:14
+informação do projeto criou o
+1:19:23
+readm vamos marcar a tarefa como concluída e prontinho a minha tarefa
+1:19:29
+número um foi concluída com o que ele foi pedido que foi passado aqui para mim
+1:19:35
+prontinho então galera temos aqui a nossa primeira parte obviamente pessoal
+1:19:40
+eu não vou ficar revisando arquivo por arquivo nesse momento quando você for
+1:19:45
+desenvolver tá aí a coisa ela muda um pouco de figura certo mas aqui ó eu já
+1:19:51
+tenho toda a estrutura inicial do meu projeto da forma usando variáveis de ambiente eu tenho as minhas
+1:19:56
+documentações eu tenho os arquivos internos onde ele preparou a parte dos logs o package ele não criou nada
+1:20:02
+scripts é não é minha o pwer tomel é para pro hot reload do ele criou meu
+1:20:08
+Docker Compose já com a minha aplicação e cara tenho né a minha primeira parte
+1:20:14
+feita agora o que eu posso chegar para ele e falar o seguinte tá baseado no
+1:20:22
+@pests aqui vá para a próxima tarefa e
+1:20:28
+implemente somente o que está no escopo e agora galera eu não sei se vocês já
+1:20:37
+perceberam mas vocês conseguiram perceber que você cri existe um fluxo um
+1:20:43
+workflow que você consegue trabalhar junto com a IA ela já tá vendo qual que é a próxima tarefa ela vai ter que
+1:20:49
+marcar a 2.1 agora como em andamento né a 2 e a 2.1 como em
+1:20:56
+progress e agora ele vai listar os projetos vai entender as coisas para começar fazer o desenvolvimento dessa
+1:21:03
+próxima tarefa tá fez sentido o que eu tô colocando
+1:21:10
+aqui para vocês pessoal é um outro nível
+1:21:18
+de desenvolvimento trabalhando com o IA e se você perceber tudo isso que a gente
+1:21:25
+fez a gente gastou sim um tempo pro setup de tudo isso mas o fato principal
+1:21:31
+aqui de forma geral é o quê é ele conseguindo passo a
+1:21:38
+passo seguir o que ele precisa fazer se parou eu abri no outro dia numa outra
+1:21:44
+janela de contexto eu falo: "Veja da onde você parou veja se essa tarefa tá
+1:21:49
+completamente realizada e depois disso continue a implementação tá então quando
+1:21:56
+você começa a trabalhar dessa forma simplesmente ó terminou a tarefa
+1:22:03
+2.1 e aí ele vai seguindo o que eu sempre vou recomendar pessoal é um chat
+1:22:09
+por tarefa tá não fiquem fazendo várias tarefas no mesmo chat ele vai começar a
+1:22:15
+se perder vai se perder no contexto as coisas não vão ficar boas o cursor tem um recurso bem interessante aqui agora
+1:22:22
+que toda vez que aparece alguma coisa né ah que tá perdendo a janela ele fala:
+1:22:29
+"Olha inicie o novo chat porque deu ruim já aqui para você conseguir trabalhar"
+1:22:34
+tá agora o lance aqui né e que eu quero
+1:22:40
+levantar na mesa é até onde a gente deve ir até quanto isso é produtivo né e eu
+1:22:47
+queria tirar algumas dúvidas do chat galera ah o que que vocês estão achando disso eu quero dar uma olhada aqui no
+1:22:54
+que vocês colocarem e sejam brutalmente honestos tá tá
+1:23:01
+ah o que que vocês acharam pessoal gostaram não gostaram acharam fraco você
+1:23:07
+acha que essa abordagem não funciona funciona pessoal eu gastei muito muitas horas os resultados que eu tô tendo para
+1:23:14
+desenvolver projetos mais ou menos nesse framework porque como eu disse para vocês o que diferencia duas Ferrares
+1:23:21
+iguais é o piloto tá se você é um desenvolvedor que tem conhecimento sólido do desenvolvimento você conhece
+1:23:28
+arquitetura de software você conhece Solid você conhece algoritmos você entende de A você entende da sua
+1:23:35
+linguagem de programação você tem um repertório importante você entende domain driven design você entende sei lá
+1:23:42
+de arquitetura hexagonal clean architecture você entende de boas práticas de desenvolvimento você entende de docker você entende de de DevOps você
+1:23:49
+entende de Kubernets quando você tem esse nível de repertório esses documentos e essas especificações elas
+1:23:56
+ficam cada vez mais fortes e quanto mais fortes essas especificações ficam mais
+1:24:01
+fortes ficam os resultados que vocês estão trabalhando tá então isso aí é um
+1:24:08
+ponto assim que muda o jogo galera mudou o jogo aqui para mim deixa eu oler o chat aqui um de cada vez tá só para
+1:24:15
+ficar de boas aqui deixa eu olhar aqui o Lucas o Wesley apesar de parecer top o
+1:24:21
+Tesk Master você viu realmente grandes diferenças para usar de agente sem ele
+1:24:28
+meu uso atual é sem ele e funciona muito bem já Lucas cara eu já fiz todos os
+1:24:34
+testes possíveis tá o que eu posso dizer com o Tesk né e com a ferramenta que eu
+1:24:40
+tô fazendo eu não vou publicar e não vou mostrar para vocês enquanto ela não esteja razoavelmente pronta
+1:24:45
+ah é que a grande diferença é que o Tesk
+1:24:51
+quando ele vê que a feature que você vai desenvolver ela é mais complexa na hora
+1:24:57
+que ele quebra em subtarefas ele faz uma pesquisa mais abrangente lá no
+1:25:03
+Perplexity a AI onde ele traz muitas outras ideias que podem somar com as
+1:25:09
+suas ADRs para fazer com que essas tarefas elas sejam mais bem descritas
+1:25:14
+com caminhos melhores tá então isso é algo assim para mim que vira o jogo tá
+1:25:21
+porque não adianta ter contexto você tem que ter especificação de tarefa agora se para cada tarefa você tiver que
+1:25:27
+especificar na mão para cada subtarefa você ter que ficar especificando detalhe e detalhe na mão realmente o processo
+1:25:35
+ele perde um pouco o flow então a ferramenta como Tesk ele me ajuda
+1:25:41
+principalmente no estado aonde você estava aonde você está você completou
+1:25:47
+aquelas tarefas porque eventualmente eu abro um novo agente e falo: "Você disse
+1:25:53
+que terminou a tarefa número um eu gostaria que você verificasse eu posso chegar aqui e fazer isso agora." Olha tá
+1:26:02
+de acordo posso colocar assim ó de [Música] acordo com a tarefa um do
+1:26:10
+Tesk gostaria que você analisasse o código de forma profunda e realmente
+1:26:20
+verificasse se ela está totalmente concluída caras eu faço isso direto
+1:26:27
+porque eu quero garantir que ela realmente cumpriu todos os requisitos daquela tarefa isso aí faz uma diferença
+1:26:33
+bem forte tá luiz Fernando para mim tá sendo uma
+1:26:38
+mão na roda posso escolher entre os modelos e os modelos mais avançados como Sonet Max Gemini 2.5 Pro tem um custo de
+1:26:46
+5 cents mas se não me se eu não me engano aí eu já não sei o que ele falou
+1:26:53
+ah aqui ó ele tá verificando as tarefas e tudo mais e ele vai tentar fazer um
+1:26:59
+checklist aqui em todos os meus arquivos para ver se tá tudo implementado aqui para mim e só para vocês saberem galera
+1:27:05
+quando eu tenho tarefas maiores coisas mais complexas eu pago 5 cent de dólar
+1:27:10
+ah para me ajudar se eu não pagar tem um trabalhinho a mais mas tem dia que eu
+1:27:16
+prefiro pagar e ter um escopo um pouco maior aí etc tá
+1:27:22
+então é basicamente isso que eu tava querendo tava querendo dizer
+1:27:28
+para vocês beleza ah o João já tá perguntando qual o valor do curso cara João a gente já
+1:27:35
+vai falar de valor do curso mas o nosso curso ele não é um curso só de A ele é o curso full cycle 4.0 que a é apenas um
+1:27:42
+dos pilares desse curso e olha só que interessante pessoal ele trouxe aqui para mim um
+1:27:48
+checkbox de tudo que foi concluído e confirmou para mim que tudo que tava sendo pedido na tarefa um foi realizado
+1:27:55
+tá então isso aí pra gente é importante ah tem gente que tá perguntando aqui
+1:28:02
+você acredita que isso possa tirar o papel de um analista ou PM cara não necessariamente tá porque agente técnico
+1:28:10
+normalmente as partes de ADRs provavelmente isso a gente vai ter que fazer junto com arquiteto e coisas desse
+1:28:17
+tipo mas o contexto do projeto a visão geral as dores etc normalmente é o PM
+1:28:24
+que vai fazer isso é a área de produto que vai trabalhar em conjunto tá então
+1:28:31
+muito pelo contrário eu acho que essas áreas têm que somar para que essas coisas possam acontecer tá mas é
+1:28:38
+importante ter padronização quanto mais padronização tudo vai ficando mais fácil tá ah eu gosto da ideia de utilizar para
+1:28:45
+se criar um projeto do zero mas isso é bacana demais minha dúvida é como aplicarmos isso a um projeto já
+1:28:50
+existente enorme o Wagner fez uma pergunta interessante para caramba wagner eu tô fazendo isso em diversos
+1:28:58
+projetos de diversos tipos de tamanho tá e as técnicas são diferentes tá na
+1:29:06
+realidade você não vai deixar de ter as suas ADRs você não vai deixar de ter o
+1:29:11
+seu contexto mas o seu contexto ele vai ter que ser reduzido e você vai ter que
+1:29:16
+fazer o quê uma análise profunda do código de tudo que tá existe de tudo que
+1:29:22
+não existe pedir paraa Suia entender indexar as principais decisões que foram
+1:29:29
+tomadas nesse projeto para ela utilizar isso como um contexto em background por
+1:29:35
+que que eu tô dizendo isso o cursor por exemplo ele indexa o nosso projeto mas
+1:29:40
+ele não lê 100% dos arquivos eles têm as rules ali que ajudam mas nem sempre ajudam quando você tem um projeto muito
+1:29:47
+grande nesse caso o que que você precisa muito é janela de contexto nesses casos
+1:29:52
+o que que você pode fazer você pega o seu modelo pega um um Gemini Pro um Pro
+1:29:57
+Max aqui do Gemini onde ele tem uma janela de um de contexto sei lá de 1 milhão de tokens ele vai conseguir ler
+1:30:04
+muito quase todos os os arquivos do seu projeto e baseado nisso você consegue
+1:30:10
+gerar documentos até mesmo ADRs dos seus projetos atuais você consegue pegar o
+1:30:16
+projeto atual entendeu contextualizar e daí você vai precisar
+1:30:21
+por exemplo trabalhar num módulo aí você faz a mesma coisa para esse módulo e aí você faz as tarefas para resolver a
+1:30:28
+feature que você tem que desenvolver naquele projeto mas você tem um documento de estado do projeto da onde o
+1:30:35
+projeto tá naquele momento com todo aqueles códigos faz sentido ô
+1:30:40
+Wagner não é simples tá não é simples mas é totalmente possível porque eu consegui fazer e deu bom tá
+1:30:49
+ah o André André o que me preocupa aí é o custo tem dicas de modelo open source para seguir nesse processo cara você
+1:30:56
+pode testar vários modelos open source e tudo mais cara
+1:31:01
+honestamente tá com o nível de produtividade que eu
+1:31:06
+tenho com a velocidade que eu programo hoje em dia para mim pagar $ no cursor é
+1:31:12
+de graça tá que seja para eu pagar $50 $OR cara dá dá para você programar muito
+1:31:20
+muito muito muito e eu acredito que se você for trabalhar numa empresa eventualmente você pode pedir paraa sua
+1:31:25
+empresa te ajudar a custear isso de alguma forma entendeu mas de forma geral
+1:31:31
+eu não tô testando modelos pequenos para isso tá quando eu preciso fazer grandes
+1:31:36
+especificações eu uso GPT quando eu preciso trabalhar em conjunto com código
+1:31:41
+eu já tô usando o Cloud Sonet 3.7 às vezes eu mudo para alguns outros modelos
+1:31:47
+da Open AI mas nada impede você testar modelos locais na sua máquina e fazer os testes
+1:31:53
+tá tá show de bola cara esse Wesley é de outro mundo
+1:32:00
+não não sou de outro mundo cara ah qual o custo pro Tk Manager o Tesk manager é
+1:32:05
+open source galera tá ah e aqui perguntaram qual é a solução
+1:32:12
+que você encontrou para tirar esses arquivos da raiz do projeto cara eu criei uma pasta pontesk manager enfiei
+1:32:20
+tudo lá dentro tive que mudar todas as regras do cursor para ele terar dentro
+1:32:25
+dessa pasta e mesma coisa e mesmo assim ah não tá muito legal cara incomoda
+1:32:31
+demais eu assim eu jamais vou criticar o projeto de uma pessoa que fez um projeto
+1:32:38
+desse com esse nível de complexidade entendeu jamais vou vou criticar o cara
+1:32:43
+de falar: "Porra porque você não criou tudo dentro de uma pasta oculta né?" Mas ele não criou dessa forma paciência quem
+1:32:50
+quiser faça o fork por exemplo e ajude eu tô criando um outro projeto parecido
+1:32:56
+mas é o que é atrapalha bastante por exemplo eu tenho o ponto ENV do meu projeto e aqui tem o ponto env do Tesk
+1:33:05
+do Tesque Master então isso acaba atrapalhando muito aí pra gente tá ah
+1:33:11
+Wesley qual será o papel do desenvolvedor nos próximos anos você acha que a gente vai se aperfeiçoar em documentação boa comunicação cara a
+1:33:18
+gente programava em em linguagem de programação em PHP Java Go agora a gente
+1:33:24
+vai programar em português a realidade vai ser essa mas você vai precisar ter
+1:33:30
+um repertório técnico muito forte para você ser capaz de olhar esse documento e
+1:33:36
+ver se realmente isso aqui que a gente gerou faz sentido cada tarefa feita é uma tarefa
+1:33:43
+validada cada tarefa feita é um é um commit é um teste é uma validação é uma
+1:33:49
+pull request que tem que ser revisada a gente não pode ir naquele vibe coding e
+1:33:54
+esperando que tudo dê certo porque não dá mas com um flow de desenvolvimento
+1:34:00
+com modo agente dessa forma cara a sua produtividade vai lá em cima entendeu se
+1:34:07
+ela fez algo muito errado você marca a tarefa como desfeita melhora o prompt para ele tentar fazer da forma não ficou
+1:34:14
+tão bom aí você programa você é programador você não precisa fazer 100% de modo agente eu não faço 100% de modo
+1:34:20
+agente nem sonhando mas a quantidade de código das coisas que ele já fez aqui
+1:34:26
+nesse meu projeto galera quanto tempo eu ia fazer para fazer essa parada na real
+1:34:33
+mesmo eu ia demorar não não não tem como você não consegue ganhar da máquina em relação à produtividade o importante é
+1:34:40
+você conseguir fazer com que a máquina ela faça da forma mais correta possível
+1:34:45
+sacou faz sentido show de
+1:34:51
+bola aqui ó o marco final 90% do tempo eu fico desenvolvendo e arrumando
+1:34:57
+códigos antigos ou melhorando usando esses formatos quando já está tudo construído e sem documentação cara e há
+1:35:03
+para isso vai ajudar demais tá ah vamos lá basicamente faz o
+1:35:10
+programador fazer code review mais do que o normal mas em nível de produtividade é perfeito exatamente oportunidade de vender cursos olha o
+1:35:17
+Pedro aqui galera vocês acham que eu tô com uma boa oportunidade de vender curso pedro tá perguntando aqui para mim
+1:35:24
+galera se é uma ótima oportunidade para vender curso vocês acham que é pessoal
+1:35:31
+é uma boa oportunidade de vender cursos nesse momento com IAI com um monte dessas
+1:35:36
+coisas para aprender cara eu vou falar que é uma baita oportunidade sabe por que é uma
+1:35:43
+baita oportunidade de vender curso porque bom primeira coisa que vocês têm que entender que é o
+1:35:48
+seguinte vendedor de curso virou um nome pejorativo nos últimos tempos né
+1:35:54
+infelizmente no mercado entraram muitas pessoas prometendo R$ 20.000 R$ 1.000 em 6 meses e seja rico e com programação
+1:36:03
+infelizmente fez com que pessoas como eu que trabalha duramente de uma forma
+1:36:09
+extremamente profissional entregando o melhor do melhor que a gente sempre pode a gente abriu uma faculdade a gente
+1:36:16
+consegue ter pós-graduações reconhecidas no MEC a gente faz um trabalho muito sério a gente não é um amador que grava
+1:36:24
+um monte de cursinho sobe meia dúzia de vídeo na Hotmart e vira um vendedor de
+1:36:29
+curso não cara a gente vende curso mas antes de vender curso cara o que a gente faz é ajuda a você ser um desenvolvedor
+1:36:36
+melhor e para isso a gente gasta milhes milhares de horas fazendo todos esses
+1:36:44
+testes aqui que eu tô mostrando para vocês que nesse momento talvez você não
+1:36:50
+tenha esse tempo para fazer afinal de contas galera quantos de vocês têm tempo
+1:36:56
+de sentar 1000 horas na frente do computador para ficar fazendo teste de A sendo que você tem que trabalhar o dia inteiro e entregar os seus perrengues no
+1:37:02
+seu trabalho e os prazos que você tem entendeu então caras ah eu tenho
+1:37:11
+muito mas muito orgulho de poder vender cursos poder vender na realidade no
+1:37:16
+final das contas facilidade método fazer com que você consiga fazer com que a sua
+1:37:23
+carreira ela fique mais sólida fazer com que você tenha mais fundamentos fazer com que você aprenda a trabalhar com IA
+1:37:29
+do jeito certo ao invés de ficar passando raiva e gastando dinheiro né então tudo isso galera a gente faz tá e
+1:37:36
+eu tenho muito orgulho da Full Psych hoje em dia para ela ter chegado nesse ponto que ela chegou de conseguir ajudar
+1:37:43
+milhares e milhares de desenvolvedores aí com muitos resultados aí tá
+1:37:49
+então a nossa a nossa certeza que eu tenho aqui para vocês é que tudo que a
+1:37:54
+gente faz é o melhor a gente a Full Pyon não é Wesley a gente tem uma equipe
+1:38:00
+gigante por trás da gente para que essa live pudesse acontecer para que amanhã
+1:38:06
+por exemplo a gente tem MBA né a gente tem turmas de MBA turmas de liderança técnica turmas de GO Expert são
+1:38:13
+pós-graduações reguladas pelo MEC amanhã por exemplo a gente vai ter uma aula fantástica totalmente VIP com Elemar
+1:38:21
+fechada via Zoom cara a cara para falar de muito de arquitetura e desenvolvimento de software falar de
+1:38:28
+trends de IA falar de liderança você que quer virar um sair de desenvolvedor e
+1:38:34
+virar um líder então esses tipos de coisa galera a gente trabalha muito sério porque a gente quer entregar o
+1:38:40
+melhor né às vezes a gente fala: "Ah vou ensinar arquitetura hexagonal" cara a gente contratou o Allar Cob o criador da
+1:38:48
+arquitetura hexagonal para dar aula pra gente na área de agile a gente pegou um
+1:38:54
+dos signatários do manifesto ágil para dar aula pra gente saca então o que a
+1:38:59
+gente faz nos dias de hoje galera é um trabalho que dá trabalho não é só gravar aula né
+1:39:09
+para eu fazer essa live aqui para vocês eu tive que me planejar para caramba para conseguir resumir um conteúdo tão
+1:39:14
+longo em tão pouco tempo entendeu então acreditem galera a gente vende curso
+1:39:20
+vende mesmo porque é assim que a gente sobrevive muitas famílias inclusive dependem da Full Cycle para como fonte
+1:39:28
+de renda a Full Cycle tem muitos funcionários tá então isso aí é algo que
+1:39:34
+a gente preza muito agora pessoal a a grande sacada aqui
+1:39:40
+tá é o seguinte vou mostrar para vocês eu acho que ficou claro né pessoal essa
+1:39:46
+parada da Iá né eu acho que eu acho que ficou claro para vocês essa parada da Iá
+1:39:52
+né deu para vocês terem uma palinha de como pode ser o seu ambiente de trabalho
+1:39:59
+né um framework que vai te ajudar a passar menos raiva com o IA né tem muita
+1:40:04
+técnica tem muitos detalhes obviamente não dá para consolidar isso em 1 hora e meia e tudo mais a gente precisa de
+1:40:11
+muito tempo muitos laboratórios muitas cases de coisas dando errado coisas dando certo para conseguir apresentar
+1:40:17
+para vocês tá e é para isso que o que a gente tá fazendo hoje e agora a gente
+1:40:22
+chega num momento importante tá no final das contas que é esse momento aqui
+1:40:32
+tá que a gente acaba de abrir as matrículas pro curso Full Cycle 4.0 tá
+1:40:41
+o nosso curso Full Cycle 4.0 ele vai te ajudar a conseguir
+1:40:47
+desenvolver aplicações de grande porte para você construir um perfil realmente
+1:40:53
+insubstituível na área de A galera e quando eu falo um perfil insubstituível
+1:40:58
+eu não tô querendo dizer que a sua empresa vai chegar e vai falar: "Olha Luan você vai ser substituído pro MA tá
+1:41:06
+então eh tchau não galera a substituição pela IA na realidade ela é baseada na
+1:41:13
+produtividade dos próprios desenvolvedores que usam com IA se eu tenho um desenvolvedor que consegue
+1:41:19
+programar né se eu tenho um sior que consegue fazer o papel de três plenos
+1:41:24
+você acha que a empresa vai abrir mais três vagas a quantidade de vagas do mercado
+1:41:30
+diminuiu para caramba galera por quê porque as empresas estão tendo mais eficiência na utilização da IA os
+1:41:38
+desenvolvedores hoje que conseguirem dominar essas técnicas de A eles vão
+1:41:44
+realmente se destacar muito porque a maioria dos envolvedores que eu conheço só sabe dar auto compete fazer alguns
+1:41:51
+prompts curtos e no final das contas passa raiva com IA e sai xingando a IA que eu mais vejo hoje em dia é youtuber
+1:41:58
+xingando e a mas normalmente é porque ele não teve um processo uma metodologia
+1:42:04
+de trabalho então a nossa ideia aqui no Full Cycle 4.0 é ter alguns pilares que
+1:42:09
+a gente considera essencial não adianta só saber IA e não
+1:42:14
+entender o que a IA tá gerando a gente sempre aqui no Full Psycho a gente nunca vendeu salário eu nunca vendi ganhe $
+1:42:22
+1.000 $000 ganhe 50.000 r$ 1.000 por mês fazendo o curso da Full Cycle ou não que
+1:42:30
+a gente sempre vendeu aqui e é o que a gente entrega para vocês é você criar um
+1:42:35
+perfil sólido é você ter fundamento sólido para você trabalhar em qualquer
+1:42:40
+grande empresa e para você ter esses fundamentos você tem que entender desses pilares que é o que a gente cobre aqui
+1:42:47
+no curso Full Cycle tá então essa aqui é a parada o curso Full Cycle 4.0 ele eu
+1:42:54
+vou até colar o link aqui para vocês tá porque as matrículas estão abertas a partir de agora e tem alguns bônus que
+1:43:01
+você vai ganhar se você fizer hoje tá então o lance é o seguinte a gente tem
+1:43:06
+alguns pilares que é arquitetura e desenvolvimento de software se você não entender de arquitetura de software meu
+1:43:12
+amigo acabou a sua carreira daqui paraa frente ela vai degringolar daqui paraa frente desenvolvedores têm que ter
+1:43:18
+conhecimentos profundos em arquitetura porque programar a IA vai programar é
+1:43:25
+fato o código nosso cada dia vale menos a solução que a gente desenvolve
+1:43:31
+vale mais mas ela só vale se você conseguir fazer gerar um código decente
+1:43:37
+então entender de arquitetura e ter profundidade em desenvolvimento é o que
+1:43:43
+vai te diferenciar ao mesmo tempo você tem que entender banco de dados você tem
+1:43:49
+que entender de segurança você tem que entender de devops sre você tem que conseguir ter o SDLC o
+1:43:58
+o software development Life Cycle no seu colo você tem que conseguir entender
+1:44:04
+tudo isso e é por conta disso que o curso Full Cycle 4.0 zero ele foi
+1:44:09
+planejado dessa forma e a gente entrou agora com esse pilar de A que é o módulo
+1:44:14
+que a gente tá trabalhando mais fortemente para começar a disponibilizar para vocês e eu não tenho dúvidas que
+1:44:19
+vai ser o melhor do melhor que vocês vão encontrar no mercado porque eu tô fazendo questão de fazer pessoalmente
+1:44:25
+toda a parte base tudo que eu tenho estudado nesses últimos meses cara e
+1:44:31
+foram meses e meses horas e por horas estudando tinha prometido pra minha família que eu não iria mais amanhecer
+1:44:37
+na frente de computador mas eu acabei quebrando essa regra para eu poder dar
+1:44:43
+um gás e aprender isso tá eu não quis falar de A enquanto eu não tivesse
+1:44:49
+convicto do que eu achava para onde o mercado tava indo e como que eu ia poder ajudar os meus alunos tá então isso aí é
+1:44:56
+o grande ponto aí para vocês tá então essa aqui é a pegada eu passei o link aí
+1:45:02
+para vocês né aí o que que acontece é o seguinte qual que é o estado hoje do
+1:45:08
+curso tá pessoal o curso Fullsai 4.0 ele é um curso que fica em constante gravação e a gente vai fazendo
+1:45:14
+liberações de módulos tá então se você entrar hoje no curso FA você já vai ter módulos ali prontos para você já começar
+1:45:20
+a fazer trilhas de conhecimento para você começar a fazer mas vão ter trilhas que não vão estar disponíveis e eu quero
+1:45:26
+que o tempo todo você possa estar estudando por conta disso o que que a
+1:45:32
+gente fez nós demos também acesso ao curso Full Cycle 3.0 que é um curso um monstro que
+1:45:40
+tem nossa são muitas horas eu não sei são mais de 1000 horas eu acho de de
+1:45:45
+curso tá com tudo quanto é tecnologia então você hoje assinando o curso Full
+1:45:52
+Cycle 4.0 você vai ter acesso ao Full Cycle
+1:45:57
+3.0 então é dois em um então enquanto a gente vai gravando o quatro liberando os
+1:46:03
+conteúdos você vai tendo acesso ao três nesse primeiro dia também você vai ter
+1:46:08
+dois anos de suporte porque normalmente é um ano de suporte e a gente vai dar acesso vitalício para você nas versões
+1:46:15
+3.0 e 4.0 do curso OK então enquanto
+1:46:21
+esses cursos existirem enquanto estiverem lá vocês vão ter acesso vocês não precisam fazer renovação anual para
+1:46:28
+ter esse curso o que acontece é que eventualmente quando a gente for ter uma versão cinco que a gente não tem nem
+1:46:34
+planejado porque a gente tá trabalhando no quatro se você quiser entrar você pode pagar uma taxa de upgrade
+1:46:40
+normalmente é uma taxa bem simbólica para você ter acesso à nova versão tá é
+1:46:45
+basicamente isso maravilha agora pontos importantes aqui pessoal o curso full
+1:46:52
+cycle ele é feito para quem já tem base de desenvolvimento ou seja ele não é um
+1:46:58
+curso para quem tá querendo aprender a programar se você não sabe lógicas de programação se você tá no início da sua
+1:47:05
+carreira eu recomendo que você faça um outro curso que é o Full Cycle para juniors a gente tem um Full Cycle for
+1:47:11
+Juniors developers que vão te ajudar mais nesse nesse nesse seu início de
+1:47:16
+carreira tá agora o lance é o seguinte pessoal o
+1:47:21
+fato é eu quero que você se torne um desenvolvedor insubstituível na área de A quem não se adaptar vai ser
+1:47:29
+substituído por um desenvolvedor que sabe a verdade é essa a gente vai ter
+1:47:34
+pilotos fantásticos de A você vai ter que ser um deles você vai ter que ser capaz de fazer coisas parecidas com o
+1:47:41
+que eu mostrei aqui para vocês tá esse aí é um dos pontos mais importantes ah é
+1:47:47
+importante aí para vocês conseguirem se ligar beleza então pessoal e a tá
+1:47:53
+mudando a nossa profissão não dá para saber o que vai acontecer o que eu tenho certeza é o que já está acontecendo
+1:48:00
+diminuição de vagas empresas algumas fazendo layoff silenciosos e muitas
+1:48:07
+empresas começando a não contratar às vezes desenvolvedores júniores porque
+1:48:13
+eles não sabem ou porque eles não têm fundamentos sólidos de desenvolvimento
+1:48:19
+então a nossa ideia aqui com vocês é que vocês aprendam de verdade galera porque
+1:48:26
+não adianta você querer desenvolver um software se você não tem base se alguém chega para você e falar por exemplo ah
+1:48:34
+vamos desenvolver um rate limiter ok você não sabe as estratégias de um rate limiter como que você vai
+1:48:43
+desenvolver sacou o que eu tô dizendo ah vou desenvolver um software numa
+1:48:48
+arquitetura assim assado se você não nunca ouviu falar naquela arquitetura como que você vai
+1:48:53
+fazer você não consegue perguntar pro GPT aquilo que você não sabe esse é o
+1:49:00
+grande problema então quando a gente está falando do curso Full Cycle a nossa ideia aqui é fazer você ter base ter
+1:49:09
+fundamento quando você olhar um código gerado pela IA pelo seu amigo por você
+1:49:14
+você conseguir entender o que tá acontecendo você conseguir criticar porque você tem base eu sempre bato
+1:49:21
+nessa tecla quem me conhece sabe o quão cri cri eu não acredito que você vai
+1:49:28
+conseguir ter uma carreira sólida de desenvolvimento se você não tiver base e fundamento você vai fazer algo que é
+1:49:34
+chamado voo de galinha você aprende ali um frameworkzinho um reactzinho um
+1:49:39
+negócio ali entrega umas aplicações caraca programei e fiz isso primeiro
+1:49:45
+desafio complexo que acontece você não sabe fazer pum você sai fora você não entrega
+1:49:53
+entende desenvolvedores não são galinhas não façam voo de galinhas que você voa um
+1:50:00
+pouquinho e cai você tem que pensar na sua carreira a longo prazo galera porque
+1:50:05
+o tempo passa e passa rápido tá então isso aí é um ponto importante aí para
+1:50:12
+vocês tá ah então a gente foca em arquitetura e desenvolvimento de software IA banco de dados segurança
+1:50:18
+DevOps SRE e aí tá o que que a gente vai fazer a gente tá criando uma trilha de A
+1:50:24
+que a gente vai fazer diversos laboratórios para a gente programar em cada vez focando em pontos diferentes
+1:50:32
+desde a geração de prompts fazendo a trabalhando com cases práticos fazendo
+1:50:37
+aulas mais avançadas tá com design e tudo mais legal a gente separou o nosso
+1:50:44
+curso em trilhas de estudo então em arquitetura e em desenvolvimento a gente tem uma trilha de Docker e contêiners
+1:50:50
+para você aprender a trabalhar com Docker de verdade para você aprender Docker em ambiente desenvolvimento
+1:50:56
+Docker para trabalhar em em ambiente de produção contêiners deep dive para você
+1:51:01
+entender realmente como um contêiner funciona por baixo dos panos você tem que fazer esse tipo de curso é
+1:51:07
+fundamento galera entendeu depois disso a gente tem trilhas de API design de API
+1:51:14
+rest nível de maturidade GRPC design de API API Gateway a gente tem testes
+1:51:20
+automatizados com TDD testes avançados padrões tipos ferramentas curso só de
+1:51:26
+teste conttainers Solid Design Patterns na prática tá arquitetura MVC focando em
+1:51:33
+arquitetura em camadas arquitetura hexagonal e clean architecture e arquitetura multiteny que não é algo
+1:51:39
+fácil de você encontrar por aí a gente tem domain driven design microsserviços e mensageria então você vai aprender
+1:51:46
+domain driven design você vai aprender domain driven design com arquitetura baseada em eventos você vai aprender
+1:51:52
+arquitetura baseada em eventos você vai aprender rabbit você vai aprender a cfka
+1:51:58
+e uma das coisas que é um grande diferencial desse curso galera é como trabalhar com modernização de sistemas
+1:52:05
+legados e transferir sistemas monolíticos para sistemas baseados em
+1:52:10
+microsserviços tá então isso aí é super importante bancos de dados inicialmente
+1:52:17
+a gente tá focando em Pugs para desenvolvedores My Kelly para desenvolvedores a Mongo para
+1:52:23
+desenvolvedores e Reds para desenvolvedores segurança focado muito
+1:52:28
+em autenticação autorização tokens JWT ACLs Zarback aí também você vai aprender
+1:52:35
+com servidor de identidade com keyclock out connect a single a 10 pra parte os
+1:52:43
+os 10 as 10 principais vulnerabilidades a de e a gente também vai falar sobre
+1:52:48
+secret management e vault também que é um ponto importante e tudo que você clicar aqui galera tem toda né a
+1:52:56
+descrição de cada item do que você vai aprender se você navegar no site e clicar aí tá então isso aí é um ponto
+1:53:03
+importante e na parte de DevOps sre Kubernets Helm Terraform infraestrutura
+1:53:09
+como código pipelines Gitops Argo CD para você dar um clique e fazer a publicação rollback das suas aplicações
+1:53:16
+então realmente né você que não entende nada disso hoje ou você que precisa se
+1:53:21
+aperfeiçoar cara essa nossa trilha de DevOp está muito fantástica tá a gente
+1:53:26
+tem a parte de s monitoramento e observabilidade então tem área só de
+1:53:32
+observabilidade só de promos de grafana módulo só de open telemetry e um módulo
+1:53:37
+só de sre mesmo de site reliability engineer de verdade porque muita gente
+1:53:43
+confunde s com devops e são coisas diferentes apesar de ter intersecções e
+1:53:49
+a parte também deve secops que é a parte de segurança no processo ali de devops
+1:53:55
+tá pessoal temos uma baita plataforma a gente tem suporte também humano e
+1:54:02
+suporte também com IA a gente tem chat com IA baseado nos conteúdos dos nossos cursos a gente tem correção de desafios
+1:54:09
+que vocês mandam pra gente então tem material didático tem um livro full cycle que você baixa que tem todo o
+1:54:15
+material conceitual dos cursos tá tem muita empresa que contrata os nossos
+1:54:20
+alunos a gente também tem muitos clientes empresariais empresas grandes que nos contratam aqui pra gente então
+1:54:27
+galera seguinte hoje é o melhor dia para você poder entrar nessa nossa turma você
+1:54:34
+contratou você já tem acesso imediato ao curso Full Cycle 4 ao curso Full Cycle 3
+1:54:40
+você já vai começar a poder estudar isso aí pra gente beleza então isso aí galera
+1:54:47
+simplesmente ah faz uma baita diferença aí para vocês
+1:54:53
+beleza estão perguntando linguagens de programação e etc caras de forma geral
+1:54:59
+quando a gente vai para laboratórios a gente tem mais flexibilidade de escolher a linguagem porque dependendo do
+1:55:05
+contexto a gente pode utilizar a diversas linguagens por
+1:55:10
+padrão quando a gente tá explicando algo vanila conceito de forma geral ah eu vou
+1:55:15
+ensinar design patterns cara a gente pegou e fez tudo em Typeescript a maioria das coisas por quê porque
+1:55:21
+TypeScript todo mundo que entende orientação objetos consegue entender TypeScript você é de se é Sharp você entendees se você é de Java você entende
+1:55:28
+script se você é de Go você entende TypeScript se você é de qualquer linguagem orientada objeto você consegue
+1:55:33
+entender TypeScript é simples de aprender e é fácil você botar isso na sua linguagem de programação mas os
+1:55:40
+laboratórios práticos que a gente vai começar a entregar eles podem ter variação de linguagem de programação sim
+1:55:46
+aí pra gente beleza então essa que é a ideia aí nossa tá a gente tem toda a
+1:55:52
+base que a gente quer ensinar e a gente tem laboratórios práticos que a gente vai utilizar mas também que a gente pode
+1:55:58
+utilizar outras linguagens aí de programação beleza lembrando galera que
+1:56:05
+é importante você saber que esse curso o foco dele não é ensinar linguagem de
+1:56:10
+programação se você quiser aprender a programar esse curso não é para você
+1:56:15
+esse curso é para você aprender a desenvolver softwares de
+1:56:21
+qualidade entendendo de arquitetura entendendo todo o processo de entrega de um software independente da linguagem tá
+1:56:29
+o que você vai aprender aqui você vai poder aproveitar e transpor isso para qualquer linguagem de programação que
+1:56:35
+você conheça tá então isso aí é um ponto assim importante para você se ligar o
+1:56:41
+Fabrício falou que tá tendo um problema para processar compra fabrício ah dá uma perguntada aqui no nosso chat talvez a
+1:56:48
+galera possa te ajudar com isso honestamente eu não sei o que pode tá não consigo ver online agora nesse
+1:56:54
+momento que pode estar acontecendo tá só para se ligar ah full cycle eu tenho o 3.0 o MBA qual
+1:57:02
+seria o custo para desse já incluso seguinte o André se você comprou o
+1:57:09
+3.0 se você comprou o 3.0 você já tem acesso gratuito ao
+1:57:15
+4.0 agora se você comprou o dois e ganhou o três aí nesse caso você precisa
+1:57:23
+fazer um upgrade do três pro 4 por um valor simbólico que a gente coloca entre em contato com a nossa galera do
+1:57:29
+atendimento eles conseguem passar todas essas informações aí para vocês tá qual
+1:57:35
+é a diferença pro MBA é possível aproveitar alguma forma depois se quiser para fazer o MBA olá Fabrício tudo bom
+1:57:42
+cara não é possível tá o MBA é um curso bem diferente tá ele tem muito mais
+1:57:48
+pessoalidade ele tem muito mais encontros ao vivo a a ementa ela é bem
+1:57:53
+diferente e o nível de profundidade ele também é diferente no MBA tem código tem
+1:58:00
+mas ele não foca em tantos detalhes de código quanto o Full Cycle 4 foca
+1:58:06
+entendeu então são cursos diferentes tem obviamente sempre uma intersecção mas
+1:58:12
+são casos diferentes aí tá o Ricardo falou ele tem o Go Expert ele
+1:58:17
+tem o P expert e o Júnior ricardo entra em contato com a nossa equipe eventualmente a gente consegue nesse
+1:58:23
+caso pelo fato de você já ter mais cursos você conseguir um desconto para entrar para quem não tem nenhum curso da
+1:58:29
+Full Pycle a gente não dá desconto tá galera eh sendo bem honesto a gente não fica negociando valor o que a gente pode
+1:58:36
+fazer é flexibilizar a forma de pagamento ah deixa eu pagar uma parte no Pix a outra num cartão a outra em dois
+1:58:44
+cartões e coisas desse tipo isso a gente consegue fazer mas a gente trabalha como
+1:58:49
+regra de não dar desconto nos nossos cursos tá ah quando vão entrar os módulos de IA
+1:58:57
+cara a gente tá acreditando que agora já pro final desse mês a gente já vai começar a soltar os primeiros módulos
+1:59:04
+porque a gente tá indo primeiro pra base conceitual mais ou menos que a gente fez
+1:59:09
+no início dessa live para depois ir especificamente para toda essa parte de
+1:59:16
+documentação e organização dos projetos para daí ir paraa parte de produtividade
+1:59:22
+e ferramentas e também pra parte de MCPs né e tools que vão te ajudar a fazer com
+1:59:30
+que a IA ela consiga ser guiada e acessar recursos externos né então isso
+1:59:35
+aí é super importante que é o que a gente vai colocar aí também tá então é importante contratei MBA disseram que é
+1:59:43
+igual o Fusycle 3 o que muda são os encontros não não não ô Juliano cara o
+1:59:50
+MBA é bem diferente do Fusy 3.0 cara ah me desculpa tá ele é bem diferente tem
+1:59:57
+módulos completamente diferentes óbvio tem módulos que são que tem intersecção
+2:00:02
+claramente mas os focos são diferentes então é bem diferente é um outro curso
+2:00:08
+além obviamente de todos os encontros ao vivos ah laboratórios práticos
+2:00:14
+ah encontros em grupo cara assim a gente tem toda uma metodologia pro MBA tá
+2:00:19
+muito bacana a gente tá tendo os encontros assim diretos só gente top participando então cara eu tô com muito
+2:00:26
+orgulho também do nosso MBA aí em arquitetura tá então eu tô tô mega feliz
+2:00:32
+tá ah além de Gol quais são outras tecnologias abordadas na pós de Gol bom
+2:00:40
+basicamente a gente utiliza Gol né mas a gente utiliza o ecossistema em volta do
+2:00:45
+Gol né então a gente trabalha com Go com Clean Architecture a gente trabalha com protocolos como GRPC Graph QL API Rests
+2:00:54
+documentações a gente entende também por trás a como que você trabalha com contêiner como preparar uma aplicação GO
+2:01:01
+para ser containerizada a gente trabalha com GO internos para você entender gerenciamento de memória schedulers o
+2:01:08
+padrão garbage collector todos esses detalhes então ele é um intensivão em go mesmo tá a gente não fica voando para
+2:01:15
+outras linguagens de programação não tá ah outra coisa que estão perguntando
+2:01:24
+é sobre pós-graduações cara todas as nossas programações a gente vai adicionar os módulos de A tá a gente não
+2:01:30
+tem prazo não foi prometido inicialmente na ementa mas a gente vai adicionar para que porque a gente acha necessário os
+2:01:36
+nossos alunos nos dias de hoje aprendam então a gente vai adicionar esses módulos de assim também nas nossas
+2:01:42
+pós-graduações tá ah então pessoal o nosso principal ponto
+2:01:49
+aqui paraa frente vai ser basicamente fazer com que você tenha
+2:01:55
+esses pilares claros na sua mente tá então hoje é o melhor dia para você
+2:02:02
+contratar o curso Full Cycle você vai ter acesso gratuito ao Full Cycle 3 você vai ter 2 anos de suporte você
+2:02:10
+vai ter acesso vitalício ao suporte o Full Psycho 4 pegando as atualizações do Full Psycho 4 você vai ter licença de 6
+2:02:18
+meses de 10 da Jet Brandch que tem muitas delas já que estão com muitos recursos de você também vai ter acesso a
+2:02:24
+todos os eventos que a gente já fez da FullSI que você pode assistir inclusive o efeito o evento da semana passada ele
+2:02:31
+sai do ar hoje e somente alunos nossos vão poder assistir esses eventos porque vai ficar gravado na nossa plataforma tá
+2:02:39
+então isso aí é um ponto importante aí pra gente conseguir trabalhar
+2:02:44
+fechou pessoal ah mais a dúvidas ô Jeferson sei
+2:02:50
+que você tá perguntando mais coisas agora sobre a cara nosso tempo tá já deu uma passada na realidade essa live já
+2:02:56
+era para ter acabado eu me alonguei muito porque eu gosto de falar e eu gosto de mostrar as coisas mas a gente pode fazer outras lives e galera
+2:03:03
+acreditem que eu vou soltar bastante conteúdo dequi pra frente também no YouTube e tudo mais óbvio que não chega
+2:03:08
+nem perto do que a gente tá entregando aqui pro pro curso fulls paraas pos e tudo mais mas pelo menos ah dá uma base
+2:03:16
+pra galera se entender de como que as coisas funcionam tá ah o Full Cycle 4.0 para Júnior para
+2:03:23
+quem quer aprender a programar sim você tendo uma base já de lógica de programação e coisas desse tipo o Pyco
+2:03:30
+Junior vai te ajudar ele vai te ajudar a trabalhar desde de Git desde Docker desde design pattern solid esses
+2:03:37
+conceitos importantes para você conseguir criar códigos realmente ah que
+2:03:43
+façam a diferença aí na sua na sua empresa pro início da sua carreira pro momento da carreira que você tá
+2:03:50
+fechou maravilha galera então pessoal hoje é o melhor dia para você contratar
+2:03:57
+esse curso tô colocando o link aqui embaixo aqui para vocês tá então ah
+2:04:05
+segue o link aqui para vocês cliquem nesse link ah contratem o curso né ah
+2:04:12
+quem contrair nesse contratar nesse primeiro dia tem esses bônus depois disso esses bônus eles vão diminuindo e
+2:04:18
+você vai começar a perder acesso a esses bônus então aproveite nesse momento para
+2:04:24
+já contratar e sair estudando ainda hoje porque a nossa ideia aqui na Fullsy é
+2:04:29
+fazer você realmente evoluir na carreira você conseguir construir um dos perfis mais desejados e bem pagos do mercado
+2:04:36
+nessa área de a onde a gente tá remodelando muita coisa para esse novo
+2:04:42
+momento que a gente tá vivendo então se você quer se tornar um desenvolvedor trabalhar nas maiores empresas do
+2:04:48
+mercado construir um portfólio construir um repertório que vai te
+2:04:55
+ajudar a pilotar IAS que vai te ajudar a tomar decisões de arquitetura vai te
+2:05:02
+ajudar você criar um código melhor você ser muito mais crítico com aquilo que você vai fazer eu não tenho dúvida
+2:05:09
+alguma que o curso Fusico é para você tá então pessoal
+2:05:15
+a o nível do curso Full Pyco 4.0 é outro
+2:05:20
+tá a gente não tá falando simplesmente de um cursinho qualquer eh e ponto não
+2:05:26
+quero fazer julgamento de cursos de outras escolas o que eu posso falar para
+2:05:33
+vocês é do resultado que a gente tem a gente trabalha de uma forma muito
+2:05:39
+muito responsável a gente tem uma empresa estabelecida a gente teve o prazer de fundar a nossa própria
+2:05:46
+faculdade a regulada pelo MEC então hoje a gente também tem faculdade a gente tem
+2:05:53
+muita gente boa que trabalha com a gente e muitos parceiros que fazem toda a diferença eu
+2:06:01
+vou dar um exemplo para vocês quando eu tava estudando em eu sentei com todas as pessoas possíveis das grandes empresas
+2:06:08
+de empresas brasileiras de pessoas que trabalham em empresas internacionais para ver como eles estão usando o IA eu
+2:06:15
+fiz esse compilado de tudo que eu aprendi com essas pessoas e baseado nisso é o que eu compilei o material que
+2:06:21
+é o que a gente tá gravando para esse curso então pessoal uma das coisas que eu digo que eu sou muito grato a Deus é
+2:06:29
+ele ter colocado pessoas fantásticas no meu caminho que eu admiro e que eu posso
+2:06:35
+chamar no WhatsApp fazer uma call no Google Meet essas pessoas me darem algumas aulas mostrarem o que elas estão
+2:06:42
+fazendo e aí eu consegui consolidar esse esse conhecimento de diversas outras
+2:06:47
+pessoas e formar a minha opinião para eu conseguir gerar uma metodologia para você conseguir aprender tá
+2:06:55
+então por favor eh deem né dê um shot aí para vocês
+2:07:02
+entrem aí no curso Full Cycle eu não tenho dúvidas que ele vai fazer diferente tá ah André Nunes qual o
+2:07:10
+suporte cara você pode clicar aqui tá ô André ou pode mandar um e-mail para
+2:07:17
+atendimento@cycle.com.br ou pergunta aqui pra galera relaxa que a gente se é problema de pagamento a gente consegue
+2:07:22
+identificar o porquado às vezes pode ser transação suspeita que a gator tá barrando pode ser bastante coisa então a
+2:07:30
+gente tá aí para te ajudar pode contar com isso tá bom quem já comprou o Full Cycole 4 vai ganhar esse bônus cara se
+2:07:37
+você já comprou o Full Cycle 4 você vai ter sim toda essa entrada da parte de A no curso tá a gente honra bastante os
+2:07:44
+nossos ah alunos ana Júlia alunos do Meli tem desconto cara a gente tem uma
+2:07:51
+página específica com um convênio com Mi tá então se você trabalha no Mi pede pra
+2:07:58
+nossa galera do atendimento passar a página porque lá você consegue contratar
+2:08:03
+você tem que contratar com o seu e-mail do Mercado Livre pra gente saber que você trabalha lá e daí ah o valor é um
+2:08:11
+pouquinho mais em conta não é aquela coisa mas a gente tem uma parceria muito forte com Melli ah então é isso aí
+2:08:19
+pessoal fechou ah o Paulo tá falando aqui só no
+2:08:26
+só ouvi sobre só não ouvi sobre Python é só Gol paulo eu não sei se você entendeu
+2:08:31
+o que a gente tá falando nessa live hoje hoje a nossa ideia não era ensinar programar ou ensinar GO hoje a nossa
+2:08:39
+live o foco era mostrar como que você pode a partir de métodos trabalhos com
+2:08:45
+prompts geração de especificações com ADRs ah
+2:08:52
+contextualização geração e organização de tarefas para que você consiga trabalhar com IA em modo agente isso que
+2:08:58
+a gente fez com GO poderia ser feito com qualquer linguagem de programação
+2:09:03
+beleza esses bônus estarão presentes numa próxima abertura de matrículas não necessariamente tá tá Lucas tem muitos
+2:09:10
+bônus que antes a gente tinha e a gente tirou tá então o que eu posso garantir é que nessas primeiras 24 horas esses
+2:09:17
+bônus estão aí numa próxima eu não posso garantir cara tá bom fechou e para quem tá querendo saber
+2:09:26
+o link tá é curso.com.br
+2:09:31
+br vou colar aqui novamente para vocês entrem analisem garantam aí sua vaga
+2:09:38
+galera porque não tenho dúvidas cara vai ser o melhor curso que vocês o contrataram eles vão dar a base que você
+2:09:44
+precisa para você ser um desenvolvedor muito bom muito sólido e ainda atualizado nesse mundo de IA perão
+2:09:54
+fechou maravilha galera ana Júlia Itaú a gente também tem convênio tá
+2:10:00
+então ah falem com a galera do atendimento a gente tem diversas empresas aí que são parceiras aí que a
+2:10:07
+gente parceiros dos funcionários necessariamente
+2:10:14
+tá é possível aprender programação mesmo sem ter experiência prévia com nenhuma
+2:10:20
+linguagem nesse curso Full Psycho 4.0 não tá esse curso já parte do princípio
+2:10:26
+que você já tem conhecimento em programação tá então eu não recomendo
+2:10:32
+que você contrate esse curso para mim seria muito melhor eu ganharia muito mais dinheiro mas eu ganharia muito mais
+2:10:39
+pessoas tristes comigo porque não iriam conseguir acompanhar o curso tá então eu tento ser o mais honesto possível galera
+2:10:46
+integridade número um aqui eh eu não quero ganhar dinheiro
+2:10:52
+simplesmente falando que o curso entrega uma coisa e não entrega tá então isso é importante tento alinhar sempre as
+2:10:58
+expectativas expectativas é sempre aquilo que dá ruim quando as elas estão desalinhadas né então esse é um grande
+2:11:05
+ponto fechou aqui sou super transparente sendo já um
+2:11:12
+arquiteto de software você considera que o conteúdo ainda é relevante Lucas muito
+2:11:17
+relevante cara sempre tem coisa que você pode aprender a arquitetura de software é algo extremamente abrangente tá
+2:11:26
+a gente tem diversas visões que não necessariamente são visões
+2:11:32
+tão tão vamos dizer assim congruentes com algumas visões meio que de babá de
+2:11:38
+arquitetura de software a gente vai em alguns pontos bem a fundo com alguns pontos até polêmicos na realidade então
+2:11:46
+sem dúvidas cara se você é arquiteto de software a gente tem muito arquiteto de software fazendo curso FY para caramba
+2:11:53
+tá só para você saber fechou você sabe qual é o aluno de idade
+2:11:58
+mais avançada que vocês têm cara Ricardo eu não sei tá a média são alunos em
+2:12:06
+torno de 25 a 45 anos mas a gente tem gente definitivamente acima de 45 anos e
+2:12:12
+também uma parcela aí de 18 a normalmente de 18 a 24 tá mas o o grosso
+2:12:19
+tá entre 25 a 45 tá só para você saber
+2:12:28
+ó o Dev Miguel o cara quando vira pai tem que escolher se gasta o cartão com curso ou compra leite nã cara compra
+2:12:36
+leite nã cara compra leite nã saúde do seu filho é muito importante mas faça um
+2:12:42
+planejamento que aos poucos você também consiga comprar o curso para que você
+2:12:48
+evolua na sua carreira e consequentemente a sua qualidade de vida vai melhorar e você não vai ter
+2:12:54
+dificuldade de comprar leite não pro seu filho tá deus abençoe você meu amigo ah
+2:13:00
+o Ricardo tem 63 anos ricardo cara idade para mim meu amigo tanto faz tá cara se
+2:13:06
+você tem requisitos para conseguir entrar e acompanhar seu curso você tá mais do que bem-vindo cara né então não
+2:13:13
+fica preso em relação à idade não o importante é você sim já ter conhecimentos em desenvolvimento de
+2:13:19
+software né você já fez um deploy trabalha com banco de dados desenvolve software cara você não vai ter problema
+2:13:25
+em acompanhar tá bom
+2:13:30
+o Gabriel Franco falou: "Esse curso é separado na linguagem e programação como os outros?" Mais ou menos ô Gabriel
+2:13:36
+basicamente toda a base do curso majoritariamente é feito em Typescript
+2:13:42
+por ser uma linguagem neutra que todo mundo entende mas a gente tá planejando laboratórios e esses laboratórios a
+2:13:48
+gente vai poder usar diversas linguagens de programação a gente vai trazer também convidados para criar laboratórios com
+2:13:55
+linguagens diferentes com experiências diferentes tá
+2:14:01
+fechou aí ó tem uma galera de 47 54 70 anos então a idade não é problema galera
+2:14:08
+o importante é o é vamos dizer é a atitude é o momento que você tá agora da
+2:14:15
+sua vida então acho que idade nos dias de hoje não significa nada tá tem duas
+2:14:21
+coisas que me deixam chateado pessoas que ah tos anos de experiência e fala com
+2:14:31
+uma arrogância muito grande mostrando que aquele tempo de experiência torna ele uma pessoa melhor por outro lado tem
+2:14:38
+o extremo tem a gente que tem muitos anos de experiência e não usa essa experiência a
+2:14:44
+favor para se vender para para conseguir somar ainda
+2:14:50
+mais na equipe porque tem muita experiência passou por muitas situações que grande parte da maioria dos
+2:14:55
+envolvedores não passaram tá então sempre tente balancear esse tipos de coisa o tempo de experiência conta muito
+2:15:02
+galera conta muito a gente não parcela no boleto tá ô Marx a gente consegue
+2:15:09
+parcelar apenas no cartão de crédito tá mas a gente consegue flexibilizar as
+2:15:16
+formas de pagamento ah uma parte no Pix uma parte no cartão uma parte no outro cartão se você precisar fazer um
+2:15:23
+bembolado desse entre em contato com a gente aqui no chat tá ah e vamos bater
+2:15:29
+um papo a gente tenta flexibilizar a gente não muda o valor mas a gente flexibiliza a forma de pagamento tá bom
+2:15:39
+aí o Ricardo falou que voltou a programar depois dos cursos da Full Pycle show de bola cara show de
+2:15:50
+bola maravilha galera pessoal alguém aqui tá em cima do muro para entrar no
+2:15:56
+curso mas ainda tá alguma dúvida que eu poderia ajudar e tirar essa dúvida para vocês
+2:16:03
+deixem me falar meu povo deixem me deixem me saber se vocês
+2:16:11
+tiverem alguma dúvida a gente da gente encerrar mas de qualquer forma pessoal fiquei muito feliz de poder estar com
+2:16:17
+vocês aqui hoje mostrar um pouquinho da parte de A quem gostou dessa parte de aí fala: "Eu gostei" quem aprendeu algo
+2:16:23
+novo fala: "Eu aprendi algo novo" quem não gostou pode falar que não gostou mas justifique porque você não gostou porque
+2:16:30
+daí eu posso tentar melhorar numa próxima tá bom que acha de usar IA para relatórios
+2:16:35
+inteligentes para empresas onde eu trabalho passamos uma situação onde a empresa era gigante faço perguntas
+2:16:41
+delegamos para cinco pessoas para responder levamos três dias cara você pode tem muitas formas de você conseguir
+2:16:49
+trabalhar com isso tá deixa eu até ver se eu tenho um MCP configurado aqui mas
+2:16:54
+eu não sei se ele vai estar funcionando deixa eu ver uma coisa aqui o post será que ele vai estar
+2:17:00
+funcionando eu posso falar o seguinte olha ah veja
+2:17:08
+todos os os todos todas as transações de um
+2:17:18
+cliente com valores acima de R$ 5.000 de
+2:17:24
+5.000 usando a tool do Postgrece não sei se ele vai conseguir fazer isso aqui
+2:17:30
+para mim vamos lá olha ele já chamou vai fazer uma query lá no
+2:17:40
+postgrace vamos ver se ele vai conseguir verificar eu não sei se esse banco de dados tá no ar na realidade
+2:17:46
+entendeu agora sei as tabelas disponíveis tô fazendo a querer tô pegando os
+2:17:52
+invoices agora tenho as transações eu vou listar os clientes
+2:17:59
+disponíveis com esses valores então ó ele falou: "O cliente específico é o John Doll" parece que não há transações
+2:18:06
+acima de 5.000 ele vai tentar com um cliente ó tem essa transação de 15.000
+2:18:11
+essa outra transação desse cara ah tem duas transações de 15.000 aqui para mim
+2:18:16
+não sei se vocês perceberam mas eu fiz uma pergunta para essa Ia Zone MCP fez
+2:18:22
+consulta no banco de dados e me retornou um relatório aí eu poderia falar: "Gere um código pega esse relatório no formato
+2:18:29
+de PDF e pum tem um relatório pronto em PDF somente perguntando ali para mim"
+2:18:34
+"ah olha só que muito louco galera" é top
+2:18:41
+né show maravilha
+2:18:47
+galera pessoal ah espero que vocês ah tenham gostado dá
+2:18:57
+para vocês perceberem né só o que eu acabei de fazer aqui já evitou de eu ficar entrando no banco de dados rodando
+2:19:02
+o comando select ou abrir plugin para eu ficar clicando e etc né é muito louco eu
+2:19:08
+posso falar assim ó quais meus meus contêiners dockers ativos que eu tenho
+2:19:14
+nesse momento eu posso fazer
+2:19:21
+isso aí ele vai usar um MCP de list containers aqui para mim ele pega essas
+2:19:30
+paradas e ele vai trazer aqui para mim todos os contêiners que eu tenho rodando tenho 10 contêiners ativos aqui no meu
+2:19:37
+sistema entendeu ah qual o log
+2:19:42
+do contêiner go gate
+2:19:48
+f1 vamos ver se ele consegue gerar isso aqui para
+2:19:54
+mim vamos
+2:20:01
+ver ele não tá conseguindo fazer o a chamada do MCP deixa eu ver agora acho
+2:20:06
+que ele vai f container logs ó aqui o log que ele trouxe tópicos
+2:20:12
+afetados e esse é o log aqui que ele trouxe que é o log que ele achou de um
+2:20:17
+problema no Cafkaa cara é fantástico isso né pessoal é isso tem muitas
+2:20:25
+possibilidades um novo mundo abriu com a IA cada dia tá amadurecendo mais o que
+2:20:32
+falta é falta de metodologia falta de conhecimento nos promptes falta de
+2:20:39
+entender o que você precisa para ter num sistema para que a IA consiga trabalhar e falta metodologia para você trabalhar
+2:20:47
+de forma agêntica esses tipos de coisa a gente vai trazer muito forte no curso
+2:20:52
+Full Psych e a gente vai fazer muitos laboratórios disso tá então isso aí
+2:20:57
+galera faz muita diferença eu espero que vocês possam entrar nessa turma e
+2:21:04
+aprender isso aí com a gente eu não tenho dúvidas que cara na real eu não
+2:21:09
+nunca vi nada igual porque eu digo porque eu tô produzindo o conteúdo com o
+2:21:15
+que a gente tá criando para esse módulo tá assim eu testei muito a metodologia foi
+2:21:23
+muita coisa muito tempo muito tempo muitas frustrações inclusive de coisas que eu pensei que ia dar certo e não deu
+2:21:29
+mas eu acho que eu cheguei num modelo bacana e eu tenho muito para compartilhar aí com vocês beleza fechou
+2:21:37
+então galera ah essa é a nossa proposta
+2:21:42
+aqui do curso Full Cycle tô passando o link novamente aqui para vocês tá
+2:21:49
+se matriculem aproveitem hoje é o melhor dia para você se matricular você vai ter bônus full cycle 3 você vai ter licença
+2:21:56
+de jet brains acessar os eventos o evento que a gente fez na semana passada vocês vão ter acesso já nessa plataforma
+2:22:03
+porque eles vão sair do ar e quem não contratar não vai ter mais acesso a esses eventos então tem muita coisa
+2:22:09
+bacana aqui galera vai depender muito de vocês aqui para vocês fechou então
+2:22:16
+pessoal ah muita muito boa noite espero que vocês tenham uma semana realmente
+2:22:22
+abençoada que tudo de bom aconteça na vida de vocês que vocês consigam realmente alcançar os objetivos que
+2:22:29
+vocês estão buscando que a família de vocês esteja bem que todos os passos que vocês deem na sua vida vocês consigam
+2:22:36
+avançar que vocês sejam felizes e que vocês tenham aí uma noite maravilhosa uma noite de sono muito boa para vocês
+2:22:42
+acordarem amanhã e conseguirem aí mais um dia de trabalho fazer o que vocês vieram para fazer cumprir a missão que
+2:22:48
+vocês têm para cumprir aí fechou então pessoal boa noite para vocês ah dúvidas
+2:22:55
+perguntem aí no chat e eu espero ver vocês aí na nossa plataforma fazendo o
+2:23:00
+curso Full Cycon aí com a gente fechou um grande abraço aí para vocês boa noite
+2:23:06
+para vocês mesmo de coração espero que vocês tenham curtido a live e estamos junto galera vamos nessa bora aí entrar
+2:23:13
+no curso Full Pyco 4.0

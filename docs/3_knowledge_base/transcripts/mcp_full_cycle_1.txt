@@ -1,0 +1,956 @@
+vídeo: Docker MCP Catalog: O novo hub de servidores MCPs chegou
+
+0:00
+se você desenvolvedor já tá trabalhando
+0:02
+aí com IA tanto para criar aplicações
+0:04
+paraa empresa que você trabalha ou mesmo
+0:05
+para desenvolver o seu software
+0:07
+provavelmente você já deva ter ouvido
+0:09
+falar em MCP Model Context Protocol um
+0:12
+protocolo que foi criado pela Antropic e
+0:14
+mudou completamente o jogo de como que a
+0:16
+gente trabalha com IA nos dias de hoje
+0:18
+principalmente porque agora os nossos
+0:20
+modelos os nossos hosts eles conseguem
+0:23
+acessar informações externas através de
+0:26
+ferramentas promptes resources que nos
+0:29
+ajudam
+0:30
+para caramba no dia a dia inclusive se
+0:32
+você nunca ouviu falar em MCP eu gravei
+0:34
+um vídeo aqui no canal dando uma baita
+0:36
+aula sobre isso então recomendo que você
+0:38
+dê uma olhadinha porque é um guia que
+0:40
+vai conseguir abrir a sua mente sobre as
+0:43
+possibilidades desse protocolo fechou
+0:46
+mas o grande ponto aqui é o seguinte num
+0:49
+momento que isso acaba virando uma moda
+0:52
+um hype como acabou virando surgiram aí
+0:55
+milhares e milhares de servidores MCPs
+0:57
+diversos sites onde a gente consulta
+0:59
+servidores baixa e instala esses
+1:01
+servidores o grande ponto nesse caso é
+1:04
+que nós temos algumas questões que não
+1:06
+estão legais como a maioria dos
+1:09
+servidores MCPs você instala na sua
+1:11
+máquina então eles conseguem executar
+1:14
+código no seu sistema operacional então
+1:18
+você pode ter pontos ali de fragilidades
+1:20
+muito fortes de segurança um outro ponto
+1:23
+também é que para cada servidor MCP que
+1:25
+você tem você tem que descobrir aonde
+1:28
+qual que é esse servidor pegar o
+1:29
+repositório dele e colocar esse servidor
+1:32
+no arquivo Jon que fica no seu curso no
+1:34
+seu VS Code não interessa onde para que
+1:37
+você consiga fazer com que a sua
+1:39
+ferramenta consiga acessar esse seu
+1:41
+servidor MCP nós temos um outro ponto
+1:44
+também que é complexo uma vez que você
+1:46
+tá usando servidores MCPs que precisam
+1:49
+de API KISYs nesse seu JSON você precisa
+1:52
+colocar essas KYS então a gente acaba
+1:54
+tendo problema de gestão e problemas de
+1:57
+segurança ao rodar esses servidores MCPs
+2:00
+e por conta disso a Docker veio que uma
+2:03
+baita sacada ela criou o MCP Catalog
+2:06
+junto com tool Kit para que que esse
+2:08
+cara serve
+2:10
+através da docker de um único contêiner
+2:13
+você vai poder gerenciar todos os seus
+2:15
+servidores MCPs então a gente vai falar
+2:17
+sobre isso nesse vídeo e eu tenho
+2:18
+certeza que você vai gostar porque eu
+2:20
+vou te mostrar isso na prática mas antes
+2:22
+da gente ir direto ao assunto queria
+2:23
+muito pedir pr você dar um like neste
+2:25
+vídeo se inscrever aqui no canal e
+2:27
+comentar como que você tá utilizando aí
+2:29
+servidores MCP no dia a dia e também
+2:32
+claro se você quer aprender a
+2:33
+desenvolver aplicações com inteligência
+2:35
+artificial né do jeito certo sem ficar
+2:38
+passando raiva como eu sei que muitos
+2:40
+desenvolvedores passam no dia a dia
+2:42
+saiba que a gente tem aí o curso Full
+2:44
+Psychico 4.0 zero que a gente adicionou
+2:46
+um pilar de inteligência artificial para
+2:48
+desenvolvedores para te ajudar
+2:50
+exatamente nesses aspectos que vão fazer
+2:53
+você ser mais produtivo também a gente
+2:55
+tem MBA em arquitetura full cycle onde
+2:57
+você também aprende mais sobre
+2:58
+inteligência artificial além de cursos
+3:01
+de liderança técnica para você sair do
+3:03
+dev ao tech e também até para você se
+3:06
+tornar um expert na linguagem GO então
+3:08
+clica no link aqui abaixo bate um papo
+3:10
+com a nossa equipe que talvez seja o
+3:12
+momento ideal para você vir e estudar
+3:14
+com a gente mas galera bora falar agora
+3:16
+sobre MCP e Docker vamos nessa meu povo
+3:19
+seguinte somente pra gente fazer um
+3:21
+resumo bem rápido sobre MCP caso você
+3:23
+nunca tenha ouvido falar mcp significa
+3:26
+model context protocol é um protocolo
+3:29
+criado pela Antropic aquela mesma
+3:31
+criadora do cloud e ele nos ajuda a
+3:34
+fazer com que o nosso modelo os nossos
+3:35
+softwares consigam falar com o mundo
+3:38
+externo tá então imagina a sua
+3:41
+inteligência artificial precisando fazer
+3:43
+uma consulta na API do seu software você
+3:46
+consegue fazer isso agora utilizando
+3:48
+servidores de MCP basicamente quando
+3:50
+você pede algo pra sua IA ela identifica
+3:53
+uma ferramenta ou um resource ou um
+3:56
+prompt e ela vai fazer uma chamada para
+3:58
+esse servidor MCP e esse servidor MCP
+4:01
+pode acessar qualquer tipo de recurso
+4:04
+externo e aqui a gente tá falando desde
+4:06
+acessar um GitHub um Gira da Vida
+4:09
+acessar seu banco de dados acessar a API
+4:11
+da sua empresa que você tá desenvolvendo
+4:13
+dá para fazer milhares de coisas com
+4:15
+isso aqui ah o grande ponto é que nós
+4:18
+temos um fluxo um pouco caótico
+4:20
+atualmente para trabalhar com MCP deixa
+4:22
+eu trazer e ampliar isso aqui para vocês
+4:25
+para vocês entenderem o problema que nós
+4:28
+temos e o e a solução fantástica que a
+4:31
+Docker tá trazendo eu gostei bastante do
+4:34
+que eles estão fazendo ah eu sou Docker
+4:36
+Captain então consigo ter bastante
+4:38
+contato com o pessoal da Docker eles me
+4:39
+mandam materiais então tem ajudado
+4:42
+bastante eu preparar meus materiais para
+4:43
+esses vídeos e trazer aqui para vocês em
+4:45
+primeira mão então o lance é o seguinte
+4:47
+galera ah hoje em dia como que a gente
+4:51
+tá trabalhando com MCP na maioria das
+4:54
+vezes tá você tem o seu cursor você tem
+4:57
+seu VS Code você tem algumas ferramentas
+4:59
+que precisam utilizar algum servidor MCP
+5:03
+e o que que você faz você vai lá no seu
+5:04
+cursor por exemplo e fala: "Ah eu
+5:07
+preciso de um MCP do GitHub" daí você
+5:10
+vai também lá no seu cursor e fala: "Ah
+5:12
+eu preciso de um MCP para acessar o
+5:15
+Postgre" ah eu preciso de um MCP para
+5:18
+acessar o Stripe preciso de um MCP para
+5:20
+pegar dados do Google Drive não
+5:22
+interessa qual é o MCP o ponto é que
+5:24
+você tem que vir aqui e cadastrar todos
+5:26
+esses caras muitos desses caras aqui
+5:29
+inclusive eles precisam que a gente
+5:32
+forneça o quê a nossa API key ou seja a
+5:37
+gente começa a ter uns arquivos de ali
+5:39
+com as API keys ah super sensíveis
+5:42
+daquilo que você tá utilizando e isso aí
+5:45
+me dá uma uma gastura danada porque
+5:47
+realmente é crítico você trabalhar dessa
+5:50
+forma tá além disso para cada servidor
+5:53
+MCP você tem que ficar chamando essas
+5:55
+aplicações e se você tem várias né
+5:58
+vários sei lá editores vários ah caras
+6:01
+que usam MCPs você começa a entrar nesse
+6:04
+fluxo mais caótico tá e uma coisa
+6:07
+interessante também de se lembrar é que
+6:10
+grande parte desses servidores MCPs eles
+6:12
+rodam na sua máquina ou seja se você
+6:15
+quiser ter esse esse servidor MCP
+6:18
+funcionando no seu computador você vai
+6:20
+ter que ter por exemplo se tem um MCP em
+6:22
+Python você tem que ter o Python
+6:24
+instalado se você tem o MCP trabalhando
+6:26
+com Node você vai ter que ter o Node
+6:28
+instalado agora se cada MCP utilizar uma
+6:31
+versão diferente da dessas versões que
+6:35
+você tem instalado no seu computador
+6:37
+você também começa a ter uma bagunça em
+6:40
+relação ao ambientes e muitas vezes não
+6:42
+conseguindo usar o MCP tá então esse aí
+6:45
+é um problema então a gente pode falar
+6:46
+que o nosso ambiente ele fica cada vez
+6:49
+mais caótico uma outra coisa importante
+6:52
+aqui é a parte de segurança né eu já
+6:55
+tinha falado para vocês em relação
+6:57
+a parte de segurança vai mais longe por
+7:00
+quê porque muitos desses MCPs às vezes
+7:03
+você vai poder pegar um MCP de terceiro
+7:05
+e esses caras aqui executam comandos
+7:07
+direto no seu computador porque ele está
+7:09
+instalado local aí no seu computador
+7:12
+então isso pode gerar ali uma questão
+7:15
+muito forte em relação à segurança num
+7:17
+vídeo anterior eu falei bastante sobre
+7:20
+isso aqui então acredito que deu para
+7:21
+vocês entenderem como que na maioria das
+7:24
+vezes a gente tá trabalhando com MCPs
+7:26
+nos dias de hoje tá agora uma coisa
+7:29
+interessante aqui de você pensar é que
+7:33
+hoje a gente tem um cara que nós já
+7:35
+utilizamos no dia a dia esse cara aqui é
+7:38
+chamado de Docker qual que é a ideia do
+7:40
+Docker ter um processo que roda num
+7:43
+formato de contêiner e esse contêiner
+7:46
+ele roda de forma isolada podendo ter né
+7:49
+a ferramenta que você queira estar
+7:51
+instalada na versão que você quiser
+7:53
+instalado e que essas ferramentas elas
+7:56
+não vão necessariamente gravar ou ler
+7:59
+dados que estão no seu sistema
+8:02
+operacional dando muito mais segurança
+8:04
+tá então trabalhar hoje em dia com MCP
+8:07
+utilizando Docker isso aí já é bastante
+8:11
+fantástico agora o mais legal de tudo é
+8:13
+que a Docker ela tá lançando uma parada
+8:15
+chamada de Docker MCP Catalog junto um
+8:19
+Docker MCP Tool Kit como é que esse cara
+8:22
+funciona a abordagem dele é realmente
+8:25
+muito inteligente tá que é esse camarada
+8:28
+aqui a ideia principal aqui da Docker é
+8:32
+fazer o seguinte ao invés tá de eu
+8:35
+instalar diretamente baixar os
+8:38
+servidores MCPs instalá-los todos no meu
+8:41
+computador o que que você faz eles
+8:44
+criaram tá um MCP catalog onde você tem
+8:49
+como se fosse um repositório de MCPs mas
+8:52
+esse repositório de MCPs ele é
+8:55
+gerenciado pel um contêiner principal da
+8:59
+Docker então o que que isso significa
+9:02
+significa que ao invés de você ter que
+9:03
+ficar instalando manualmente os
+9:06
+servidores MCPs do seu computador o que
+9:08
+você faz você vai lá no seu Docker
+9:11
+Desktop habilita o servidor MCP que você
+9:13
+quiser e quando né a sua ferramenta for
+9:18
+utilizar esse MCP o que que vai
+9:20
+acontecer vamos imaginar que o meu MCP
+9:22
+client vai querer utilizar um MCP de SQL
+9:26
+ele vai bater nesse contêiner principal
+9:29
+aqui da Docker ou seja ele vai bater
+9:30
+nesse cara aqui ó ele vai bater nesse
+9:33
+cara esse cara aqui vai saber se você
+9:37
+tem habilitado por exemplo um MCP de SQL
+9:40
+se tiver ele chama esse MCP e retorna o
+9:44
+resultado para você ou seja esse
+9:47
+camarada da Docker virou um
+9:49
+intermediário e isso aí facilita a vida
+9:52
+porque agora você não tem que sair
+9:53
+cadastrando um monte de MCPs dentro do
+9:57
+seu JSON ali onde você gerencia esses
+9:59
+caras porque a Docker vai fazer tudo
+10:02
+isso para você em relação à parte aí do
+10:05
+Docker MCP Catalog uma coisa
+10:07
+interessante também agora é que pelo
+10:10
+menos por agora o MCP Catalog que a
+10:12
+Docker tá distribuindo tem uma pancada
+10:14
+de servidores mas o mais legal é que
+10:17
+esses servidores MCPs eles são
+10:19
+homologados com os parceiros que
+10:22
+desenvolveram ou seja eles em tese aí
+10:24
+eles são bem seguros e uma coisa mais
+10:26
+bacana também é o seguinte toda a parte
+10:30
+de quis a toda essa parte de segurança
+10:33
+toda essa parte de você não ficar com
+10:36
+API Kys para lá e para cá elas são
+10:38
+armazenadas de forma segura num volte do
+10:41
+próprio Docker ou seja você não precisa
+10:43
+ficar replicando isso para tudo quanto é
+10:46
+lado e joga gera muito mais segurança e
+10:49
+também eu não preciso nem falar uma vez
+10:50
+que você tá rodando com o Docker todo o
+10:53
+processo daquele servidor MCP está
+10:55
+rodando dentro de um contêiner e se ele
+10:58
+tá rodando dentro de um contêiner ele
+11:00
+não tem acesso à sua máquina para sair
+11:03
+gravando arquivos e tudo mais a não ser
+11:05
+que você dê explicitamente mas de forma
+11:07
+geral você não precisa fazer isso e sem
+11:10
+dúvidas isso aí muda completamente o
+11:13
+jogo na hora que você vai trabalhar e
+11:15
+ficar muito mais ali de cabeça fresca
+11:18
+com relação à parte de segurança tá
+11:21
+então essa que é a ideia do MCP Catalog
+11:23
+eu vou mostrar aqui para vocês como é
+11:25
+que funciona isso no Docker tem o Tool
+11:27
+Kit que eles vão lançar tá para lançar
+11:30
+numa próxima release ali do Docker
+11:32
+Desktop quando lançar eu vou mostrar
+11:34
+para vocês como é que funciona tá então
+11:36
+vamos ver essa parada na prática agora
+11:38
+pessoal eu vou aqui no meu Docker
+11:40
+Desktop tá então obviamente é uma
+11:43
+solução da Docker Inc então se você tem
+11:45
+o Docker Desktop que você pode instalar
+11:47
+tanto no Linux no Mac quanto no Windows
+11:50
+você tem essa oportunidade de trabalhar
+11:53
+ali com o MCP Tool Kit da Docker tá
+11:56
+então como que funciona primeira coisa
+11:57
+que você tem que se ligar você vai na
+11:59
+parte de extensions Manage e você vai
+12:02
+buscar para uma extension chamada de
+12:04
+Docker MCP Tool Kit tá uma vez que você
+12:08
+instalou essa extensão você dá um open
+12:10
+ela já vai estar aqui embaixo aqui para
+12:11
+vocês e agora que a coisa fica bem
+12:14
+bacana de você entender primeira coisa
+12:18
+que você tem que se ligar é que nós
+12:19
+temos duas partes uma parte chamada MCP
+12:22
+Servers e outra parte chamada de MCP
+12:25
+clients tá para que que serve qual que é
+12:27
+a diferença das duas tá bom os MCP
+12:31
+Servers são os servidores onde nós
+12:33
+fazemos a nossa IA acessar para trazer
+12:37
+informações ou executar ações pra gente
+12:40
+tá os MC MCP clients são os clients que
+12:44
+a Docker já deixa meio que
+12:46
+pré-configurado para você fazer a
+12:48
+conexão desse MCP tool kit neles então
+12:51
+eu vou primeiro aqui em clients para
+12:52
+vocês entenderem o que eu tô querendo
+12:54
+dizer por exemplo vamos imaginar que eu
+12:57
+quero instalar o meu MCP né Tool Kit da
+13:01
+Docker no meu cursor então o que que eu
+13:03
+faço eu venho aqui e clico em connect
+13:06
+quero fazer isso com o meu cloud vou
+13:08
+aqui clico em connect quero fazer aqui
+13:11
+com o Gordon que é o do própria a da
+13:13
+própria Docker então a ideia é para
+13:16
+facilitar o processo de configuração mas
+13:19
+na prática o que que isso significa que
+13:22
+ele vai acessar o arquivo ponjonjon
+13:26
+desses dois caras e colocar ali o
+13:29
+comando para inicializar o servidor de
+13:32
+catálogo deles tá e eu vou mostrar isso
+13:34
+aí para vocês mas fique tranquilo em
+13:36
+relação a clicar em conectar desconectar
+13:38
+porque isso é é simplesmente detalhe tá
+13:42
+mas a parte mais bacana de tudo é a
+13:45
+parte dos MCP servers qual que é a
+13:47
+lógica aqui você tem uma listagem
+13:50
+gigante de MCP servers esses esses MCP
+13:54
+servers no momento é um catálogo geral
+13:57
+onde você tem diversos que você pode
+14:00
+escolher tem categorização e tudo mais
+14:03
+esses caras pelo menos no momento da
+14:05
+gravação desse vídeo são homologados
+14:07
+pela Docker ou seja são caras seguros de
+14:11
+você trabalhar ou pelo menos passaram
+14:13
+por um crio bem diferente e aqui você
+14:16
+consegue ver a quantidade de tools que
+14:19
+esses MCPs t tá e a ideia principal da
+14:23
+Docker foi fantástica em relação de
+14:25
+fazer o quê vamos imaginar que eu chego
+14:27
+aqui e digito assim: GitHub tá se você
+14:29
+clicar aqui nesse MCP Server o que que
+14:32
+ele vai trazer aqui para mim quais são
+14:34
+as tools que ele disponibiliza e eu
+14:37
+posso ver a documentação mas uma parada
+14:39
+importante é essa parte aqui de
+14:41
+configuration por quê aqui eu passo o
+14:44
+meu token isso aqui fica guardado no
+14:46
+Volt aí da Docker inclusive eles vão
+14:49
+fazer a a toda uma parte de autenticação
+14:53
+diferente eu acredito também no futuro
+14:55
+usando o alt e etc mas a ideia principal
+14:59
+aqui de tudo isso é que você não precisa
+15:02
+mais ficar transportando API KISS para
+15:06
+lá e para cá e isso aí é algo realmente
+15:09
+muito mas muito bacana porque somente
+15:11
+quem teve um monte de servidor MCP
+15:13
+instalado tendo que colocar KIS na mão
+15:15
+sabe a tensão que é realmente ficar
+15:18
+fazendo isso então essa que é a ideia
+15:20
+principal como é que eu habilito esse
+15:22
+cara eu simplesmente clico aqui e ele
+15:25
+vai habilitar mas eu não vou habilitar
+15:27
+ele ainda por eu vou aqui no meu cursor
+15:29
+tá e no meu cursor se você for no cursor
+15:33
+settings e depois clicarem aqui em MCP
+15:36
+lembrando que você pode fazer isso com
+15:37
+qualquer servidor qualquer software que
+15:40
+tenha suporte MCP como VS Code também
+15:44
+tem suporte MCP tá então nesse caso aqui
+15:47
+o que que ele tá mostrando que eu tenho
+15:49
+um único servidor MCP instalado e se
+15:52
+você perceber esse servidor MCP
+15:54
+instalado é o servidor MCP da Docker se
+15:58
+você olhar aqui o comando para
+16:00
+inicializar esse servidor MCP é
+16:03
+utilizando o Docker Run e isso dá mais
+16:05
+tranquilidade porque a gente sabe que os
+16:08
+nossos MCPs vão ser executados dentro de
+16:10
+um contêiner então aqui é o comando de
+16:13
+inicialização e no final das contas né
+16:15
+naquele botão se você desse um connect
+16:18
+aqui né no clients ele iria editar esse
+16:22
+arquivo aqui e iria cadastrar no final
+16:26
+das contas essa informação no seu JSON
+16:29
+isso aqui já é o suficiente para você
+16:32
+ter tudo que você precisa para trabalhar
+16:34
+com MCP catalog ali da Docker então
+16:37
+fazendo isso se você olhar aqui o meu
+16:39
+MCP server ele não tá nem falando que eu
+16:42
+tenho tools available por eu não tenho
+16:44
+nenhuma tool habilitada ali para mim mas
+16:47
+chegando aqui por exemplo e eu venho no
+16:49
+MCP Server no GitHub e eu habilito esse
+16:52
+cara aqui o que que vai acontecer quando
+16:56
+eu chegar aqui no meu cursor e der um
+16:58
+refresh olha só as minhas tools
+17:02
+referentes ao GitHub já estão
+17:05
+habilitadas aqui para mim e eu não
+17:07
+precisei cadastrar o MCP do GitHub não
+17:11
+precisei pegar a minha K e colocar no
+17:13
+meu JON porque tudo isso tá gerenciado
+17:16
+pelo esse MCP né esse tool kit da Docker
+17:19
+ah Wesley eu quero mais um servidor MCP
+17:22
+não tem problema vou pegar aqui um de
+17:23
+Qode que é simples né qode qode clico
+17:28
+aqui né habilitei esse meu servidor e
+17:32
+quando eu der um refresh ó perceba que o
+17:34
+final aqui é reviews quando eu der um
+17:35
+refresh você vai ver que entrou uma nova
+17:38
+tool para eu conseguir trabalhar então
+17:40
+agora a minha vida ela fica mais simples
+17:43
+quando eu tô precisando utilizar os
+17:46
+principais servidores MCPs porque agora
+17:51
+a Docker ela provê essa camada de
+17:54
+abstração para mim o que está por vir em
+17:57
+relação a Docker e assim que eles
+17:59
+lançarem oficialmente eu vou fazer
+18:02
+questão de trazer aqui para vocês é que
+18:04
+apesar de a gente estar fazendo isso
+18:06
+tudo pelo Docker Desktop a gente vai ter
+18:09
+a opção de a gente fazer esses catálogos
+18:12
+e tudo mais via commandline interface e
+18:15
+você também vai poder criar os seus
+18:17
+próprios catálogos isso aí começa a
+18:19
+deixar as coisas também cada vez mais
+18:22
+interessantes e eu acredito que tudo tá
+18:25
+evoluindo para o fato de você poder
+18:27
+também publicar o seu próprio servidor
+18:29
+MCP e você ter um catálogo dos seus
+18:32
+próprios servidores para serem
+18:34
+gerenciados dessa forma e aí a gente
+18:37
+chega eu acho que no melhor dos mundos
+18:40
+você cria o seu você tem um catálogo que
+18:44
+tem todos os seus personalizados ou não
+18:47
+personalizados e você só vai habilitando
+18:49
+e desabilitando trabalhando aqui com a
+18:51
+Docker lembrando que isso que eu tô
+18:53
+mostrando tá no Docker Desktop acredito
+18:55
+que o Tool Kit logo em breve já vai sair
+18:57
+na próxima release né
+19:01
+que a Docker tá fazendo aí e assim que
+19:03
+eles fizerem eu trago mais notícias aqui
+19:05
+para vocês agora você que tá trabalhando
+19:10
+com MCP fala a verdade se isso aqui
+19:13
+acaba sendo não acaba sendo uma mão na
+19:15
+roda você tem mais segurança muito mais
+19:17
+facilidade de uso e você não precisa
+19:19
+mais ficar gerenciando um JON com um
+19:21
+monte de chaves e tudo mais realmente a
+19:24
+Docker mandou muito bem e agora a gente
+19:26
+já vai começar a perceber que a Docker
+19:28
+ela não vai ser só apenas um hub de
+19:31
+imagens Docker mas ela também vai ser um
+19:33
+hub de MCPs que a gente vai utilizar
+19:36
+através dessas imagens Docker então
+19:39
+espero que você tenha gostado desse
+19:40
+vídeo e claro se você quiser aprender
+19:42
+mais como ser mais produtivo aprendendo
+19:45
+de verdade a trabalhar com inteligência
+19:47
+artificial em ambiente de
+19:48
+desenvolvimento clica no link abaixo
+19:50
+vamos bater um papo porque aqui na Full
+19:52
+Cycle sem dúvidas a gente vai poder te
+19:54
+ajudar em relação a isso clica aí para
+19:56
+saber mais os nossos cursos a gente
+19:58
+escuta você entende o seu momento
+19:59
+profissional e aí se for né momento para
+20:03
+você você bora estudar com a gente aí em
+20:06
+MBA pós-graduação a gente tem o curso
+20:08
+fullsico tem bastante coisa maravilha
+20:11
+pessoal deixe seus comentários falem o
+20:13
+que você gostou não gostou e a gente vem
+20:15
+aí pro nosso próximo vídeo até mais
+20:19
+[Música]
+20:34
+he เฮ

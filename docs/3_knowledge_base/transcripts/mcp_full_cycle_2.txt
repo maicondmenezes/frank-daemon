@@ -1,0 +1,928 @@
+vídeo: Os 4 Planos de Ação de um Workflow de Desenvolvimento com IA
+
+0:00
+Cada vez tá ficando mais frequente, a
+0:02
+gente vê a galera tentando se organizar
+0:04
+e criando um workflow decente para
+0:06
+conseguir desenvolver as aplicações
+0:08
+utilizando a inteligência artificial. E
+0:11
+parte de desse workflow hoje em dia tá
+0:13
+muito baseado em algo chamado de plano
+0:15
+de ação. Então, se você hoje em dia
+0:18
+desenvolve com aplicações como o
+0:20
+Windsurf ou por exemplo o Cloud Code,
+0:22
+você já vai começar a perceber que eles
+0:24
+tentam criar um plano de ação, inclusive
+0:26
+uma checklist do que eles precisam fazer
+0:29
+para chegar até o fim da tarefa que você
+0:31
+tá colocando, tá? O grande ponto é que
+0:34
+muitos desses planos de ação pode ser
+0:36
+uma baita furada. E nesse vídeo eu vou
+0:39
+mostrar aqui para vocês quatro tipos
+0:41
+diferentes de plano de ação que você
+0:44
+deve utilizar na hora que você vai criar
+0:46
+a sua aplicação, principalmente quando
+0:48
+são aplicações maiores, tá? E daí você
+0:51
+vai entender a diferença de um plano de
+0:53
+ação feita por você, tá? Com ajuda de a
+0:56
+claramente, mas um plano de ação que a
+0:59
+IA utiliza para fazer o tracking das
+1:01
+suas próprias tarefas. Mas antes da
+1:03
+gente ir direto ao assunto, queria muito
+1:05
+pedir pr você dar um like nesse vídeo,
+1:07
+ah, se inscrever aqui no canal. Deixa um
+1:09
+comentário também aqui embaixo falando
+1:11
+como que você tá com o seu workflow de
+1:13
+desenvolvimento com IA, se isso tem
+1:15
+melhorado, se não tem melhorado, o que
+1:17
+que você tem feito aí para te ajudar no
+1:20
+dia a dia. E eu também não posso deixar
+1:22
+de falar que aqui na Full Psycho a gente
+1:25
+lançou um MBA em engenharia de software
+1:27
+com o IA, onde o nosso foco é fazer você
+1:30
+ser muito mais produtivo com o IA, tendo
+1:32
+workflows, processos claros para que
+1:35
+você consiga desenvolver qualquer tipo
+1:36
+de projeto, desde projetos do zero até
+1:39
+aqueles projetos que tem ali milhares e
+1:42
+milhares de arquivos no Codebase. E
+1:44
+também nesse MBA você também vai
+1:47
+aprender a desenvolver aplicações
+1:50
+integradas com o IA e também agentes de
+1:53
+A, que realmente é a nova geração de
+1:56
+aplicações que você vai começar
+1:58
+desenvolver daqui pra frente. Mas
+1:59
+galera, vamos aqui pra tela do meu
+2:01
+computador. Eu acho que vai ficar um
+2:02
+pouco mais fácil eu dar alguns exemplos
+2:04
+aqui para vocês, tá? Primeira coisa que
+2:06
+a gente tem que se ligar, deixa eu
+2:07
+melhor, deixa eu compartilhar aqui um o
+2:09
+cursor que eu tava trabalhando aqui com
+2:12
+ele, né? E o cursor eu habilitei aqui,
+2:14
+nesse caso o Cloud Code. Deixa eu até
+2:17
+dar uma scrollada aqui para baixo. Eu
+2:19
+não sei se você percebe, mas na hora que
+2:21
+você vai utilizar essas ferramentas,
+2:23
+muitas delas agora estão criando um
+2:26
+plano de ação e daí conforme eles fazem,
+2:29
+né, a tarefa que eles estão traqueando,
+2:31
+eles vão matando isso aí como uma tarefa
+2:34
+realizada, tá? Se você perceber, tá? Eu
+2:37
+não sei se você já usou o Windsurf, que
+2:39
+é uma outra ideia fantástica. Agora ele
+2:42
+tem uma opção que você pede para ele
+2:45
+gerar um plano de ação conforme ele vai
+2:47
+desenvolvendo. Então, automaticamente o
+2:50
+que que ele começa a fazer? ele começa a
+2:53
+criar, né, a anotações e planos de ação
+2:57
+que ele vai seguindo e aí ele consegue
+2:59
+aí programar por horas, vamos dizer
+3:01
+assim, porque ele vai mantendo o
+3:04
+tracking do que ele tá fazendo e
+3:06
+conforme eu vou interagindo, ele vai
+3:07
+mudando as anotações e tudo mais, tá?
+3:10
+Cara, esses recursos, tá, eles são
+3:12
+recursos fantásticos porque faz com que
+3:15
+a IA ela tenha uma linha de raciocínio
+3:17
+no processo de desenvolvimento dela, tá?
+3:20
+Mas eu vou mostrar aqui para vocês agora
+3:22
+qual é a diferença desse plano de ação
+3:24
+pros planos de ação que você deveria tá
+3:27
+criando aí no seu dia a dia para
+3:29
+trabalhar e organizar o seu workflow, tá
+3:31
+bom? Seguinte, primeira coisa que a
+3:33
+gente tem que se ligar é que a IA em si,
+3:36
+ela não tem a ideia da dimensão do
+3:39
+projeto que você quer desenvolver, né?
+3:41
+Normalmente a IA ela trabalha muito por
+3:43
+tarefas, com coisas muito específicas,
+3:46
+porque se você chegar e fala: "Cria uma
+3:48
+tela de login, será que tem que ter
+3:50
+esqueci minha senha? Será que ele tem
+3:52
+que criar um banco de dados para eu
+3:53
+fazer o login? Será que essa tela vai
+3:55
+usar qualquer tipo de CSS, qualquer
+3:57
+framework?" Então, ela vai começar a
+3:59
+tomar decisões por elas mesmas e muitas
+4:01
+vezes essas decisões não fazem sentido
+4:04
+no seu projeto, tá? Então, ela não tem
+4:06
+uma dimensão macro do seu projeto de
+4:09
+forma geral, tá? Então esse aí é o nosso
+4:11
+primeiro ponto e por conta disso eu
+4:14
+tenho alguns planos de ação que eu
+4:15
+realmente recomendo que você aplique no
+4:18
+seu dia a dia, principalmente dependendo
+4:20
+do tamanho do seu projeto, tá? Então
+4:22
+vamos aí pro nosso primeiro plano de
+4:24
+ação, que é o plano de ação global. Qual
+4:26
+que é a ideia desse plano de ação? É uma
+4:29
+visão de alto nível de como o projeto
+4:31
+será desenvolvido, tá? A ideia dele é
+4:34
+focar em quais são as etapas barra a
+4:37
+ordem de desenvolvimento do projeto ou
+4:39
+da sprint como um todo, tá? E essa
+4:42
+responsabilidade de criar esse plano de
+4:45
+ação é do desenvolvedor. E toda vez que
+4:47
+eu falo que é do desenvolvedor é porque
+4:49
+é algo explícito e intencional que o
+4:51
+desenvolvedor vai fazer. Se o
+4:52
+desenvolvedor quiser usar IA para ajudar
+4:55
+a montar esse plano, tudo bem, mas quem
+4:57
+que tem que refinar e garantir esse
+4:59
+plano aqui é o desenvolvedor, tá? Então
+5:02
+eu vou dar um exemplo rapidamente aqui
+5:03
+para vocês, ah, de um plano de ação bem
+5:06
+simples, somente para você pegar a ideia
+5:09
+aqui do que eu tô falando, tá? Eu criei
+5:10
+uma pastinha plena aqui só para utilizar
+5:13
+como ideia aqui para vocês, tá? Então,
+5:16
+lance é o seguinte, deixa eu tirar esse
+5:20
+cara daqui, tá? Seguinte, olha só que
+5:23
+interessante, tá? Plano de ação global,
+5:25
+alto nível. Setup de ambiente de
+5:28
+desenvolvimento. Fazer o bootstrap de um
+5:30
+servidor MCP no formato HTTP streamable.
+5:33
+Usar bet tools. Ah, stream de tools para
+5:36
+notification e data processing stream.
+5:38
+Workflow multistep. MCP server com
+5:41
+gerenciamento de sessões. Web server
+5:43
+para disponibilizar o MCP server via
+5:46
+http. Então, se você perceber aqui é um
+5:49
+plano de ação que eu quebro quais são os
+5:52
+principais pontos que a minha aplicação,
+5:55
+que o meu projeto vai ter que fazer, tá?
+5:57
+Ou seja, essa é uma ideia, visão geral
+6:00
+de como que eu trabalho com o projeto.
+6:02
+Isso aqui vai me ajudar e também vai
+6:04
+ajudar a IA entender em qual momento que
+6:07
+ela tá no processo de desenvolvimento
+6:09
+desse software. Legal? Agora, olha só
+6:11
+que interessante, eu tenho um outro tipo
+6:13
+aqui de plano de ação, tá? que é o plano
+6:15
+de ação baseado na etapa ou no tópico
+6:18
+que a IA vai se ligar para desenvolver,
+6:22
+tá? Novamente aí a gente já tá falando
+6:24
+de uma visão mais baixo nível de como a
+6:27
+etapa será desenvolvida. E aqui é
+6:29
+importante que você entenda é como a
+6:32
+etapa será desenvolvida, tá? Basicamente
+6:36
+o foco vai ser nas etapas dos itens a
+6:39
+serem desenvolvidos. E novamente, a
+6:41
+responsabilidade de fazer isso é do
+6:44
+desenvolvedor, tá? Então eu trouxe um
+6:46
+outro exemplo aqui de um plano de ação
+6:50
+baseado nos tópicos, tá? Então se você
+6:52
+olhar aqui, né, eu tenho tópicos a serem
+6:55
+implementados. Então eu tenho aqui user
+6:57
+tools, vai ser em bet, vai ter um crude
+7:00
+de usuários em bet, uma listagem de
+7:01
+usuários, eu tenho a stream tools com
+7:04
+notification stream, stream data
+7:05
+processing, eu tenho workflow mult, a
+7:08
+resumable resumable long tasks, mcp
+7:11
+server com session manager, com in em
+7:14
+memory event store. Aí eu tenho web
+7:16
+server com midware, com as rotas, com a
+7:19
+configuração e com entry point. Então,
+7:21
+se você perceber agora, se eu comparar
+7:24
+esses tópicos com o ponto global, né, as
+7:27
+coisas já mudam um pouco de figura,
+7:29
+porque eu já vou est focando em outros
+7:31
+pontos, né, ah, em relação ao que vai
+7:35
+ser desenvolvido. Então, novamente, eu
+7:37
+já tenho algo um pouco mais granular,
+7:40
+tá? E aí, voltando aqui aos nossos
+7:43
+planos de ação, nós temos o plano de
+7:45
+ação baseado no prompt, tá? E o que que
+7:49
+é um plano de ação baseado no prompt,
+7:51
+tá? O lance é o seguinte, pessoal. Aqui
+7:54
+a gente foca em tópico. Aqui a gente vai
+7:56
+falar para você tem que desenvolver o
+7:58
+user tools, o bet, o crude a de usuários
+8:01
+em bet, a listagem. Ou seja, aqui a
+8:03
+gente tem, não de uma forma tão
+8:05
+granular, mas aqui a gente já tem quase
+8:08
+que uma tarefa. E eu vou falar para você
+8:10
+quase que uma tarefa, porque plano de
+8:13
+ação é diferente de tarefa também, tá?
+8:16
+Então acompanha essa parada aqui comigo.
+8:18
+Então essa que é a ideia aqui principal.
+8:21
+Agora o que que é o plano de ação
+8:23
+baseado no prompt. E a isso aqui muda o
+8:26
+jogo, galera, porque no prompt eu vou
+8:30
+trazer, deixa eu fechar isso aqui que tá
+8:31
+me atrapalhando. No prompt eu vou fazer
+8:34
+o meu prompt. Nesse caso é um prompt que
+8:36
+eu tenho aqui, que eu uso bastante ele,
+8:38
+que eu trago as instruções de como que a
+8:40
+IA ela deve se portar, desde o que ela
+8:43
+tô dando, qual o role dela, o que que
+8:45
+ela tem que fazer, o que que com a linha
+8:47
+de raciocínio e tudo mais. Mas se você
+8:49
+perceber aqui nesse meu plano de ação,
+8:52
+nesse meu prompt, eu trago aqui um
+8:54
+workflow, tá? E nesse workflow eu falo
+8:57
+para ele que ele vai ter uma estratégia
+8:59
+para desenvolvimento de alto nível, tá?
+9:02
+E em cima dessa estratégia de alto
+9:04
+nível, eu tô trazendo outras estratégias
+9:07
+que ele tem que trabalhar aqui no
+9:10
+workflow. E a partir dali, ele vai ter
+9:13
+que fazer o quê? Desenvolver um plano de
+9:16
+ação. Crie um plano de ação, claro que
+9:18
+deve ser feito, baseado no plano de
+9:20
+ação. Esboce uma sequência de passos
+9:23
+específicos, simples e verificáveis, tá?
+9:26
+Então, se você perceber aqui tudo que tá
+9:28
+nessa parte de workflow, eu estou
+9:30
+forçando com que ela crie internamente
+9:33
+um plano de ação, mas nesse caso é algo
+9:36
+muito mais de um nível de controle meu,
+9:39
+porque nesse plano eu posso falar
+9:41
+inclusive no workflow, quando você
+9:44
+terminar essa parte, pergunta para mim
+9:45
+se ele pode continuar ou se você tiver
+9:48
+essa dúvida, passa o controle para mim
+9:50
+ou não, termine tudo completamente, sem
+9:52
+passar o controle que eu reviso depois.
+9:55
+Então, uma coisa é um plano de alto
+9:57
+nível, outra coisa é um plano com nível
+10:00
+menor, onde eu falo granularmente o que
+10:02
+vai ter que ser feito. E aqui, né, é o
+10:05
+meu prompt de eu falando como ela deve
+10:08
+agir e como ela deve criar um plano de
+10:10
+ação para ela se organizar, mas baseado
+10:13
+nos critérios que eu tô colocando, tá?
+10:16
+Então, isso aqui é um ponto
+10:18
+importantíssimo. E aqui, por último, a
+10:21
+gente tem o quê? o plano de ação
+10:24
+controlado pela IA, que foi o primeiro
+10:26
+plano que eu trouxe aqui para vocês,
+10:29
+onde a própria IA, ela vai programando,
+10:33
+gerando um plano que ela vai utilizar,
+10:36
+ela mesmo vai dando um tracking das da
+10:40
+das tarefas dela, ela vai ah colocando
+10:44
+anotações, mas isso é para o controle
+10:46
+dela. Ou seja, esse tipo de plano de
+10:48
+ação não é, não sou eu que quero
+10:51
+controlar. Eu posso até editar esses
+10:53
+arquivos para ajudar, nesse caso aqui,
+10:55
+Windsurf, a facilitar a minha vida. Mas
+10:58
+a ideia é que quem vai tomar conta dessa
+11:01
+parada é a própria IA, tá? Então, muita
+11:04
+gente hoje em dia tá pensando que como
+11:06
+as IAS elas estão lançando recursos como
+11:09
+plano de ação, isso tá me inventando de
+11:12
+fazer o meu plano de ação. O meu plano
+11:15
+de ação, ele sempre vai ter uma visão
+11:16
+que a IA ela não tem, tá? E aí a gente
+11:20
+começa a entrar numa outra discussão
+11:22
+entre qual que é a diferença de um plano
+11:25
+de ação para tarefas. Porque o que eu tô
+11:27
+trazendo aqui para vocês, galera, ah,
+11:30
+não é, né, ah, um uma lista de tarefas
+11:34
+que ela tem que fazer. é um plano de
+11:36
+como que ela deve seguir a ordem, o que
+11:38
+ela vai ter implementando. Agora, o que
+11:41
+ela vai implementar é outra história. E
+11:44
+é por conta disso que a gente tem algo
+11:47
+diferente, que é o plano de ação, ele é
+11:50
+diferente, tá? Deixa eu até aumentar
+11:52
+aqui, de tarefas, tá? Então, enquanto um
+11:56
+plano de ação dá uma visão geral do que
+11:58
+será feito, uma tarefa, ela determina de
+12:02
+forma granular o que de fato será
+12:04
+implementado. Uma tarefa, ela define
+12:07
+como tecnicamente um item ele vai ser
+12:10
+implementado. E dependendo da
+12:12
+complexidade da tarefa, ela pode ser
+12:15
+expandida em subtarefas, tá? Então, as
+12:18
+tarefas elas devem possuir detalhes de
+12:21
+baixo nível de como a implementação
+12:23
+deverá ocorrer, podendo inclusive usar
+12:26
+exemplos para isso. Então o que que
+12:28
+acontece é o seguinte, galera. Eu ter
+12:30
+esse plano aqui para ir a trabalhar
+12:31
+comigo não vai ser o suficiente para eu
+12:35
+conseguir dar detalhes de como ela deve
+12:37
+implementar. E é aqui que tá a diferença
+12:40
+de um desenvolvedor que sabe o que tá
+12:41
+fazendo, tá? do que um desenvolvedor que
+12:44
+realmente deixa a me levar e faz um vibe
+12:46
+code onde vai sair um código maluco,
+12:49
+porque eu não estou definindo nada de
+12:51
+como isso vai desenvolver. Então aqui eu
+12:53
+tenho uma visão do que agora como será
+12:56
+desenvolvido. Aí eu já entro no nível de
+12:59
+tarefas, tá? E quando eu entro no nível
+13:01
+de tarefas, eu criei um exemplo aqui
+13:02
+para vocês de tarefas, tá? Então olha
+13:05
+só, eu tenho aqui, ó, tarefas de session
+13:07
+manager em memory store implementation.
+13:10
+Então aqui eu tenho, eu fiz no formato
+13:12
+tudo, mas você se organiza da forma que
+13:14
+quiser. Criar interface de session data,
+13:16
+definir os tipos básicos para transport,
+13:19
+para transporte, server e createed,
+13:21
+implementar em memory event store, tá? O
+13:24
+sistema de armazenamento para
+13:27
+resumibilidade,
+13:28
+métodos de store event, replay after
+13:31
+events, tá? E aqui nessa mesma tarefa, o
+13:34
+que eu posso fazer aqui é dar exemplos
+13:37
+de base de implementação para ele ter
+13:40
+uma ideia de como ele deve implementar
+13:43
+essas tarefas que eu acabei de colocar,
+13:45
+tá? Da mesma forma aqui eu tenho
+13:47
+tarefas, criar o session manager,
+13:48
+implementar o create session. E aqui eu
+13:51
+dou base para ele ter uma ideia de como
+13:54
+isso também deve ser implementado. Mesma
+13:56
+coisa, sistema de cleanup automático,
+13:59
+exemplo, métodos de life cycle básicos
+14:02
+que ele tem que utilizar. Então, se você
+14:04
+perceber aqui, galera, eu estou sendo
+14:07
+específico de forma granular do que vai
+14:09
+ser feito, falando o que deve ser feito
+14:12
+e dependendo dos casos como deve ser
+14:16
+feito, tá? Então, pessoal, a gente tem
+14:18
+que sempre pensar, se você for criar um
+14:21
+projetinho que você vai fazer com meia
+14:24
+dúzia de arquivos, que você pode jogar
+14:26
+fora amanhã, você acha que realmente
+14:28
+vale a pena a gente ter tudo isso? Eu
+14:30
+não acho que vale a pena. Mas novamente,
+14:32
+pessoal, quando a gente tá criando uma
+14:34
+aplicação,
+14:36
+a gente tá sempre pensando em tempo e
+14:40
+complexidade, em linhas de código, né?
+14:43
+Conforme o nosso projeto for crescendo,
+14:45
+ele vai aumentando a complexidade. O que
+14:48
+a gente quer fazer é manter essa
+14:50
+complexidade de uma forma melhor. E para
+14:54
+isso a gente tem que ter mecanismos que
+14:56
+traquem o projeto e os objetivos dele a
+15:00
+longo prazo, né? Então aqui nem teste
+15:02
+automatizado, galera, né? dar trabalho
+15:04
+para criar no início, mas isso é o que
+15:06
+vai manter o futuro do software para que
+15:08
+ele não seja um software que vai ter que
+15:10
+ser reescrito daqui uma semana, porque a
+15:13
+IA saiu fazendo um monte de besteira,
+15:15
+muita maluquice, que você ficou sem
+15:17
+controle, tá? Então, dependendo do tipo
+15:20
+de projeto, vale ter a pena um plano de
+15:22
+ação global, vale a pena ter um plano de
+15:25
+ação baseado em tópicos, em features de
+15:27
+do que vai ter que realmente ser
+15:28
+implementado naquela sprint. Vale a pena
+15:31
+você ter um prompt decente. Isso não é
+15:33
+vale a pena. Isso você tem que ter. Se
+15:34
+você não tem um prompt hoje que resolva
+15:37
+grande falhas de workflow que a sua IA
+15:40
+tá fazendo, vá e tenha isso. Invista
+15:44
+tempo nisso. Eu já disponibilizei várias
+15:47
+vezes essa parada, tá? Nos eventos que a
+15:49
+gente tá fazendo. Então tenha um prompt
+15:52
+decente que inclusive ajude no workflow,
+15:54
+tá? Você pode utilizar regras também,
+15:56
+rules para te ajudar, mas tenha sempre
+15:58
+um prompt decente. E por último,
+16:00
+tarefas, tá? Ah, e novamente um ponto
+16:03
+importante para te dizer, galera, é o
+16:05
+seguinte. Tudo isso que eu falei, você
+16:08
+pode fazer usando a IA. A IA pode me
+16:11
+ajudar a gerar essa lista de tarefas, a
+16:13
+IA pode me ajudar a expandir as tarefas,
+16:15
+a IA pode me ajudar a criar alguns
+16:17
+exemplos para facilitar o processo de
+16:20
+desenvolvimento, mas isso é
+16:22
+responsabilidade minha. Porque quando a
+16:25
+Iá terminar aquela sessão e ela ter que
+16:27
+começar um chat do zero, você pode
+16:30
+perder completamente o tracking da sua
+16:33
+aplicação. A própria IA, ela vai começar
+16:35
+a alucinar, ela não sabe de onde parou,
+16:37
+como as coisas continuaram, mesmo que
+16:39
+ela tenha o plano de ação dela, tá?
+16:41
+Então, lembre-se, você tem que controlar
+16:43
+a IA. Ela vai se ajudar agora com esses
+16:47
+planos que ela tem? vai, mas a
+16:49
+responsabilidade é sua. Então, use o bom
+16:52
+senso, organize esses planos de ação de
+16:54
+uma forma que se o projeto for grande,
+16:56
+de uma forma mais elaborada, se o
+16:58
+projeto for menor de uma forma um pouco
+16:59
+mais simplificada, mas não deixe aí de
+17:03
+ter esses planos de ação, porque se você
+17:05
+não tiver a chance da IA alucinar, fazer
+17:08
+um monte de besteira, fazer um código
+17:10
+legal e depois ela vai e quebra tudo o
+17:13
+código, esses tipos de coisas já dá para
+17:15
+evitar para caramba, tá? Então, pegue
+17:18
+essa dica, espero que ela cons ela
+17:20
+consiga aí realmente te ajudar no dia a
+17:22
+dia, tá? E se você quer aprender isso e
+17:26
+muito mais de como que você pode ser
+17:28
+mais produtivo, tendo workflows para
+17:30
+diferentes tipos de projeto, projetos
+17:32
+que começam do zero, projetos com
+17:34
+milhares de arquivos, projetos onde você
+17:37
+não tem documentação ou você tá
+17:38
+implementando um framework que a
+17:40
+documentação tá defasada e você precisa
+17:43
+realmente utilizar todo o potencial da
+17:45
+IA.
+17:46
+Clique no link aí abaixo para você
+17:48
+conhecer melhor o nosso MBA em
+17:50
+engenharia de software com IA, porque
+17:52
+ele vai pegar de ponta a ponta desde
+17:53
+arquiteturas modernas utilizando IA, tá?
+17:57
+Ele vai pegar você sendo mais produtivo
+17:59
+com IA, vai pegar também para você
+18:01
+desenvolver e integrar aplicações com IA
+18:03
+e criar agentes de IA e também a parte
+18:05
+de DevOps SRE para você poder entregar e
+18:08
+garantir a confiabilidade dos seus
+18:10
+sistemas. Fechou? Então clica no link
+18:12
+logo abaixo, bate um papo com a nossa
+18:13
+equipe, tá? Dá tempo de você entrar
+18:15
+ainda na nossa turma e eu espero que
+18:17
+você curta, porque realmente é um MBA
+18:20
+feito para desenvolvedores. Nada aquela
+18:22
+parada de você ficar falando de machine
+18:24
+learning, deep learning, treinamento de
+18:26
+modelos, não. É para desenvolvimento.
+18:29
+Então clica no link aí abaixo. Espero
+18:31
+que você tenha curtido esse esse vídeo,
+18:32
+tá? E também, né, deixa um comentário
+18:35
+aqui embaixo como que você tá
+18:37
+trabalhando com seus planos de ação para
+18:39
+melhorar a qualidade do desenvolvimento
+18:41
+de software comia. É isso aí. Grande
+18:43
+abraço, galera, e até mais.
+18:46
+[Música]
+19:01
+He. เฮ

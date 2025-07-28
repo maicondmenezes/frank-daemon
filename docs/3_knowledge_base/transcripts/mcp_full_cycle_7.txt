@@ -1,0 +1,700 @@
+vídeo: Prompt de IA fazendo Mesa Redonda com Criadores do Kafka, RabbitMQ e Redis
+
+0:00
+galera é realmente impressionante o que você consegue fazer hoje criando promptes decentes para trabalhar com
+0:07
+inteligência artificial você já imaginou por exemplo você pegar o criador do Reds
+0:12
+o criador do Cafk e o criador do Rabbit MQ numa mesa redonda discutindo para
+0:18
+você qual é a melhor solução que você deve escolher entre as opções que eles estão trazendo cara isso muda
+0:26
+completamente o jogo na hora que você vai tomar uma decisão técnica e muitas vezes uma decisão que você nem sabe
+0:33
+quais são as variáveis que estão envolvidas então hoje eu quero mostrar aqui para vocês como que eu criei uma
+0:40
+mesa redonda tecendo os especialistas que eu quiser para que eles consigam
+0:46
+discutir entre eles mesmos e eles depois entrarem num consenso na melhor resposta
+0:52
+que foi dadas ali para eles e o mais bacana de tudo isso é que isso foi feito
+0:57
+totalmente com algumas técnicas de promptes que eu vou mostrar para você aqui ideia fechou então vamos lá mas
+1:04
+antes da gente falar né exatamente sobre esses tipos de prompt e eu te mostrar tudo isso na prática eu queria muito
+1:11
+pedir que você desse um joinha nesse vídeo se inscrevesse no nosso canal e obviamente se você quer aprender mais
+1:18
+sobre isso que eu tô te mostrando engenharia de promptores saiba que tanto no nosso
+1:23
+curso full no nosso MBA nas nossas pós-graduações nós estamos adicionando
+1:28
+pilares de A inclusive a gente já tem disponível um curso de prompting engineers para desenvolvedores que você
+1:35
+não pode perder então se você tem algum interesse clica no link aqui abaixo a gente bate um papo entendeu seu momento
+1:41
+profissional e quem sabe você não vem aí explorar muito mais o potencial da IA
+1:46
+para que você consiga ser um desenvolvedor aí cinco vezes mais produtivo fechou bom galera vamos direto
+1:53
+ao assunto agora deixa eu compartilhar aqui a minha tela para que você entenda um pouco a ideia do que eu criei aqui
+2:01
+como exemplo para você ter o nível de possibilidades que a gente tem quando a gente sabe realmente pedir vamos dizer
+2:08
+assim pra inteligência artificial tá então antes da gente ir para esse
+2:13
+desafio né a essa mesa redonda tec eu quero trazer um super micro eh resumo de
+2:22
+dois tipos de prompts que você tem que saber e o que você precisa ter clareza
+2:28
+tá um tipo de prompt ele é bem famoso ele é chamado de chain of thoughts né o
+2:33
+C e esse cara ele é muito importante e muito interessante de como ele funciona
+2:39
+por quê porque você pede para ele fazer algo né mas que te mostre o passo a
+2:46
+passo de como ele chegou ali tá ou seja se você precisa fazer um processo de
+2:51
+debugging se você precisa trabalhar num nível ali para que ele mostre a lógica
+2:57
+que ele tá chegando naquele resultado esse encadeamento de pensamentos é super
+3:03
+interessante porque você tem mais transparência no processo porque você entende o raciocínio que ele tá seguindo
+3:09
+e uma vez que ele segue esses raciocínios você pode pedir até para ele
+3:15
+baseado no raciocínio que ele teve né tomar algumas ações porque é como se ele tivesse pensado
+3:22
+alto e nesse pensamento alto ele usasse a própria resposta dele como contexto
+3:27
+para ir seguindo pras próximas interações tá então esse chas essa é a ideia você faz uma input e depois
+3:35
+baseado nessa input você vai pedindo para ele analisar passo a passo e ele vai trazendo os passos até chegar no
+3:41
+output mas o lance é o seguinte a gente começa a ter umas outras opções super
+3:48
+interessantes aqui de prompts também que mudam o jogo tá e um deles aqui é
+3:54
+chamado de three of thoughts tá ou t ou t o que que esse cara faz ele ele
+4:00
+possibilita pra gente avaliar múltiplas opções ele ajuda a gente analisar e
+4:06
+fazer comparações de tradeoffs de diferentes estratégias tá e o mais
+4:12
+interessante de tudo é que você pode pedir para ele inclusive qual seria a
+4:18
+decisão final dele baseado em determinados critérios que você expõe e
+4:24
+aí ele vai analisar todas as próprias possibilidades que ele mesmo falou e
+4:29
+baseado nessas possibilidades ele vai utilizar os critérios que você utilizou
+4:35
+para ele determinar para você qual é a melhor eh a melhor opção baseado naquilo
+4:41
+que você perguntou tá essas imagens que estão vindo aqui são baseadas nesse link
+4:46
+onde tem o PDF onde explica especificamente ali o Tree of Thoughts mas ele também explica a ideia do Chain
+4:52
+of Thought ali também então eu super recomendo que você acesse esse link tá
+4:57
+então quando a gente tá pensando aqui em three ofs dá para perceber que você pode
+5:02
+entrar com uma input essa input dá por exemplo três opções dessas três opções ele escolheu essas duas dessas duas ele
+5:10
+gerou uma outra opção e aqui gerou uma outra opção mas entre essas duas ele preferiu a seguir com essa que dessa
+5:17
+opção aqui que teve ele escolheu essa aqui então dá para você perceber que você faz o encadeamento de opções onde
+5:24
+ele pode escolher mas uma das coisas mais fantásticas aqui que você pode
+5:30
+fazer é o seguinte é combinar esses tipos de prompt ou seja eu utilizo tá o
+5:37
+chain of thoughts em conjunto com o tre of thoughts logo eu consigo explorar as
+5:45
+diversas soluções possibilidades que eu tenho ainda mostrando o passo a passo
+5:51
+para eu entender a lógica de cada uma dessas opções tá então essa é a ideia
+5:57
+assim super básica tá só para você ter uma ideia eu tenho no nosso curso a
+6:03
+gente tem um curso específico para prompt engineer ah para desenvolvedores onde a gente traz ali mais de eu acho
+6:09
+que mais de 10 tipos de promptes combinações tabelas eh como se diz
+6:14
+tabelas comparativas quando você usa um quando que você usa outro qual que você usa para documentação qual que você usa
+6:20
+para exploração então é bem inteligente porque dá para você ter insightes e conseguir fazer coisas que a gente nunca
+6:27
+imaginou que daria para ser feita e obviamente se você tiver criatividade você consegue fazer algumas coisas legais tá bom dito isso galera eu quero
+6:35
+mostrar aqui para vocês um uma parada que eu criei e eu acho que ficou muito
+6:41
+legal e honestamente eu tô usando essa parada para caramba e ter me ajudado a
+6:46
+eu ter conhecimento de algumas opções que às vezes eu não se eu não sabia que existia tá então qual que é a ideia aqui
+6:54
+eu vou mostrar para você agora na teoria e na prática tá apesar da prática também ser um pouco teórica mas eu quero trazer
+7:01
+aqui o que eu criei tá foi algo chamado de mesa redonda tec basicamente eu vou
+7:07
+escolher um tema para uma discussão ah quando eu inserir esse tema
+7:14
+vão ser feitas algumas perguntas adicionais para garantir que a IA tenha
+7:19
+um pouco mais contexto possa fazer algumas perguntas a mais ali para mim e daí a parte legal fica que eu começo a
+7:26
+escolher quem são os especialistas técnicos que vão participar dessa mesa
+7:33
+redonda por exemplo eu posso falar e que é o que a gente vai fazer hoje que eu
+7:38
+tenha uma mesa redonda ah com o especialista por exemplo que criou o
+7:45
+Apach Cafka um especialista que criou o Rabbit MQ especialista que criou o Reds
+7:52
+tá e eu vou jogar um problema para eles né e cada um desses especialistas eles
+8:00
+vão trazer aqui para mim duas opções de solução daquele problema que eu tô
+8:06
+trazendo aqui pra gente e essas opções ele vai determinar toda a lógica de
+8:11
+pensamento que ele tá trazendo aqui e ao final dessas duas opções os próprios
+8:18
+especialistas vão escolher qual é a melhor opção que ele sugeriu tá então se
+8:24
+eu sou Wesley eu tô dando duas opções eu vou escolher entre as minhas duas opções qual é a melhor legal mas a parte legal
+8:31
+começa quando a gente chega nessa parte seis que são perguntas cruzadas o que que acontece depois que todo mundo deu a
+8:38
+sua opinião eu posso falar o seguinte: "Olha eu quero que esse especialista né
+8:44
+ah confronte aquele outro especialista e daí cada um começa a justificar e dizer
+8:51
+se concorda ou não com a resposta do outro." E eu posso fazer essas perguntas
+8:57
+cruzadas quantas vezes eu quiser e eles vão gerando essa discussão e o mais interessante de tudo é que eu consigo
+9:05
+ver a argumentação de cada um deles entendendo a qual é o ponto de vista de
+9:12
+cada um depois que eu fiz essas perguntas cruzadas eu vou pedir para que esses
+9:18
+especialistas falem entre si mesmos baseado em todos os resumos de tudo que
+9:23
+eles falaram e os três entrem em consenso quais são as melhores opções né
+9:30
+ou qual é a melhor opção que eles devem recomendar então nesse momento eles
+9:35
+começam uma discussão até que cada um falha: "Ah eu prefiro opção realmente do Wesley eu preciso prefiro opção do Luís
+9:43
+eu prefiro opção não sei de quem" então isso aí é muito importante porque você consegue ver até o raciocínio final isso
+9:50
+significa que vai ser a melhor resposta do mundo não mas galera para algo
+9:55
+extremamente exploratório quando você tem dúvidas você pode escolher especialistas que são
+10:02
+famosos onde provavelmente a IA já utilizou muitos artigos desses caras que
+10:07
+faz com que ela entenda o ponto de vista dessa pessoa tá então isso aí é um dos
+10:13
+pontos mais interessantes e você vai ver que bacana que o resultado que isso dá para gerar tá então qual que foi o
+10:20
+desafio aqui pra gente o meu case que eu tô trazendo é o seguinte eu possuo é um case que tem um
+10:27
+contexto bem amplo aí né vamos dizer assim não é a melhor entrada do mundo
+10:32
+pra gente passar proá mas vocês vão entender a ideia eu vou colocar aqui eu possuo um sistema que precisa se
+10:37
+comunicar com outro microsserviço através de mensageria a a volumetria de 10.000 1000 mensagens por segundo eu não
+10:44
+preciso de persistência de mensagens e eu preciso garantir que a mensagem foi
+10:49
+entregue então eu não preciso salvar as mensagens ou seja elas podem ser descartadas mas eu preciso garantir que
+10:56
+a mensagem ela foi entregue e provavelmente né aí eu preciso ter lidar
+11:01
+com bastante mensagens por segundo tenho alguns critérios o que que são esses critérios tá qual é a melhor solução
+11:09
+baseada nos seguintes critérios solução que vai dar para mim a menor latência a maior facilidade de uso né e que vai ser
+11:18
+resiliente e ter tolerância a falhas tá especialistas que eu vou escolher aqui
+11:24
+tá j Craps o um dos criadores ali da Confluent trabalhava no LinkedIn para
+11:30
+fazer a criação do Apach Cafka o Alex Richardson é um dos fundadores da
+11:35
+criação do Rabbit MQ e o Salfador São Felipo que é o criador do Reds e aí dá
+11:42
+para perceber que nós temos três sistemas que entre aspas são concorrentes em uma determinada
+11:49
+área por exemplo né o Rabit MQ é um sistema de mensageria o Apcháfica também
+11:57
+né trabalha muito com string de dados o Reds ele tem um recurso em tempo real
+12:03
+chamado de ah Reds Pub Sub e ele também tem o Reds Stream então se você perceber
+12:10
+dependendo da situação eu posso escolher para trabalhar com mensageria entre
+12:16
+Cafka Rabit MQ e Reds o meu objetivo agora aqui é baseado na expertise dos
+12:23
+meus especialistas né ah qual é a melhor ferramenta para eu usar nesse caso
+12:29
+baseado nesses critérios aqui tá então essa aqui é a nossa ideia e eu quero
+12:34
+mostrar aqui para vocês como é que a gente pode fazer essa mesa e vamos tentar a gente se divertir um pouco
+12:40
+apesar da gente ficar na interface do Chat GPT lembrando tá que o prompt que eu utilizei ah ele foca muito nesses
+12:49
+aspectos que eu acabei de falar eh cha a tree of thought a gente também tem
+12:54
+skeleton of thought a gente tem é self consistency também a gente tem bastante coisa mas o interessante aqui para vocês
+13:00
+terem uma ideia de possibilidades que a gente tem no dia a dia para fazer exploração principalmente quando a gente
+13:06
+tem dúvidas da onde a gente tá querendo chegar tá ah lembrando também que com esse prompt você pode colocar isso
+13:13
+dentro de um agente você pode colocar isso dependendo dentro de um MCP você pode utilizar aquele pacote né aquele
+13:19
+framework do Google Hwaya onde você faz um agente conversar com o outro então tem bastante coisa legal que dá para
+13:25
+fazer ou você consegue criar um meu GPT né customizado onde você consegue ter
+13:30
+essa interação também fechou então vamos lá galera eu vou mostrar aqui para vocês como é que funciona a parada eu tenho
+13:38
+aqui tá ah um cara que eu chamei de Mesatec
+13:43
+legal e nesse Mesatec eu vou dar um iniciar aqui para mim e ele vai se apresentar e mostrar como é que funciona
+13:50
+a ideia do sistema aqui então se você olhar ele fala o seguinte: "Olá eu sou o seu facilitador virtual para essa mesa
+13:56
+redonda com especialistas técnicos aqui você pode reunir especialistas reconhecidos da área de tecnologia para
+14:02
+discutir problemas complexos propor soluções de tomar decisões embasadas esse sistema simula um ambiente de
+14:09
+debate profundo com lógica de raciocínio passo a passo análises comparativas e iteração contínua até que todos cheguem
+14:15
+num consenso exatamente como uma equipe de arquitetura snior por exemplo de alto nível chegaria durante essa experiência
+14:22
+você vai ter geração de perguntas complementares proposta de soluções comparação cruzadas e um ciclo de debate
+14:29
+contínuo até que todas as vozes técnicas entrem em acordo tá você tem controle do início mas durante o consenso os
+14:36
+especialistas tomarão a frente da conversa até resolverem a questão ou até você decidir intervir vamos começar a
+14:42
+selecionar o tema da discussão e os nomes dos especialistas que vão
+14:48
+participar então eu vou voltar aqui pro meu scol draw e eu vou colocar né a aqui
+14:56
+o tema né então eu vou colocar eh vou colocar aqui o meu
+15:08
+case ah daí eu vou colocar qual utilizar cafka Rabbit
+15:17
+MQ e Reds vou dar um enter aqui para mim
+15:23
+e agora ele vai falar assim tema muito relevante técnico agora vamos paraa etapa dois expansão do problema vou
+15:29
+fazer três perguntas complementares uma de cada vez para elidar melhor os requisitos e restrições aqui pergunta
+15:36
+um: você precisa de entrega garantida exatamente uma vez ou pelo menos uma vez
+15:42
+ou seja é aceitável que a mensagem possa ser processada mais de uma vez desde que não se perca eu vou colocar sim tá eu
+15:50
+posso receber ela mais de uma vez mas eh eu vou ter um produtor ou um consumidor
+15:57
+ID potente então eu posso descartar essa imagem caso ela chegue entregue ali pra
+16:02
+gente tá então eu posso usar etlios 11 sim é
+16:08
+aceitável mais de uma vez vou colocar aqui para
+16:13
+ela vamos lá ótimo então vamos considerar que a list é suficiente ou
+16:19
+seja evitar a perda mais importante do que evitar duplicação qual o nível de latência aceitável pelas mensagens né ah
+16:27
+sub 100 msundos ou uma latência de alguns segundos aceitável eu vou colocar aqui uma latência de 200 msundos aqui
+16:40
+tá então ele tá trazendo uma licência razoavelmente apertada 200 msundos por mensagem pergunta três esse sistema de
+16:47
+mensagem será utilizado para comunicação ponto a ponto entre dois microsserviços ou existe a necessidade de fun um para
+16:54
+muitos como múltiplos consumidores consumindo a mesma mensagem olha que interessante galera que ele tá me
+17:00
+perguntando porque isso muda completamente por exemplo se eu for usar o Rabbit MQ eu vou ter que usar uma
+17:06
+Exchange e ter diversas filas ou se eu for usar o KFCA isso vai depender muito
+17:11
+de como que eu vou organizar as minhas partições então tem muita coisa aí para organizar eu vou colocar um para muitos
+17:18
+tá eu posso ter vários consumidores ali para mim então agora temos o panorama
+17:24
+completo comunicação via mensageria entre microsserviços volume 10.000 1000 mensagens por segundo entrega garantida
+17:30
+sem necessidade de persistência latência máxima padrão de comunicação a Fun um
+17:37
+para muitos consumidores agora passaremos pra etapa três soluções por especialistas informe o nome dos
+17:44
+especialistas que participarão na discussão por exemplo Martin Fer Charity Majors Kelsin High Tower eu vou colocar
+17:51
+aqui tá aqui eu já tenho o nome dos caras são os especialistas o J Craps o
+17:57
+Alex Richardson e o Salvadore aqui né então vou colocar esses caras aqui com
+18:04
+os especialistas perfeitos agora vamos iniciar a solução por especialista cada
+18:10
+uma com sua das suas personalidades defendendo suas propostas começaremos com J Craps criador do Apachfica vamos
+18:17
+lá agora a gente tem que esperar a solução desse nosso amigo vamos aguardar um pouquinho então vamos lá olha aqui o
+18:23
+J Craps acabou de responder: Solução um cafca com tóxos atópicos particionados e
+18:30
+múltiplos consumidores em grupos criar um cluster de cafica com particionamento ajustado para suportar 10.000 mensagens
+18:36
+por segundo vai de 10 a 50 partições configurar tópicos com política de retenção mínima de 1 hora apenas para
+18:43
+buffer de segurança sem foco em persistência então olha só que interessante galera o foco o Cafkaa ele
+18:49
+tem um foco muito forte em persistência de dados mas eu falei que eu não preciso de persistência então ele tá colocando
+18:55
+uma retenção de uma hora e depois disso as mensagens vão ser perdidas usar consumidores independentes para cada
+19:01
+tipo de serviço interessado fal nativo ativar o X all no produtor para garantir
+19:07
+a replicação antes de considerar a mensagem entregue habilitar o auto comit
+19:12
+falso para ele não garantir que o consumidor ah para ele garantir que ele
+19:18
+só vai ser comitado quando o consumidor confirmar que leu a resposta então ele colocou aqui ó Cafica é projetado para
+19:23
+truput massivo com baixa latência sub 100 msundos com tan adequado o modelo de log de múltiplos grupos de consumidores
+19:30
+é ideal para funs mesmo sem a necessidade de persistência longa e buffer natural dos tópicos aqui ele deu
+19:36
+uma segunda opção aqui para mim cá fica com tópico compactado e produtores ID potentes criar um
+19:43
+cleanout policy compact para eliminar mensagens duplicadas ativar de potência
+19:48
+configurar replicação né é replication factor de dois ou três para garantir a entrega caso de falhas usar consumidores
+19:55
+como broadcast para cada serviço no seu grupo aí ele deu a abordagem e ele mesmo
+20:02
+escolheu entre as duas opções que ele deu a solução um motivo da solução um é mais direta resiliente e performática
+20:08
+pro cenário dado o modelo de partições e múltiplos consumidores oferece funal in nativo e exigência de taxa de ingestão
+20:15
+de controle simples como persistência longa não é necessária podemos manter a retenção curta agora aqui ele já me dá
+20:22
+ele já me dá pronto para continuar com o Alex Richardson do Rabbit MQ né ah e eu
+20:29
+não vou comentar nada do Craps agora tá então eu vou colocar sim sim continue agora a gente vai ter o
+20:38
+cara do Rabit MQ ah trazendo as opções dele vamos ver aqui ó solução um que ele
+20:45
+trouxe é o Rabbit MQ com exchange do tipo Falout filas independentes criar uma exchange do tipo Falout que
+20:51
+automaticamente entrega mensagem para todas as filas cada serviço o consumidor cria sua própria víncula a fila
+20:58
+vinculada ao exchange usar publish confirms no produtor para garantir a entrega até o broker aplicar o kos o
+21:04
+basicos nos consumidores para evitar sobrecarga e rebalanceamento dinâmico evitar o uso de disco
+21:11
+transition transitionent que e não persistentes para maximizar o truput
+21:17
+justificativa o high rabbit MQ é é forte para caso de fun usar exchange fan com
+21:22
+filas temporárias confirmadas garante-se a taxa alta com latência abaixo de 200 ms overhead de persistência arquitetura
+21:29
+permite paralelismo entre consumidores e controle fino de trupput e aqui ele dá
+21:34
+segunda opção né criar uma exchange do tipo topic permitindo um roteamento por tipo de mensagem usar o mandatory flag
+21:41
+no produtor para detalhe se a mensagem foi roteada ativar auto delete para as filas não utilizadas e reduzir overhead
+21:47
+rodar rabbit MQ emo cluster com mirror a QS para garantir tolerância a falhas aí
+21:52
+a justificativa que ele deu e a opção que ele escolheu é a solução um usando o modelo FAL que ele trouxe aqui pra gente
+22:00
+tá e agora vamos paraas soluções aqui do Salvatore vamos lá continue e agora a
+22:07
+gente vai finalmente pra solução do nosso camarada do Reds vamos ver aqui ó a primeira opção
+22:14
+que ele deu foi o Reds Pub sub puro com replicação passos: utilizar o publish
+22:19
+subscriber do Reds Nativo para comunicação direta configurar os nossos Reds em modo replicado primário e
+22:25
+réplicas para garantir disponibilidade usar um canal único para broadcast onde todos os consumidores se inscrevem
+22:32
+aumentar o paralelismo horizontal com reds cluster para suportar trut desejado garantir baixa latência menor de 1
+22:39
+msegundo por natureza em memory do ah Reds o cara tá falando em menos de 1
+22:45
+msegundos justificativa o Reds Pub Sub oferece Fout em tempo real com desempenho extremamente baixo em
+22:52
+latência 10.000 mensagens com segundo com tan adequada replicação é viável porém não há garantias de entrega se o
+22:58
+consumidor estiver offline compensando aqui com a alta disponibilidade de cluster ou seja ele trouxe um ponto aqui
+23:05
+pra gente que não é muito legal solução reds streams com grupos de consumidores
+23:11
+criar uma stream para cada tipo de mensagem ou canal lógico cada serviço atua como parte de um consumer group
+23:17
+configurar o tempo de retenção curto nos streams 5 minutos apenas para fall usar
+23:23
+exec para confirmar a leitura e evitar a perda em creche do consumidor ativar replicão e persistência mínima rdb
+23:30
+snapshot a periódico apenas para confiabilidade básica justificativa são
+23:35
+uma evolução do Publ sub tradicional permite fanout via grupos confirma a leitura tolerante a falhas leves embora
+23:42
+não seja necessário persistir dados o stream permite reprocessar mensagens perdidos de suporte
+23:47
+escalabilidade opção que ele escolheu foi opção dois dele né mesmo sem exigência de persistência ah o Red
+23:54
+Stream oferece melhor controle de entrega é mais robusto permite reprocessamento em caso de falha e ainda
+24:00
+opera com baixa latência então ele escolheu a opção dois e agora a gente entra na etapa quatro aqui comparação
+24:07
+cruzada quem que você quer que discuta e aqui eu vou colocar pra gente eu vou
+24:13
+colocar salfa como que é o nome dele salfatore como é que escreve o nome do nosso amigo eu vou colocar aqui
+24:19
+salfatore é salfatore salfatore versus craps ou seja Rabs e
+24:26
+Reds versus CFC aqui para mim então agora o que que vai acontecer um
+24:32
+camarada vai dar uma opinião criticando a solução do outro tá então ó o
+24:38
+Salvadore tá analisando o JCPS aqui pra gente vamos dar uma olhada nessas nessas
+24:44
+análises aqui galera seguinte requisitos a alta taxa de mensagens 10k
+24:53
+por segundo j o K fica projetado para auto truts streams atinge com tan e reds
+25:01
+cluster fal grupos de consumidores consumer gropes latência menor que 200
+25:06
+atingível com tan naturalmente baixo menos de 1 msundo com reds list 11 via
+25:12
+controle de offset via exec sem persistência armazena mensagens m super
+25:17
+curo prazo stream com retenção mínima simplicidade operacional exige a
+25:23
+infraestrutura dedicada reds é mais leve resiliência falhas alta via replicação e comit básica via RDB ou EOF para
+25:31
+persistência passo linha dois de raciocínio então o KFK brilha em robusteza e exige mais infraestruturas
+25:38
+do Keeper Brokers Turning Fino apesar que o Cafk agora tem o novo protocolo Kraft ah Reds Streams oferece
+25:45
+simplicidade controle leve de falhas excelência em latência mas não escala linearmente enquanto o K fica sem
+25:50
+esforço manual para um sistema que não precisa de retenção nem durabilidade Kafka parece ser um overkill o foco do
+25:57
+sistema é entrega garantida com latência baixa onde o Reds Stream é o suficiente mais que operacionalmente escolha Reds
+26:05
+Streams porque esse cara fala que não justifica o caso do do cenário do Cafka
+26:10
+ele basicamente ele tá falando que o o Reds já consegue resolver esse problema
+26:16
+agora eu vou colocar o seguinte Reds versus Rabbit MQ vamos ver como é que
+26:22
+sai as diferenças dessas comparações então a segunda comparação cruzada
+26:28
+o Salvadore versus o Richardson do Rabbit MQ e agora a gente vai ver a
+26:35
+comparação desses caras então olhando aqui a comparação requisito taxa de 10k
+26:42
+de de mensagens por segundo rabit MQ exige tan fino não é o seu ponto forte
+26:48
+reds Streams atingível com Reds Cluster nativo com exchange fanout nativo com
+26:53
+consumer groups atingível com latência sem persistência no rabbit MQ
+26:59
+naturalmente menor que 1 msundo publish confirms my kos x nos consumidores sem
+27:06
+persistência com mensagens transitórias com retenção mínima com stream simplicidade recare turning de kills
+27:13
+reds é mais direto e leve escalabilidade horizontal a reds cluster facilita a
+27:19
+linha de raciocínio é que o Rabbit MQ é excelente em routing flexibilidade mas foi projetado pro True Pult massivo
+27:25
+principalmente ser persistência o Reds Stream apesar de não ser mensageria
+27:30
+tradicional entrega Falout o Rabbit MQ tem o modelo do exchange fun reds evita
+27:36
+overhead necessário e etc escolha do Salvadore que criou o Reds a jica
+27:43
+técnica dele é o Reds né então o cara tá puxando a sardinha pro lado aqui agora
+27:49
+aqui ele tá perguntando se eu quero ir para uma etapa de consenso eu vou falar que não eu quero que ele faça cfica ah
+27:57
+eu quero que ele faça eu quero que o
+28:02
+Craps pergunte para o Salvadore aqui para mim ou seja
+28:10
+agora é Cafkaa versus Reds mas quem tá analisando agora é o criador do Cafa que
+28:17
+vai fazer né a pergunta cruzada né a discussão cruzada com o camarada do
+28:25
+Reds e agora a parada fica legal porque um começa a falar que respeita o outro vamos lá Safatore respeito muito Reds
+28:33
+mas streams ainda são relativamente recentes e não tem o mesmo histórico de confiabilidade sobre carga intensa e
+28:39
+alta concorrência com o Kafk em uma arquitetura com dezenas de consumidores independentes como que você garante que
+28:46
+o Reds Streams não se torne um gargalo único especialmente com fan massivo você
+28:51
+confia plenamente na escalabilidade de reds streams para lidar com esse tipo de topologia sem comprometer a entrega aí
+28:58
+ele pergunta se deseja que o Salfador responda sim agora eu tô vendo um cara discutir com o outro
+29:04
+aqui e vamos ver a resposta aqui ó excelente pergunta J sim eu confio sim
+29:10
+na escalabilidade na escalabilidade do Reds Stream o Reds tradicional opera single trader mas o cluster distribui os
+29:16
+dados em múltiplos nós com partições baseadas em slots e uma arquitetura fanout pesado cada stream pode ser
+29:21
+alocado em nó separado além disso ao usar vários consumer groups por stream shareds lógicos tipos de evento é
+29:28
+possível paralelizar tanto WR quanto read de forma eficaz em benchmarks internos já ultrapassamos mais de e
+29:34
+10.000 1000 mensagens por stream e o modelo baseado em buffer e memória garante latência baixa claro que o K
+29:39
+fica em escala linearmente com partições mas carrega conseguir o custo operacional de replicação zoeper
+29:45
+retenção de disco no nosso cenário sem persistência em foco fun o Red Stream a
+29:51
+com cluster entrega o K fica com menos sobrecarga se o seu único objetivo for
+29:57
+truto sob retenção mativa Kafka vence mas aqui o problema é entregar rápido
+30:03
+sem perder e para muitos ao mesmo tempo Reds faz isso de forma eficiente e pragmática e agora eu vou fazer o
+30:10
+seguinte eu vou pedir para o
+30:16
+Rabbit MQ versus Reds tá vamos ver o Alexis quanto contra o
+30:23
+Reds aqui pra gente olhar vamos lá vamos ver aqui ó salfador você
+30:30
+levantou bons pontos reds strings tem baixa latência simplicidade boas calibridades com Reds Cluster mas algo
+30:35
+fundamental que você nemencia maturidade controle de fluxo confiável rabbit MQ é
+30:41
+veterano em findout em fun com mecanismos robustos de basicos reentrega
+30:46
+e back pressure e controle de filas de consumo seu protocolo MQP oferece garantias formais sobre entrega e
+30:51
+roteamento de Restreams e o Reds Streingers ainda não tem de forma personalizada além disso Reds exige
+30:57
+cuidado extrema para não perder mensagens se algum consumidor cair antes de processar o XC pendente reds Cluster
+31:03
+não distribui consumer groups automaticamente em grandes equipes o ecossistema e as ferramentas monitoram
+31:09
+Rabbit MQ são infinitamente mais maduras minha solução com exchange fun filas efêmeras e publisher confirma a entrega
+31:16
+reds é ótimo para muitos cenários mas mensageria ah com controle funal sobre carga ah de produção por último aqui
+31:23
+galera só para não ficar longo eu vou fazer o seguinte ah eu vou colocar baseado nos critérios
+31:34
+vou voltar aqui no meu camarada
+31:40
+aqui faça a etapa de consenso essa etapa de consenso basicamente vai fazer com
+31:47
+que todas as discussões que eles que os três tiveram aqui baseado aqui nesses
+31:53
+critérios que é bem o que o Tree of Thoughts faz qual vai ser o consenso que os três vão entrar nesse momento então
+32:00
+vamos dar um entra aqui e ver o que que acontece aqui
+32:08
+galera vendo agora os nossos critérios menor latência facilidade de uso
+32:14
+resiliência e tolerância a falhas reavaliação do JC Craps do Cafka com base nos critérios preciso reconhecer
+32:21
+que o Kafka não se destaque em latência especialmente se removermos o fator de persistência como
+32:27
+prioridade a Cafca é altamente resiliente mas isso vem com a complexidade de cluster partições
+32:32
+replicação zoeper ou KFT K raft agora não é mais o simples de operar dado que
+32:39
+a persistência for descartada como necessidade e o sistema exige entrega rápida com FAL Cafka se torna mais
+32:46
+robusto do que necessário entre as opções reds streams e entrega com menor latência e simplicidade mesmo com
+32:53
+resiliência mais leve com Reds Cluster e XC dá para alcançar at least o on com
+32:59
+controle aceitável atualizo minha posição com reds strings onde atende
+33:04
+melhor o conjunto dos três critérios agora reavaliação do Richardson né eh
+33:11
+com Rabbit MQ rabbit MQ é ótimo em facilidade de uso mas apenas até certo
+33:16
+ponto em larga escala ting out tan de filas a MQP Kos Prefet mirror KS
+33:22
+aumentam a complexidade em termos de latência entregamos abaixo de 200 msundos mas não batemos o Reds que
+33:29
+trabalha direto da memória sobre a resiliência sim temos mais controle formal mas novamente isso vem com mais
+33:35
+peso operacional a simplicidade velocidade natural do Reds com fallback via strings é mais alinhado ao cenário
+33:43
+acredito que o Red Streams seja superior para esse caso específico baseado nos
+33:49
+três critérios éavaliação do salfatore ambos fizeram observações sentatas red Stream não é uma bala de prata nesse
+33:56
+caso mas latência estamos falando de microsegundos facilidade um comando para
+34:01
+criar stream e outro para consumir resiliência com Reds Cluster e Xac alcançamos Outlist on isolado em e
+34:08
+confirma a minha posição reds strings é a melhor escolha para esse técnico então consenso alcançado solução final
+34:14
+escolhida Red Stream com Consumer Groups executando sobre Reds Clusters aqui
+34:19
+justificativas consolidadas e tudo mais galera agora eu quero que vocês prestem atenção numa coisa tá eu não quis criar
+34:27
+uma briguinha de Reds Rabbit MQ perceba que depois de tudo que eles descreveram
+34:33
+eu trouxe três critérios: latência facilidade e resiliência e falei que garantia de
+34:40
+persistência não era importante para mim então automaticamente ele já vai
+34:46
+removendo CAFCA facilidade de uso né latência o Reds é muito rápido ah então
+34:52
+se você perceber a discussão ela vai andando mas no final do dia principalmente quando você tá
+34:57
+trabalhando com three ofs você escolhe o critério final da melhor opção então
+35:03
+esses três caras eles escolheram baseado nesses critérios se eu tivesse colocado
+35:08
+a persistência totalmente necessária talvez as opções tivessem ser sido
+35:14
+diferentes em relação à escolha tá mas galera independente desse nosso vamos
+35:21
+dizer assim bate-papo entre esses três especialistas o que eu quero que vocês
+35:26
+levem em consideração aqui é o quanta coisa dá para fazer com técnicas de
+35:31
+prompt um simples prompt ou não tão simples é capaz de a gente fazer esses
+35:37
+tipos de interação onde nós realmente conseguimos ver diversos pontos de vista
+35:44
+e depois esses pontos de vista sendo batidos escrutinados ao ponto de você
+35:51
+inclusive com a sua experiência também ter um nível de criticidade e entender
+35:57
+qual tecnologia nesse caso utilizar né mas esse tipo de coisa poderia ser para tipo de arquitetura tipo de tecnologia
+36:04
+metodologia não interessa qual mas o ponto aqui é você entender essas
+36:10
+possibilidades eu queria muito que você comentasse aqui embaixo para dizer o que que você achou se você já fez alguma
+36:15
+coisa parecida se você já usou algum desses tipos de prompt chafs three of
+36:21
+thoughts ou a combinação desses caras aí inclusive tá então quero saber a sua
+36:27
+opinião se você gostou ou não e também deixo o link aqui abaixo para você conhecer mais sobre o nosso curso Full
+36:34
+Cycle o nosso MBA em arquitetura a nossa pós-graduação para você virar um líder técnico e também até um expert na
+36:41
+linguagem GO a gente tá adicionando IA em tudo e sem dúvidas vai fazer uma baita diferença inclusive nosso curso aí
+36:49
+focado em prompt engineering para Dev onde você vai aprender isso e muito mais também já tá disponível para você
+36:56
+começar a estudar ainda hoje então clica aqui no link abaixo vamos bater um papo porque tem bastante coisa legal vindo
+37:02
+por aí um grande abraço e até o nosso próximo vídeo aqui no canal
+37:08
+Fullai เฮ [Música]
