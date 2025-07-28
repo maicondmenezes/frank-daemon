@@ -143,23 +143,23 @@ Frank-Daemon adota os princípios da **Clean Architecture** para garantir um des
 ```mermaid
 graph TD
     subgraph "Camada 4: Frameworks & Drivers (Detalhes)"
-        UI[Interfaces: TUI, Voz, API]
-        DB[DB & Persistência: SQLite, Redis]
-        DEVICES[Recursos Externos: FS, Git, LLMs]
+        UI["Interfaces: TUI, Voz, API"]
+        DB["DB & Persistência: SQLite, Redis"]
+        DEVICES["Recursos Externos: FS, Git, LLMs"]
     end
 
     subgraph "Camada 3: Adaptadores de Interface"
-        ECA[ECA Orchestrator (Controller)]
-        PROMPT[Prompt Engine (Gateway/Presenter)]
-        WORKFLOW[Workflow Manager (Controller)]
+        ECA["ECA Orchestrator (Controller)"]
+        PROMPT["Prompt Engine (Gateway/Presenter)"]
+        WORKFLOW["Workflow Manager (Controller)"]
     end
 
     subgraph "Camada 2: Regras de Aplicação (Casos de Uso)"
-        USE_CASES[Use Cases: ExecutarComando, GerarArtefato, Aprender]
+        USE_CASES["Use Cases: ExecutarComando, GerarArtefato, Aprender"]
     end
 
     subgraph "Camada 1: Regras de Negócio (Entidades)"
-        ENTITIES[Entidades: Tarefa, Contexto, Memória]
+        ENTITIES["Entidades: Tarefa, Contexto, Memória"]
     end
 
     %% A Regra de Dependência: Setas apontam para dentro, das camadas externas para as internas.
